@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FAF Beta Experimental Changes</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="patchnotes.css">
+</head>
+<body>
+<table id="container"><tr>
+	<td id="main">
+		<div id="intro">
+			<h1>FAF Beta</h1>
+            <p>Welcome to the fafbeta patchnotes. The listed Changes in this patchnote is subject to change.</p>
+            <p>The Changes that are currently apart of fafbeta are to allow for testing of the new balance in actual games.</p>
+            <p>We worked hard to keep this update until we feel like the changes that are on beta are ready for the main game.</p>
+            <p>This Page will be updated as much as possible to what changes are live on fafbeta</p>
+			<br>
+			<p>-- The Balance Team</p>
+		</div>
+			
+		<!-- <h2>Land</h2> -->
+			
+		<!--<div id="unithere" class="card">
+			<h3><img src="images/acutml.png"> ACU TML (UEF and Seraphim) / Seraphim SCU TML</h3>
+			Not much needs to be said much about the ACU TML and it's negative impact on teamgames. We are removing some of the reasons that made it so superior to normal TML launchers against TMDs. Making the upgrade count should now require a much smarter use of it's advantages instead of getting an immensely powerful weapon for little investment.
+			<ul>
+				<li>Missle hitpoints: <strike>3 hp</strike> → 2 hp</li>
+			</ul>
+		</div>-->
+		
+		<h2>Navy</h2>
+		
+		<div id="destroyer" class="card">
+			<h3>Cybran Destroyer</h3>
+			<p>Github issue: <a href="https://github.com/FAForever/fa/issues/4948">4948</a></p>
+			<p>We increased range for the Salem before and found it to still be lacking considering the nerf to their frigates. This should help bring their early navy in line with the other factions.</p>
+			
+			<ul>			
+				<li>MaxRange: <strike>80</strike> → 85</li>
+			</ul>
+		</div>
+		
+		<div id="frigate" class="card">
+			<h3>Frigate Cost Change</h3>
+			<p>Github Issuse: <a href="https://github.com/FAForever/fa/issues/4947">4947</a></p>
+			
+			<p>The previous nerf to Cybran frig cost is a bit too much of a nerf considering its decreased range. Similarly, Aeon frigs got a nice buff in both cost and range, this turned out to be too much so we are removing the cost change for that too.</p>
+			
+			<h4>Aeon</h4>
+				<ul>			
+					<li>Energy Cost: <strike>2800 </strike> → 2900</li>
+					<li>Mass Cost: <strike>280 </strike> → 290</li>
+					<li>Build Time: <strike>1400 </strike> → 1450</li>
+				</ul>
+			
+			<h4>Cybran</h4>
+				<ul>			
+					<li>Energy Cost: <strike>2600 </strike> → 2500</li>
+					<li>Mass Cost: <strike>260 </strike> → 250</li>
+					<li>Build Time: <strike>1300 </strike> → 1250</li>
+				</ul>
+		</div>
+		
+		<div id="cruiser" class="card">
+			<h3>Cruisers</h3>
+			<p>Github Issuse:<a href="https://github.com/FAForever/fa/pull/4959">4959</a></p>
+
+			<p>This change will go along with the torp bomber nerf (#4956) which will make sending torps directly into cruisers much less efficient. Instead picking off ships out of range will be favored.</p>
+			
+			<h4>Aeon</h4>
+				<ul>			
+					<li>HP: <strike>3250</strike> → 3850</li>
+					<li>AA Range: <strike>75</strike> → 60</li>
+				</ul>
+
+			<h4>UEF</h4>
+				<ul>			
+					<li>HP: <strike>2500</strike> → 3100</li>
+					<li>AA Range: <strike>75</strike> → 60</li>
+				</ul>
+
+			<h4>Cybran</h4>
+				<ul>			
+					<li>HP: <strike>3000</strike> → 3600</li>
+					<li>AA Range: <strike>75</strike> → 60</li>
+				</ul>
+			
+			<h4>Seraphim</h4>
+				<ul>			
+					<li>HP: <strike>2400</strike> → 3000</li>
+					<li>AA Range: <strike>65</strike> → 55</li>
+				</ul>
+		</div>
+		
+		<div id="carrier" class="card">
+			<h3>T3 Carriers</h3>
+			<p>Github Issuse: <a href="https://github.com/FAForever/fa/issues/4955">4955</a></p>
+			
+			<p>This change will allow t3 navy to detect stealthed subs at a decent distance.</p>
+			
+			<ul>			
+				<li>Water Vision Radius: <strike>36</strike> → 100</li>
+				<li>Vision Radius: <strike>85</strike> → 100</li>
+			</ul>
+		</div>
+		
+		<div id="atlantis" class="card">
+			<h3>Atlantis</h3>
+			<p>Github Issuse: <a href="https://github.com/FAForever/fa/issues/4954">4954</a></p>
+
+			<p>These changes should make the Atlantis far more viable. The speed increase will improve its microablity while the size makes groundfiring it less effective.</p>
+			
+			<ul>			
+				<li>Uniform Scale: <strike>0.1</strike> → 0.09</li>
+				<li>Max Speed: <strike>2.8</strike> → 3.3</li>
+				<li>SelectionSizeX: <strike>1.8</strike> → 1.62</li>
+				<li>SelectionSizeZ: <strike>12.8</strike> → 11.52</li>
+				<li>SizeX: <strike>2.8</strike> → 2.52</li>
+				<li>SizeY: <strike>2.3</strike> → 2.07</li>
+				<li>SizeZ: <strike>20</strike> → 18</li>
+			</ul>
+		</div>
+		
+		<h2>Air</h2>
+		
+		<div id="torps" class="card">
+			<h3>Torp Bommbers</h3>
+			<p>Github Issuse: <a href="https://github.com/FAForever/fa/issues/4956">4956</a></p>
+			
+			<p>This change along with the cruiser change will make cruisers stronger in head on attacks but allow torps to more easily raid the outskirts of an enemies navy.</p>
+			Once your UEF opponent reaches the t3 stage, you are playing against a time-bomb. As UEF pays for this with a weak t2 navy, there is nothing wrong with this, except that this time-bomb is ticking a bit too fast. Making the main reason for the UEF dominance more expensive will give other factions more time to beat them before they are able to gather a critical mass of battleships that can use their range in combination with their great support units to dominate the sea.
+			
+			<ul>			
+				<li>Damage: <strike>750</strike> → 600</li>
+			</ul>
+		</div>
+		
+		<h2>Structures</h2>
+		
+		<div id="harms" class="card">
+			<h3>HARMS</h3>
+			<p>Github Issuse: <a href="https://github.com/FAForever/fa/issues/4952">4952</a></p>
+
+			<p>Harms are quite overpowered as is. This change will decrease their total power while keeping them viable to spam up quickly. We remove their stealth ability to make targeting them far less annoying and decrease their health and range to allow destros stand a chance against them.</p>
+			
+			<ul>			
+				<li>Removed Personal Stelth</li>
+				<li>HP: <strike>11000</strike> → 7000</li>
+				<li>Build Time: <strike>4097</strike> → 2050</li>
+				<li>Max Radius: <strike>80</strike> → 70</li>
+			</ul>
+		</div>
+		
+		<p style="height: 1000px"></p>
+	</td>
+	
+	<td id="sidebar">
+		<div id="icongrid">
+		<h2><a href="#container">Contents</a></h2>
+		
+		<p>Navy<br>
+		<a href="#destroyer"><img src="images/salem.png"></a>
+		<a href="#frigate"><img src="images/frig.png"></a>
+		<a href="#cruiser"><img src="images/cybrancruiser.png"></a>
+		<a href="#atlantis"><img src="images/atlantis.png"></a>
+
+		<p>Air<br>
+		<a href="#torps"><img src="images/torps.png"></a>
+		
+		<p>Structures<br>
+		<a href="#harms"><img src="images/harms.png"></a>
+		
+		</div>
+	</td>
+</tr></table>
+</body>
+</html>
