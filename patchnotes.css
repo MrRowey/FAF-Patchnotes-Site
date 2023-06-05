@@ -34,13 +34,14 @@ body {
 
 #icongrid {
 	position: fixed;
-	top: 0px;
+	top: 20px;
 	width: 200px;
 	background: #4d5c50;
 	padding: 0 20px 20px 20px;
 	margin-left: 20px;
 	color: #f2f2f2;;
 	text-align: justify;
+	border-radius: 15px;
 }
 
 #icongrid h2 {
@@ -55,6 +56,7 @@ body {
 
 .card {
 	background: #f2f2f2;
+	border-radius: 15px;
 	margin: 10px;
 	padding: 5px 25px;
 	color: #3d3c40;
@@ -90,3 +92,9 @@ strike {
 img {
     vertical-align: middle;
 }
+
+
+hr.rounded {
+	border-top: 6px solid #bbb;
+	border-radius: 4px;
+  }
