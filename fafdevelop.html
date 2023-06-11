@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Development iteration II</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="patchnotes.css" />
+  </head>
+  <body>
+    <table id="container">
+      <tr>
+        <td id="main">
+          <div id="intro">
+            <h1>Development iteration II</h1>
+            <p>
+              This page reflects some of the work that the game team has done
+              the past few months. This page is maintained separately. It may
+              not reflect the latest changes. If you'd like to remain up to date
+              on then we recommend you review the
+              <a
+                href="https://github.com/FAForever/fa/commits/deploy/fafdevelop"
+              >
+                history
+              </a>
+              on Github.
+            </p>
+            <p>Jip</p>
+          </div>
+
+          <h2>Bug fixes</h2>
+
+          <div id="drones" class="card">
+            <h3>Construction drones</h3>
+            <p>
+              GitHub references:
+              <a href="https://github.com/FAForever/fa/pull/5040">5040</a> and
+              <a href="https://github.com/FAForever/fa/pull/5028">5028</a>
+            </p>
+
+            <p>
+                The construction drones of the UEF faction are prime candidates for various tasks. Due to a bug they could be ignored as a target as anti air weapons scan for targets in their vicinity. As a result the drones are now a lot more vulnerable to anti air.
+            </p>
+
+            <ul>
+              <li>
+                Rover drones (from the kennel) are no longer ignored as a target after docking once
+              </li>
+              <li>
+                Shoulder drones (of the UEF ACU) are now ignored as a target by weapons when they are docked on the shoulders
+              </li>
+            </ul>
+          </div>
+
+          <h2>Mechanics</h2>
+
+          <div id="missile" class="card">
+            <h3>Missile construction</h3>
+            <p>
+              GitHub references:
+              <a href="https://github.com/FAForever/fa/pull/5034">5034</a>,
+              <a href="https://github.com/FAForever/fa/pull/4867">4867</a> and
+              <a href="https://github.com/FAForever/FA-Binary-Patches/pull/15">
+                15
+              </a>
+            </p>
+
+            <p>
+              There have been long standing problems with missile construction
+              that have been confusing players for years. With thanks to an
+              assembly patch we can tackle two of these problems.
+            </p>
+
+            <ul>
+              <li>
+                An adjacency bonus to structures building a missile is processed
+                immediately
+              </li>
+              <li>
+                The progress of the missile construction is restored when a unit
+                changes army
+              </li>
+            </ul>
+          </div>
+
+          <p style="height: 1000px"></p>
+        </td>
+
+        <td id="sidebar">
+          <div id="icongrid">
+            <h2><a href="#container">Contents</a></h2>
+
+            Bug fixes
+            <br />
+            <a href="#drones"><img src="images/kenneldrone.png" /></a>
+            <br /><br />
+
+            Mechanics
+            <br />
+            <a href="#missile"><img src="images/nukelauncher.png" /></a>
+            <br /><br />
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <footer></footer>
+</html>
