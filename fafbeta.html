@@ -36,6 +36,29 @@
 			</ul>
 		</div>
 
+		<div id="rangebots" class="card">
+			<h3><b style="color: rgb(83, 83, 250);">New</b> Mongoose & Hoplite</h3>
+			
+			<p>GitHub Pull Request: <a href="https://github.com/FAForever/fa/pull/4766">4766</a></p>
+
+			<p>The following changes make it so the unit stay on target more when moving.</p>
+			
+			Mongoose
+			<ul>
+				<li>Turn Rate: <strike>90</strike> → 80</li>
+				<li>Rack Salvo Charge Time: <strike>2</strike> → 1</li>
+				<li>Rack Salvo Reload Time: <strike>1</strike> → 2</li>
+				<li>Turret Yaw Speed: <strike>80</strike> → 90</li>
+			</ul>
+
+			Hoplite
+			<ul>
+				<li>Turn Rate: <strike>90</strike> → 80</li>
+				<li>Muzzle Velocity: <strike>15</strike> → 20</li>
+				<li>Turret Yaw Speed: <strike>60</strike> → 130</li>
+			</ul>
+		</div>
+
 		<div id="scathis" class="card">
 			<h3>Scathis</h3>
 			
@@ -137,24 +160,24 @@
 		</div>
 
 		<div id="sub" class="card">
-			<h3>T1 Subs</h3>
-			<p>Github Issue:<a href="https://github.com/FAForever/fa/pull/4987">4987</a></p>
+			<h3><b style="color: rgb(83, 83, 250);">New</b> T1 Subs</h3>
+			<p>Github Issue:<a href="https://github.com/FAForever/fa/pull/5051">5051</a></p>
 
 			<p>Allows subs to take 2 hits from torp bombers. Does not apply to sera, but they have anti torp which will accomplish the same result.</p>
 			
 			<h4>Aeon</h4>
 				<ul>			
-					<li>HP: <strike>550</strike> → 650</li>
+					<li>HP: <strike>550</strike> → 775</li>
 				</ul>
 
 			<h4>UEF</h4>
 				<ul>			
-					<li>HP: <strike>600</strike> → 700</li>
+					<li>HP: <strike>600</strike> → 800</li>
 				</ul>
 
 			<h4>Cybran</h4>
 				<ul>			
-					<li>HP: <strike>525</strike> → 625</li>
+					<li>HP: <strike>525</strike> → 775</li>
 				</ul>
 			
 			<h4>Seraphim</h4>
@@ -227,17 +250,32 @@
 
 		</div>
 
+		<div id="tempest" class="card">
+            <h3><b style="color: rgb(83, 83, 250);">New</b> Tempest</h3>
+            <p>GitHub Issue: <a href="https://github.com/FAForever/fa/issues/4854">4854</a></p>
+
+            <p>This is to improve the handling of the tempest.</p>
+            
+            <ul>            
+                <li>Back Up Distance: <strike>0</strike> → 45</li>
+                <li>Max Speed Reverse: <strike>0</strike> → 2.5</li>
+				<li>Rotate On Spot: <strike>true</strike> → false</li>
+				<li>Turn Rate: <strike>30</strike> → 35</li>
+            </ul>
+
+		</div>
+
 	
 		<h2>Air</h2>
 		
 		<div id="torps" class="card">
-            <h3>Torpedo Bombers</h3>
-            <p>GitHub Issue: <a href="https://github.com/FAForever/fa/issues/4956">4956</a></p>
+            <h3><b style="color: rgb(83, 83, 250);">New</b> Torpedo Bombers</h3>
+            <p>GitHub Issue: <a href="https://github.com/FAForever/fa/issues/5036">5036</a></p>
             
-            <p>This change along with the cruiser change will make cruisers stronger in head on attacks but allow torps to more easily raid the outskirts of an enemies navy. </p>
+            <p>This revert the change done previously that nerfed the damage. </p>
             
             <ul>            
-                <li>Damage: <strike>750</strike> → 600</li>
+                <li>Damage: <strike>600</strike> → 750</li>
             </ul>
 		</div>
 
@@ -372,18 +410,32 @@
 			</ul>
 		</div>
 
+		<div id="strats" class="card">
+            <h3><b style="color: rgb(83, 83, 250);">New</b> Strategic Bombers</h3>
+            <p>GitHub Issue: <a href="https://github.com/FAForever/fa/issues/5048">5048</a> & <a href="https://github.com/FAForever/fa/issues/5013">5013</a></p>
+            
+            <p>Slight nerf to strats cost and build time as well as the reload time</p>
+            
+            <ul>            
+				<li>Mass Cost: <strike>2100</strike> → 1900</li>
+                <li>Energy Cost: <strike>144k</strike> → 180k</li>
+				<li>Buildtime: <strike>9.6k</strike> → 12k</li>
+				<li>Rate of Fire: <strike>5s</strike> → 8s</li>
+            </ul>
+		</div>
+
 		<h2>Structures</h2>
 		
 		<div id="harms" class="card">
             <h3>HARMS</h3>
-            <p>GitHub Issue: <a href="https://github.com/FAForever/fa/issues/4952">4952</a></p>
+            <p>GitHub Issue: <a href="https://github.com/FAForever/fa/issues/4952">4952</a>  & <a href="https://github.com/FAForever/fa/issues/5060">5060</a></p>
 
-            <p>Harms are quite overpowered as is. This change will decrease their total power while keeping them practical to spam up quickly. We remove their stealth ability to make targeting them far less annoying and decrease their health and range to allow destroyers stand a chance against them. </p>
+            <p>To bring the Harms inline with the buffs to the Tech 1 & 2 Torpedo Lauched we are reverting the BT and adding back some HP. </p>
             
             <ul>            
                 <li>Removed Personal Stealth</li>
-                <li>HP: <strike>11000</strike> → 7000</li>
-                <li>Build Time: <strike>4097</strike> → 2050</li>
+                <li>HP: <strike>11000</strike> → 9000</li>
+                <li>Build Time: <strike>2050</strike> → 4097</li>
                 <li>Max Radius: <strike>80</strike> → 70</li>
             </ul>
 		</div>
@@ -547,6 +599,16 @@
 
 		</div>
 
+		<div id="sams" class="card">
+			<h3><b style="color: rgb(83, 83, 250);">New</b>SAMS</h3>
+			<p>GitHub Pull Request: <a href="https://github.com/FAForever/fa/pull/5049">5049</a></p>
+
+			<ul>
+				<li>HP: <strike>7000</strike> → 5000</li>
+			</ul>
+
+		</div>
+
 		<h2>Mechanics</h2>
 
 		<div id="reclaim" class="card">
@@ -604,6 +666,8 @@
 			<h3>OverCharge</h3>
 			<p>GitHub Pull Request: <a href="https://github.com/FAForever/fa/pull/5016">5016</a></p>
 
+			<p></p>
+
 			<ul>
 				<li>Energy Required: <strike>5000</strike> → 7500</li>
 			</ul>
@@ -655,6 +719,7 @@
 		<br>
 		<a href="#spirit"><img src="images/spirit.png"></a>
 		<a href="#scathis"><img src="images/scathis.png"></a>
+		<a href="#rangebots"><img src="images/mongoose.png"></a>
 		<br><br>
 
 		Navy
@@ -668,6 +733,7 @@
 		<a href="#atlantis"><img src="images/atlantis.png"></a>
 		<a href="#cooperatlantis"><img src="images/cooper.png"></a>
 		<a href="#shard"><img src="images/shard.png"></a>
+		<a href="#tempest"><img	src="images/tempest.png"></a>
 		<br><br>
 
 		Air
@@ -677,6 +743,7 @@
 		<a href="#elevations"><img src="images/seraairscout.png"></a>
 		<a href="#mercy"><img src="images/mercy.png"></a>
 		<a href="#intercepter"><img src="images/t1inti.png"></a>
+		<a href="#strats"><img src="images/serastrat.png"></a>
 		<br><br>
 
 		Structures
@@ -686,6 +753,7 @@
 		<a href="#sonar"><img src="images/serasonar.png"></a>
 		<a href="#radar"><img src="images/UEF_T2_Radar.png"></a>
 		<a href="#energystorage"><img src="images/estorage.png"></a>
+		<a href="#sams"><img src="images/sam.png"></a>
 		<br><br>
 
 		Mechanics
