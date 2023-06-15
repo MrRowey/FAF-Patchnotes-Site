@@ -1,875 +1,1178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>FAF Beta Experimental Changes</title>
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="patchnotes.css">
-	<style>
-		:root {
-			--new: #5353FA;
-		}
-	</style>
-</head>
-<body>
-<table id="container">
-	<tr>
-	<td id="main">
-		<div id="intro">
-			<h1>FAF Beta</h1>
-			<p>Welcome to the fafbeta Patchnotes.</p>
-			<p>The changes listed here are all subject to change. </p>
-            <p>All the changes that are currently listed a part of fafbeta to alow us to evaluate the new balance in actual games. </p>
-            <p>We will keep this page as up-to-date as possible and once we feel the changes are ready for the main game in beta we will push the next balance patch. </p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAF Beta Experimental Changes</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="patchnotes.css" />
+    <style>
+      :root {
+        --new: #5353fa;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="container">
+      <tr>
+        <td id="main">
+          <div id="intro">
+            <h1>FAF Beta</h1>
+            <p>Welcome to the fafbeta Patchnotes.</p>
+            <p>The changes listed here are all subject to change.</p>
+            <p>
+              All the changes that are currently listed a part of fafbeta to
+              alow us to evaluate the new balance in actual games.
+            </p>
+            <p>
+              We will keep this page as up-to-date as possible and once we feel
+              the changes are ready for the main game in beta we will push the
+              next balance patch.
+            </p>
             <p>-- The Balance Team</p>
-			<hr/>	
-			<p>All newly add changes will have the <b style="color: var(--new);">New</b> tag. All new changes are from the date commencing 11th June 23</p>
-		</div>
-		
-		<h2>Land</h2>
-			
-		<div id="spirit" class="card">
-			<h3>Spirit</h3>
-			
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/4852">4852</a></p>
+            <hr />
+            <p>
+              All newly add changes will have the
+              <b style="color: var(--new)">New</b> tag. All new changes are from
+              the date commencing 11th June 23
+            </p>
+          </div>
 
-			<p>Brings the Spirit's speed in line with the other t1 scouts. This plays a small role in reducing effectiveness in tree breaking as well.</p>
-			<ul>
-				<li>Max Speed: <strike>5</strike> → 4.6</li>
-				<li>Max Acceleration: <strike>5</strike> → 4.6</li>
-			</ul>
-		</div>
+          <h2>Land</h2>
 
-		<div id="rangebots" class="card">
-			<h3><b style="color: var(--new);">New</b> Mongoose & Hoplite</h3>
-			
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/4766">4766</a></p>
+          <div id="spirit" class="card">
+            <h3>Spirit</h3>
 
-			<p>The following changes make it so the unit stay on target more when moving.</p>
-			
-			<b><u>Mongoose</u></b>
-			<ul>
-				<li>Turn Rate: <strike>90</strike> → 80</li>
-				<li>Rack Salvo Charge Time: <strike>2</strike> → 1</li>
-				<li>Rack Salvo Reload Time: <strike>1</strike> → 2</li>
-				<li>Turret Yaw Speed: <strike>80</strike> → 90</li>
-			</ul>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/4852">4852</a>
+            </p>
 
-			<b><u>Hoplite</u></b>
-			<ul>
-				<li>Turn Rate: <strike>90</strike> → 80</li>
-				<li>Muzzle Velocity: <strike>15</strike> → 20</li>
-				<li>Turret Yaw Speed: <strike>60</strike> → 130</li>
-			</ul>
-		</div>
-
-		<div id="scathis" class="card">
-			<h3>Scathis</h3>
-			
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/4975">4975</a></p>
-
-			<p>This unit was far more inaccurate than desired or indicated by the reticle. Some shots still go outside the reticle, but with this change, this is fixed for the most part. Increasing its accuracy further buffed its performance against shielded bases too much.</p>
-			<ul>
-				<li>Fixed Spread Radius: <strike>80</strike> → 70</li>
-			</ul>
-		</div>
-
-		<div id="gc" class="card">
-			<h3><b style="color: var(--new);">New</b> Galactic Colossus</h3>
-			
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/5055">5055</a></p>
-
-			<p>Removal of Omni as it is doesn't make sense that it only relies upon counters the cybran acu.</p>
-			<ul>
-				<li>Omni Removed</li>
-			</ul>
-		</div>
-
-		<div id="amphib" class="card">
-			<h3><b style="color: var(--new);">New</b> Amphibious Land Unit Torp</h3>
-			
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/5012">5012</a></p>
-
-			<p>These changes were based on a PR by Basilisk3 but we decided went a bit farther as to make these units more viable underwater.</p>
-			
-			<b><u>Wagner</u></b>
-			<ul>
-				<li>Damage: <strike>15</strike> → 30</li>
-			</ul>
-
-			<b><u>Brick</u></b>
-			<ul>
-				<li>Damage: <strike>8</strike> → 15</li>
-				<li>Anit Torp Flare RoF: <strike>0.065</strike> → 0.05</li>
-			</ul>
-
-			<b><u>Othumn</u></b>
-			<ul>
-				<li>Damage: <strike>30</strike> → 60</li>
-			</ul>
-		</div>
-		
-		<h2>Navy</h2>
-		
-		<div id="navytmd" class="card">
-			<h3>Naval TMD</h3>
-			<p>Github:<a href="https://github.com/FAForever/fa/pull/4984">4984</a></p>
-
-			<p>Navy tmd get's a slight rework with the decrease of battleship/battlecruiser tmd and a buff of cruiser/carrier tmd. This will make it so bs's will need cruiser/carrier support to deal with larger quantities of missiles. Aeon tmd is unchanged considering it's uniqueness didn't allow for these adjustments.</p>
-
-			<h4>Cruisers</h4>
-				<ul>
-					<li>Range: <strike>50</strike> → 60</li>
-					<li>RoF: <strike>0.5</strike> → 0.25</li>
-				</ul>
-
-			<h4>Carriers (Only Cybran)</h4>
-				<ul>
-					<li>Range: <strike>50</strike> → 60</li>
-					<li>RoF: <strike>0.5</strike> → 0.25</li>
-				</ul>
-			
-			<h4>Battleships And Battlecruiser</h4>
-				<ul>
-					<li>Range: <strike>50</strike> → 31</li>
-				</ul>
-		</div>
-
-		<div id="destroyer" class="card">
-            <h3>Cybran Destroyer</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4948">4948</a></p>
-            <p>We increased range for the Salem before and found it to still be lacking considering the decrease to their frigates. This should help bring their early navy in line with the other factions. </p>
-            
-            <ul>            
-                <li>Max Range: <strike>80</strike> → 85</li>
+            <p>
+              Brings the Spirit's speed in line with the other t1 scouts. This
+              plays a small role in reducing effectiveness in tree breaking as
+              well.
+            </p>
+            <ul>
+              <li>Max Speed: <strike>5</strike> → 4.6</li>
+              <li>Max Acceleration: <strike>5</strike> → 4.6</li>
             </ul>
-		</div>
-		
-		<div id="frigate" class="card">
+          </div>
+
+          <div id="rangebots" class="card">
+            <h3><b style="color: var(--new)">New</b> Mongoose & Hoplite</h3>
+
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/4766">4766</a>
+            </p>
+
+            <p>
+              The following changes make it so the unit stay on target more when
+              moving.
+            </p>
+
+            <b><u>Mongoose</u></b>
+            <ul>
+              <li>Turn Rate: <strike>90</strike> → 80</li>
+              <li>Rack Salvo Charge Time: <strike>2</strike> → 1</li>
+              <li>Rack Salvo Reload Time: <strike>1</strike> → 2</li>
+              <li>Turret Yaw Speed: <strike>80</strike> → 90</li>
+            </ul>
+
+            <b><u>Hoplite</u></b>
+            <ul>
+              <li>Turn Rate: <strike>90</strike> → 80</li>
+              <li>Muzzle Velocity: <strike>15</strike> → 20</li>
+              <li>Turret Yaw Speed: <strike>60</strike> → 130</li>
+            </ul>
+          </div>
+
+          <div id="scathis" class="card">
+            <h3>Scathis</h3>
+
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/4975">4975</a>
+            </p>
+
+            <p>
+              This unit was far more inaccurate than desired or indicated by the
+              reticle. Some shots still go outside the reticle, but with this
+              change, this is fixed for the most part. Increasing its accuracy
+              further buffed its performance against shielded bases too much.
+            </p>
+            <ul>
+              <li>Fixed Spread Radius: <strike>80</strike> → 70</li>
+            </ul>
+          </div>
+
+          <div id="gc" class="card">
+            <h3><b style="color: var(--new)">New</b> Galactic Colossus</h3>
+
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/5055">5055</a>
+            </p>
+
+            <p>
+              Removal of Omni as it is doesn't make sense that it only relies
+              upon counters the cybran acu.
+            </p>
+            <ul>
+              <li>Omni Removed</li>
+            </ul>
+          </div>
+
+          <div id="amphib" class="card">
+            <h3>
+              <b style="color: var(--new)">New</b> Amphibious Land Unit Torp
+            </h3>
+
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/5012">5012</a>
+            </p>
+
+            <p>
+              These changes were based on a PR by Basilisk3 but we decided went
+              a bit farther as to make these units more viable underwater.
+            </p>
+
+            <b><u>Wagner</u></b>
+            <ul>
+              <li>Damage: <strike>15</strike> → 30</li>
+            </ul>
+
+            <b><u>Brick</u></b>
+            <ul>
+              <li>Damage: <strike>8</strike> → 15</li>
+              <li>Anit Torp Flare RoF: <strike>0.065</strike> → 0.05</li>
+            </ul>
+
+            <b><u>Othumn</u></b>
+            <ul>
+              <li>Damage: <strike>30</strike> → 60</li>
+            </ul>
+          </div>
+
+          <h2>Navy</h2>
+
+          <div id="navytmd" class="card">
+            <h3>Naval TMD</h3>
+            <p>
+              Github:<a href="https://github.com/FAForever/fa/pull/4984"
+                >4984</a
+              >
+            </p>
+
+            <p>
+              Navy tmd get's a slight rework with the decrease of
+              battleship/battlecruiser tmd and a buff of cruiser/carrier tmd.
+              This will make it so bs's will need cruiser/carrier support to
+              deal with larger quantities of missiles. Aeon tmd is unchanged
+              considering it's uniqueness didn't allow for these adjustments.
+            </p>
+
+            <h4>Cruisers</h4>
+            <ul>
+              <li>Range: <strike>50</strike> → 60</li>
+              <li>RoF: <strike>0.5</strike> → 0.25</li>
+            </ul>
+
+            <h4>Carriers (Only Cybran)</h4>
+            <ul>
+              <li>Range: <strike>50</strike> → 60</li>
+              <li>RoF: <strike>0.5</strike> → 0.25</li>
+            </ul>
+
+            <h4>Battleships And Battlecruiser</h4>
+            <ul>
+              <li>Range: <strike>50</strike> → 31</li>
+            </ul>
+          </div>
+
+          <div id="destroyer" class="card">
+            <h3>Cybran Destroyer</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4948">4948</a>
+            </p>
+            <p>
+              We increased range for the Salem before and found it to still be
+              lacking considering the decrease to their frigates. This should
+              help bring their early navy in line with the other factions.
+            </p>
+
+            <ul>
+              <li>Max Range: <strike>80</strike> → 85</li>
+            </ul>
+          </div>
+
+          <div id="frigate" class="card">
             <h3>Frigate</h3>
 
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4947">4947</a></p>
-            
-            <p>The previous nerf to Cybran frig cost is a bit too much of a decrease considering its decreased range. Similarly, Aeon frigs got a nice buff in both cost and range, this turned out to be too much, so we are removing the cost change for that too. </p>
-            
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4947">4947</a>
+            </p>
+
+            <p>
+              The previous nerf to Cybran frig cost is a bit too much of a
+              decrease considering its decreased range. Similarly, Aeon frigs
+              got a nice buff in both cost and range, this turned out to be too
+              much, so we are removing the cost change for that too.
+            </p>
+
             <b><u>Aeon</u></b>
-                <ul>            
-                    <li>Energy Cost: <strike>2800 </strike> → 2900</li>
-                    <li>Mass Cost: <strike>280 </strike> → 290</li>
-                    <li>Build Time: <strike>1400 </strike> → 1450</li>
-                </ul>
-            
+            <ul>
+              <li>Energy Cost: <strike>2800 </strike> → 2900</li>
+              <li>Mass Cost: <strike>280 </strike> → 290</li>
+              <li>Build Time: <strike>1400 </strike> → 1450</li>
+            </ul>
+
             <b><u>Cybran</u></b>
-                <ul>            
-                    <li>Energy Cost: <strike>2600 </strike> → 2500</li>
-                    <li>Mass Cost: <strike>260 </strike> → 250</li>
-                    <li>Build Time: <strike>1300 </strike> → 1250</li>
-                </ul>
-		</div>
-		
-		<div id="cruiser" class="card">
-			<h3>Cruisers</h3>
-			<p>Github: <a href="https://github.com/FAForever/fa/pull/4959">4959</a></p>
+            <ul>
+              <li>Energy Cost: <strike>2600 </strike> → 2500</li>
+              <li>Mass Cost: <strike>260 </strike> → 250</li>
+              <li>Build Time: <strike>1300 </strike> → 1250</li>
+            </ul>
+          </div>
 
-			<p>This change will make sending torps directly into cruisers much less efficient. Instead picking off ships out of range will be favored.</p>
+          <div id="cruiser" class="card">
+            <h3>Cruisers</h3>
+            <p>
+              Github:
+              <a href="https://github.com/FAForever/fa/pull/4959">4959</a>
+            </p>
 
-			<b><u>Aeon</u></b>
-				<ul>			
-					<li>HP: <strike>3250</strike> → 3850</li>
-					<li>AA Range: <strike>75</strike> → 60</li>
-				</ul>
+            <p>
+              This change will make sending torps directly into cruisers much
+              less efficient. Instead picking off ships out of range will be
+              favored.
+            </p>
 
-			<b><u>UEF</u></b>
-				<ul>			
-					<li>HP: <strike>2500</strike> → 3100</li>
-					<li>AA Range: <strike>75</strike> → 60</li>
-				</ul>
+            <b><u>Aeon</u></b>
+            <ul>
+              <li>HP: <strike>3250</strike> → 3850</li>
+              <li>AA Range: <strike>75</strike> → 60</li>
+            </ul>
 
-			<b><u>Cybran</u></b>
-				<ul>			
-					<li>HP: <strike>3000</strike> → 3600</li>
-					<li>AA Range: <strike>75</strike> → 60</li>
-				</ul>
-			
-			<b><u>Seraphim</u></b>
-				<ul>			
-					<li>HP: <strike>2400</strike> → 3000</li>
-					<li>AA Range: <strike>65</strike> → 55</li>
-				</ul>
-		</div>
+            <b><u>UEF</u></b>
+            <ul>
+              <li>HP: <strike>2500</strike> → 3100</li>
+              <li>AA Range: <strike>75</strike> → 60</li>
+            </ul>
 
-		<div id="sub" class="card">
-			<h3><b style="color: rgb(83, 83, 250);">New</b> T1 Subs</h3>
-			<p>Github: <a href="https://github.com/FAForever/fa/pull/5051">5051</a></p>
+            <b><u>Cybran</u></b>
+            <ul>
+              <li>HP: <strike>3000</strike> → 3600</li>
+              <li>AA Range: <strike>75</strike> → 60</li>
+            </ul>
 
-			<p>Allows subs to take 2 hits from torp bombers. Does not apply to sera, but they have anti torp which will accomplish the same result.</p>
-			
-			<b><u>Aeon</u></b>
-				<ul>			
-					<li>HP: <strike>550</strike> → 775</li>
-				</ul>
+            <b><u>Seraphim</u></b>
+            <ul>
+              <li>HP: <strike>2400</strike> → 3000</li>
+              <li>AA Range: <strike>65</strike> → 55</li>
+            </ul>
+          </div>
 
-			<b><u>UEF</u></b>
-				<ul>			
-					<li>HP: <strike>600</strike> → 800</li>
-				</ul>
+          <div id="sub" class="card">
+            <h3><b style="color: rgb(83, 83, 250)">New</b> T1 Subs</h3>
+            <p>
+              Github:
+              <a href="https://github.com/FAForever/fa/pull/5051">5051</a>
+            </p>
 
-			<b><u>Cybran</u></b>
-				<ul>			
-					<li>HP: <strike>525</strike> → 775</li>
-				</ul>
-			
-			<b><u>Seraphim</u></b>
-				<ul>			
-					<li>HP: <strike>400</strike> → 550</li>
-				</ul>
-		</div>
-		
-		<div id="carrier" class="card">
+            <p>
+              Allows subs to take 2 hits from torp bombers. Does not apply to
+              sera, but they have anti torp which will accomplish the same
+              result.
+            </p>
+
+            <b><u>Aeon</u></b>
+            <ul>
+              <li>HP: <strike>550</strike> → 775</li>
+            </ul>
+
+            <b><u>UEF</u></b>
+            <ul>
+              <li>HP: <strike>600</strike> → 800</li>
+            </ul>
+
+            <b><u>Cybran</u></b>
+            <ul>
+              <li>HP: <strike>525</strike> → 775</li>
+            </ul>
+
+            <b><u>Seraphim</u></b>
+            <ul>
+              <li>HP: <strike>400</strike> → 550</li>
+            </ul>
+          </div>
+
+          <div id="carrier" class="card">
             <h3>T3 Carriers</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4955">4955</a></p>
-            
-            <p>This change will allow t3 navy to detect stealth subs at a decent distance. </p>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4955">4955</a>
+            </p>
 
-            <ul>            
-                <li>Water Vision Radius: <strike>36</strike> → 100</li>
-                <li>Vision Radius: <strike>85</strike> → 100</li>
-				<li>Added TMD to Seraphim & Aeon carrier</li>
+            <p>
+              This change will allow t3 navy to detect stealth subs at a decent
+              distance.
+            </p>
+
+            <ul>
+              <li>Water Vision Radius: <strike>36</strike> → 100</li>
+              <li>Vision Radius: <strike>85</strike> → 100</li>
+              <li>Added TMD to Seraphim & Aeon carrier</li>
             </ul>
-		</div>
-		
-		<div id="atlantis" class="card">
+          </div>
+
+          <div id="atlantis" class="card">
             <h3>Atlantis</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4954">4954</a></p>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4954">4954</a>
+            </p>
 
-            <p>These changes should make the Atlantis far more viable. The speed increase will improve its micro ability while the size makes ground firing it less effective. </p>
-            
-            <ul>            
-                <li>Uniform Scale: <strike>0.1</strike> → 0.09</li>
-                <li>Max Speed: <strike>2.8</strike> → 3.3</li>
-                <li>SelectionSizeX: <strike>1.8</strike> → 1.62</li>
-                <li>SelectionSizeZ: <strike>12.8</strike> → 11.52</li>
-                <li>SizeX: <strike>2.8</strike> → 2.52</li>
-                <li>SizeY: <strike>2.3</strike> → 2.07</li>
-                <li>SizeZ: <strike>20</strike> → 18</li>
+            <p>
+              These changes should make the Atlantis far more viable. The speed
+              increase will improve its micro ability while the size makes
+              ground firing it less effective.
+            </p>
+
+            <ul>
+              <li>Uniform Scale: <strike>0.1</strike> → 0.09</li>
+              <li>Max Speed: <strike>2.8</strike> → 3.3</li>
+              <li>SelectionSizeX: <strike>1.8</strike> → 1.62</li>
+              <li>SelectionSizeZ: <strike>12.8</strike> → 11.52</li>
+              <li>SizeX: <strike>2.8</strike> → 2.52</li>
+              <li>SizeY: <strike>2.3</strike> → 2.07</li>
+              <li>SizeZ: <strike>20</strike> → 18</li>
             </ul>
+          </div>
 
-		</div>
-
-		<div id="cooper" class="card">
+          <div id="cooper" class="card">
             <h3>Cooper</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4988">4988</a></p>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4988">4988</a>
+            </p>
 
-            <p>Coopers will be getting a more tight formation so they cover eachother better with their torp defense. Additionally they get multiple stat changes to get an overall buff.</p>
-            
-            <ul>            
-                <li>Health: <strike>1750</strike> → 1575</li>
-                <li>Energy Cost: <strike>7200</strike> → 6480</li>
-                <li>Mass Cost: <strike>900</strike> → 810</li>
-                <li>Build Time: <strike>3600</strike> → 3240</li>
-                <li>FootprintSizeX: <strike>2</strike> → 3</li>
-                <li>FootprintSizeZ: <strike>6</strike> → 3</li>
-                <li>Max Range: <strike>50</strike> → 55</li>
+            <p>
+              Coopers will be getting a more tight formation so they cover
+              eachother better with their torp defense. Additionally they get
+              multiple stat changes to get an overall buff.
+            </p>
+
+            <ul>
+              <li>Health: <strike>1750</strike> → 1575</li>
+              <li>Energy Cost: <strike>7200</strike> → 6480</li>
+              <li>Mass Cost: <strike>900</strike> → 810</li>
+              <li>Build Time: <strike>3600</strike> → 3240</li>
+              <li>FootprintSizeX: <strike>2</strike> → 3</li>
+              <li>FootprintSizeZ: <strike>6</strike> → 3</li>
+              <li>Max Range: <strike>50</strike> → 55</li>
             </ul>
+          </div>
 
-		</div>
-
-		<div id="shard" class="card">
+          <div id="shard" class="card">
             <h3>Shard</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4981">4981</a></p>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4981">4981</a>
+            </p>
 
             <p>Simple buff to make them more viable.</p>
-            
-            <ul>            
-                <li>Build Time: <strike>800</strike> → 600</li>
-                <li>Damage: <strike>6</strike> → 7.5</li>
+
+            <ul>
+              <li>Build Time: <strike>800</strike> → 600</li>
+              <li>Damage: <strike>6</strike> → 7.5</li>
             </ul>
+          </div>
 
-		</div>
-
-		<div id="tempest" class="card">
-            <h3><b style="color: var(--new);">New</b> Tempest</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4854">4854</a></p>
+          <div id="tempest" class="card">
+            <h3><b style="color: var(--new)">New</b> Tempest</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4854">4854</a>
+            </p>
 
             <p>This is to improve the handling of the tempest.</p>
-            
-            <ul>            
-                <li>Back Up Distance: <strike>0</strike> → 45</li>
-                <li>Max Speed Reverse: <strike>0</strike> → 2.5</li>
-				<li>Rotate On Spot: <strike>true</strike> → false</li>
-				<li>Turn Rate: <strike>30</strike> → 35</li>
+
+            <ul>
+              <li>Back Up Distance: <strike>0</strike> → 45</li>
+              <li>Max Speed Reverse: <strike>0</strike> → 2.5</li>
+              <li>Rotate On Spot: <strike>true</strike> → false</li>
+              <li>Turn Rate: <strike>30</strike> → 35</li>
             </ul>
+          </div>
 
-		</div>
+          <h2>Air</h2>
 
-	    <h2>Air</h2>
+          <div id="mercy" class="card">
+            <h3><b style="color: var(--new)">New</b> Mercy</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4985">4985</a> &
+              <a href="https://github.com/FAForever/fa/issues/5044">5044</a>
+            </p>
 
-		<div id="mercy" class="card">
-            <h3><b style="color: var(--new);">New</b> Mercy</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4985">4985</a> & <a href="https://github.com/FAForever/fa/issues/5044">5044</a></p>
-            
-            <p>Based on <a href="https://forum.faforever.com/topic/1834/ideas-for-mercy-changes">Deribus's suggestion</a> from a while ago, this changes the mercies role from a snipe unit to a low damage AOE unit.</p>
+            <p>
+              Based on
+              <a
+                href="https://forum.faforever.com/topic/1834/ideas-for-mercy-changes"
+                >Deribus's suggestion</a
+              >
+              from a while ago, this changes the mercies role from a snipe unit
+              to a low damage AOE unit.
+            </p>
 
-			<p>We have tweaked the setting a bit more and added it so your able to see the area of affect when mercy is deployed.</p>
-            
-            <ul>            
-                <li>BankFactor: <strike>3</strike> → 10</li>
-				<li>KLift: <strike>3</strike> → 1</li>
-				<li>KTurn: <strike>0.8</strike> → 2</li>
-				<li>MaxAirspeed: <strike>10</strike> → 13</li>
-				<li>MinAirspeed: <strike>10</strike> → 3</li>
-				<li>TurnSpeed: <strike>1.5</strike> → 1</li>
-				<li>Health: <strike>10</strike> → 90</li>
-				<li>VisionRadius: <strike>15</strike> → 10</li>
-				<li>Elevation: <strike>18</strike> → 12</li>
-				<li>MaxSpeed: <strike>10</strike> → 13</li>
-				<li>Damage: <strike>2400</strike> → 30</li>
-				<li>DamageRadius: <strike>3</strike> → 7</li>
-				<li>DoTPulses: <strike>0</strike> → 20</li>
-				<li>DoTTime: <strike>0</strike> → 10</li>
-				<li>FiringTolerance: <strike>6</strike> → 0.1</li>
-				<li>Added Vision Projectile on impact</li>
+            <p>
+              We have tweaked the setting a bit more and added it so your able
+              to see the area of affect when mercy is deployed.
+            </p>
+
+            <ul>
+              <li>BankFactor: <strike>3</strike> → 10</li>
+              <li>KLift: <strike>3</strike> → 1</li>
+              <li>KTurn: <strike>0.8</strike> → 2</li>
+              <li>MaxAirspeed: <strike>10</strike> → 13</li>
+              <li>MinAirspeed: <strike>10</strike> → 3</li>
+              <li>TurnSpeed: <strike>1.5</strike> → 1</li>
+              <li>Health: <strike>10</strike> → 90</li>
+              <li>VisionRadius: <strike>15</strike> → 10</li>
+              <li>Elevation: <strike>18</strike> → 12</li>
+              <li>MaxSpeed: <strike>10</strike> → 13</li>
+              <li>Damage: <strike>2400</strike> → 30</li>
+              <li>DamageRadius: <strike>3</strike> → 7</li>
+              <li>DoTPulses: <strike>0</strike> → 20</li>
+              <li>DoTTime: <strike>0</strike> → 10</li>
+              <li>FiringTolerance: <strike>6</strike> → 0.1</li>
+              <li>Added Vision Projectile on impact</li>
             </ul>
-		</div>
-	
-		<div id="transports" class="card">
+          </div>
+
+          <div id="transports" class="card">
             <h3>Transports</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4570">4570</a></p>
-            
-            <p>Adjust the movement of air transports to increase consistency and responsiveness. This means that placing unload orders on the fly will not cause a huge delay in unloading. It also makes transports quite easy to micro, so we are giving interceptors similar changes to help them against the new transports.</p>
-            
-			<b><u>Transport Elevation</u></b>
-				<ul>
-					<li>T1 Elevation: 8</li>
-					<li>T2 Elevation: 9</li>
-					<li>T3 Elevation: 10</li>
-				</ul>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4570">4570</a>
+            </p>
 
-			<b><u>T1 Transports</u></b>
-				<ul>
-					<li>AutoLandTime: <strike>1</strike> → 2 </li>
-					<li>BankFactor: <strike>0.1</strike> → 0.2</li>
-					<li>BankForward: <strike>False</strike> → True</li>
-					<li>KMove: <strike>0.95</strike> → 2</li>
-					<li>KTurn: <strike>1</strike> → 2</li>
-					<li>KTurnDamping: <strike>4</strike> → 2</li>
-					<li>LiftFactor: <strike>8</strike> → 2</li>
-					<li>TransportHoverHeight: <strike>6</strike> → 4</li>
-					<li>CollisionOffsetY: <strike>0</strike> → -0.25</li>
-				</ul>
+            <p>
+              Adjust the movement of air transports to increase consistency and
+              responsiveness. This means that placing unload orders on the fly
+              will not cause a huge delay in unloading. It also makes transports
+              quite easy to micro, so we are giving interceptors similar changes
+              to help them against the new transports.
+            </p>
 
-			<b><u>T2 Transports</u></b>
-				<ul>
-					<li>AutoLandTime: <strike>1</strike> → 2 </li>
-					<li>BankFactor: <strike>0.1</strike> → 0.2</li>
-					<li>BankForward: <strike>False</strike> → True</li>
-					<li>KMove: <strike>0.95</strike> → 2</li>
-					<li>KTurn: <strike>1</strike> → 2</li>
-					<li>KTurnDamping: <strike>4</strike> → 2</li>
-					<li>LiftFactor: <strike>8</strike> → 2</li>
-					<li>TransportHoverHeight: <strike>6</strike> → 4</li>
-					<li>CollisionOffsetY: <strike>0.1</strike> → -0.25</li>
-				</ul>
-
-			<b><u>T3 Transports</u></b>
-				<ul>
-					<li>AutoLandTime: <strike>1</strike> → 2 </li>
-					<li>BankFactor: <strike>0.1</strike> → 0.2</li>
-					<li>BankForward: <strike>False</strike> → True</li>
-					<li>KLift: <strike>1</strike> → 2</li>
-					<li>KLiftDamping: <strike>1.25</strike> → 2</li>
-					<li>KMove: <strike>0.8</strike> → 2</li>
-					<li>KTurn: <strike>1</strike> → 2</li>
-					<li>KTurnDamping: <strike>4</strike> → 2</li>
-					<li>LiftFactor: <strike>7</strike> → 4</li>
-					<li>CollisionOffsetY: <strike>-0.1</strike> → -0.25</li>
-				</ul>
-
-		</div>
-
-		<div id="elevations" class="card">
-			<h3>Air Elevations</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/4799">4799</a></p>
-
-			<ul>
-				<li>T1 Scout: <strike>20</strike> → 16 </li>
-				<li>T1 Interceptor: <strike>18</strike> → 14 </li>
-				<li>T1 Bomber: <strike>18</strike> → 14 </li>
-				<li>T2 Combat Fighter: <strike>20</strike> → 18</li>
-				<li>T3 Scout: <strike>25</strike> → 22 </li>
-				<li>T3 Air Superiority: <strike>20</strike> → 18 </li>
-				<li>T3 Stratiegic Bomber: <strike>14</strike> → 18</li>
-				<li>T3 Torpedo Bomber: <strike>25</strike> → 18</li>
-				<li>T4 CZAR: <strike>25</strike> → 20 </li>
-
-			</ul>
-		</div>
-
-		<div id="intercepter" class="card">
-            <h3><b style="color: var(--new);">New</b> Interceptors & Swiftwind</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/5010">5010</a></p>
-            
-            <p>This change helps balance out the transport changes. This also makes intis feel more responsive and better to micro.</p>
-            
-			<b><u>Interceptors</u></b>
-            <ul>            
-				<li>AutoLandTime: <strike>1</strike> → 2</li>
-                <li>BankFactor: <strike>2</strike> → 3</li>
-				<li>BreakOffDistance: <strike>5</strike> → 10</li>
-				<li>CombatTurnSpeed: <strike>1.5</strike> → 1.7</li>
-				<li>KLift: <strike>3</strike> → 2</li>
-				<li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
-				<li>KMove: <strike>1</strike> → 1.5</li>
-				<li>LiftFactor: <strike>7</strike> → 5</li>
-				<li>StartTurnDistance: <strike>5</strike> → 10</li>
-				<li>TurnSpeed: <strike>1.5</strike> → 1.7</li>
+            <b><u>Transport Elevation</u></b>
+            <ul>
+              <li>T1 Elevation: 8</li>
+              <li>T2 Elevation: 9</li>
+              <li>T3 Elevation: 10</li>
             </ul>
 
-			<b><u>Swiftwind</u></b>
-			<ul>
-                <li>BankFactor: <strike>2</strike> → 3</li>
-				<li>CombatTurnSpeed: <strike>1.5</strike> → 1.8</li>
-				<li>KLift: <strike>3</strike> → 2</li>
-				<li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
-				<li>KMove: <strike>1</strike> → 1.5</li>
-				<li>LiftFactor: <strike>7</strike> → 5</li>
-				<li>StartTurnDistance: <strike>5</strike> → 10</li>
-				<li>TurnSpeed: <strike>1.5</strike> → 1.8</li>
-			</ul>
-		</div>
-
-		<div id="strats" class="card">
-            <h3><b style="color: var(--new);">New</b> Strategic Bombers</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/5048">5048</a> & <a href="https://github.com/FAForever/fa/issues/5013">5013</a></p>
-            
-            <p>Slight decrease to strats cost and build time as well as the reload time</p>
-            
-            <ul>            
-				<li>Mass Cost: <strike>2100</strike> → 1800</li>
-                <li>Energy Cost: <strike>144k</strike> → 180k</li>
-				<li>Buildtime: <strike>9.6k</strike> → 12k</li>
-				<li>Rate of Fire: <strike>5s</strike> → 8s</li>
+            <b><u>T1 Transports</u></b>
+            <ul>
+              <li>AutoLandTime: <strike>1</strike> → 2</li>
+              <li>BankFactor: <strike>0.1</strike> → 0.2</li>
+              <li>BankForward: <strike>False</strike> → True</li>
+              <li>KMove: <strike>0.95</strike> → 2</li>
+              <li>KTurn: <strike>1</strike> → 2</li>
+              <li>KTurnDamping: <strike>4</strike> → 2</li>
+              <li>LiftFactor: <strike>8</strike> → 2</li>
+              <li>TransportHoverHeight: <strike>6</strike> → 4</li>
+              <li>CollisionOffsetY: <strike>0</strike> → -0.25</li>
             </ul>
-		</div>
 
-		<h2>Structures</h2>
-		
-		<div id="harms" class="card">
-            <h3><b style="color: var(--new);">New</b> HARMS</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4952">4952</a>  & <a href="https://github.com/FAForever/fa/issues/5060">5060</a></p>
-
-            <p>We are decrease the harms by removing the stealth and HP and Range Reduction</p>
-            
-            <ul>            
-                <li>Removed Personal Stealth</li>
-                <li>HP: <strike>11000</strike> → 9000</li>
-                <li>Build Time: <strike>4097</strike> → 4100</li>
-                <li>Max Radius: <strike>80</strike> → 70</li>
+            <b><u>T2 Transports</u></b>
+            <ul>
+              <li>AutoLandTime: <strike>1</strike> → 2</li>
+              <li>BankFactor: <strike>0.1</strike> → 0.2</li>
+              <li>BankForward: <strike>False</strike> → True</li>
+              <li>KMove: <strike>0.95</strike> → 2</li>
+              <li>KTurn: <strike>1</strike> → 2</li>
+              <li>KTurnDamping: <strike>4</strike> → 2</li>
+              <li>LiftFactor: <strike>8</strike> → 2</li>
+              <li>TransportHoverHeight: <strike>6</strike> → 4</li>
+              <li>CollisionOffsetY: <strike>0.1</strike> → -0.25</li>
             </ul>
-		</div>
 
-		<div id="torpdef" class="card">
+            <b><u>T3 Transports</u></b>
+            <ul>
+              <li>AutoLandTime: <strike>1</strike> → 2</li>
+              <li>BankFactor: <strike>0.1</strike> → 0.2</li>
+              <li>BankForward: <strike>False</strike> → True</li>
+              <li>KLift: <strike>1</strike> → 2</li>
+              <li>KLiftDamping: <strike>1.25</strike> → 2</li>
+              <li>KMove: <strike>0.8</strike> → 2</li>
+              <li>KTurn: <strike>1</strike> → 2</li>
+              <li>KTurnDamping: <strike>4</strike> → 2</li>
+              <li>LiftFactor: <strike>7</strike> → 4</li>
+              <li>CollisionOffsetY: <strike>-0.1</strike> → -0.25</li>
+            </ul>
+          </div>
+
+          <div id="elevations" class="card">
+            <h3>Air Elevations</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/4799">4799</a>
+            </p>
+
+            <ul>
+              <li>T1 Scout: <strike>20</strike> → 16</li>
+              <li>T1 Interceptor: <strike>18</strike> → 14</li>
+              <li>T1 Bomber: <strike>18</strike> → 14</li>
+              <li>T2 Combat Fighter: <strike>20</strike> → 18</li>
+              <li>T3 Scout: <strike>25</strike> → 22</li>
+              <li>T3 Air Superiority: <strike>20</strike> → 18</li>
+              <li>T3 Stratiegic Bomber: <strike>14</strike> → 18</li>
+              <li>T3 Torpedo Bomber: <strike>25</strike> → 18</li>
+              <li>T4 CZAR: <strike>25</strike> → 20</li>
+            </ul>
+          </div>
+
+          <div id="intercepter" class="card">
+            <h3>
+              <b style="color: var(--new)">New</b> Interceptors & Swiftwind
+            </h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5010">5010</a>
+            </p>
+
+            <p>
+              This change helps balance out the transport changes. This also
+              makes intis feel more responsive and better to micro.
+            </p>
+
+            <b><u>Interceptors</u></b>
+            <ul>
+              <li>AutoLandTime: <strike>1</strike> → 2</li>
+              <li>BankFactor: <strike>2</strike> → 3</li>
+              <li>BreakOffDistance: <strike>5</strike> → 10</li>
+              <li>CombatTurnSpeed: <strike>1.5</strike> → 1.7</li>
+              <li>KLift: <strike>3</strike> → 2</li>
+              <li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
+              <li>KMove: <strike>1</strike> → 1.5</li>
+              <li>LiftFactor: <strike>7</strike> → 5</li>
+              <li>StartTurnDistance: <strike>5</strike> → 10</li>
+              <li>TurnSpeed: <strike>1.5</strike> → 1.7</li>
+            </ul>
+
+            <b><u>Swiftwind</u></b>
+            <ul>
+              <li>BankFactor: <strike>2</strike> → 3</li>
+              <li>CombatTurnSpeed: <strike>1.5</strike> → 1.8</li>
+              <li>KLift: <strike>3</strike> → 2</li>
+              <li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
+              <li>KMove: <strike>1</strike> → 1.5</li>
+              <li>LiftFactor: <strike>7</strike> → 5</li>
+              <li>StartTurnDistance: <strike>5</strike> → 10</li>
+              <li>TurnSpeed: <strike>1.5</strike> → 1.8</li>
+            </ul>
+          </div>
+
+          <div id="strats" class="card">
+            <h3><b style="color: var(--new)">New</b> Strategic Bombers</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5048">5048</a> &
+              <a href="https://github.com/FAForever/fa/issues/5013">5013</a>
+            </p>
+
+            <p>
+              Slight decrease to strats cost and build time as well as the
+              reload time
+            </p>
+
+            <ul>
+              <li>Mass Cost: <strike>2100</strike> → 1800</li>
+              <li>Energy Cost: <strike>144k</strike> → 180k</li>
+              <li>Buildtime: <strike>9.6k</strike> → 12k</li>
+              <li>Rate of Fire: <strike>5s</strike> → 8s</li>
+            </ul>
+          </div>
+
+          <h2>Structures</h2>
+
+          <div id="harms" class="card">
+            <h3><b style="color: var(--new)">New</b> HARMS</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4952">4952</a> &
+              <a href="https://github.com/FAForever/fa/issues/5060">5060</a>
+            </p>
+
+            <p>
+              We are decrease the harms by removing the stealth and HP and Range
+              Reduction
+            </p>
+
+            <ul>
+              <li>Removed Personal Stealth</li>
+              <li>HP: <strike>11000</strike> → 9000</li>
+              <li>Build Time: <strike>4097</strike> → 4100</li>
+              <li>Max Radius: <strike>80</strike> → 70</li>
+            </ul>
+          </div>
+
+          <div id="torpdef" class="card">
             <h3>Torpedo Defences</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4946">4946</a></p>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4946">4946</a>
+            </p>
 
-            <p>Decrease the volatility of t1 navy. Makes getting locked out of water at t1 harder. </p>
-            
-			<b><u>Aeon and UEF</u></b><br>
-				Tech 1
-				<ul>
-					<li>Build Time: <strike>450</strike> → 675</li>
-					<li>Damage: <strike>150</strike> → 180</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Build Time: <strike>1467</strike> → 2201</li>
-					<li>Damage: <strike>150</strike> → 180</li>
-				</ul>
+            <p>
+              Decrease the volatility of t1 navy. Makes getting locked out of
+              water at t1 harder.
+            </p>
 
-			<b><u>Cybran</u></b><br>
-				Tech 1
-				<ul>
-					<li>Build Time: <strike>450</strike> → 675</li>
-					<li>Damage: <strike>25</strike> → 30</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Build Time: <strike>1467</strike> → 2201</li>
-					<li>Damage: <strike>50</strike> → 60</li>
-				</ul>
+            <b><u>Aeon and UEF</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Build Time: <strike>450</strike> → 675</li>
+              <li>Damage: <strike>150</strike> → 180</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Build Time: <strike>1467</strike> → 2201</li>
+              <li>Damage: <strike>150</strike> → 180</li>
+            </ul>
 
-			<b><u>Seraphim</u></b><br>
-				Tech 1
-				<ul>
-					<li>Build Time: <strike>450</strike> → 675</li>
-					<li>Damage: <strike>100</strike> → 120</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Build Time: <strike>1467</strike> → 2201</li>
-					<li>Damage: <strike>201</strike> → 242</li>
-				</ul>
-		</div>
+            <b><u>Cybran</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Build Time: <strike>450</strike> → 675</li>
+              <li>Damage: <strike>25</strike> → 30</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Build Time: <strike>1467</strike> → 2201</li>
+              <li>Damage: <strike>50</strike> → 60</li>
+            </ul>
 
-		<div id="sonar" class="card">
+            <b><u>Seraphim</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Build Time: <strike>450</strike> → 675</li>
+              <li>Damage: <strike>100</strike> → 120</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Build Time: <strike>1467</strike> → 2201</li>
+              <li>Damage: <strike>201</strike> → 242</li>
+            </ul>
+          </div>
+
+          <div id="sonar" class="card">
             <h3>T1/T2 Sonar</h3>
-            <p>GitHub: <a href="https://github.com/FAForever/fa/issues/4996">4996</a></p>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/4996">4996</a>
+            </p>
 
-            <p>The current range of t1/t2 sonars is lacking compared to t1/t2 radars considering the speed difference between land and navy units. They will be getting a range buff to make them more useful while giving them some small nerfs to balance them out.</p>
-            
-			<b><u>Reactivation Time</u></b>
-			<p>How long it take for the structure to work again after powerstalling.</p>
-			<ul>
-				<li>T1: 2 Seconds</li>
-				<li>T2: 4 Seconds </li>
-				<li>T3: 6 Seconds</li>
-			</ul>
+            <p>
+              The current range of t1/t2 sonars is lacking compared to t1/t2
+              radars considering the speed difference between land and navy
+              units. They will be getting a range buff to make them more useful
+              while giving them some small nerfs to balance them out.
+            </p>
 
-			<b><u>Aeon</u></b><br>
-				Tech 1
-				<ul>
-					<li>Health: <strike>500</strike> → 400</li>
-					<li>Energy Cost: <strike>544</strike> → 1275</li>
-					<li>Mass Cost: <strike>64</strike> → 150</li>
-					<li>Build Time: <strike>80</strike> → 127.5</li>
-					<li>Maintenace Cost: <strike>10</strike> → 20</li>
-					<li>Sonar Radius: <strike>115</strike> → 160</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Health: <strike>1000</strike> → 800</li>
-					<li>Energy Cost: <strike>3600</strike> → 7200</li>
-					<li>Mass Cost: <strike>150</strike> → 300</li>
-					<li>Build Time: <strike>845</strike> → 1680</li>
-					<li>Sonar Radius: <strike>230</strike> → 290</li>
-				</ul>
+            <b><u>Reactivation Time</u></b>
+            <p>
+              How long it take for the structure to work again after
+              powerstalling.
+            </p>
+            <ul>
+              <li>T1: 2 Seconds</li>
+              <li>T2: 4 Seconds</li>
+              <li>T3: 6 Seconds</li>
+            </ul>
 
-			<b><u>UEF</u></b><br>
-				Tech 1
-				<ul>
-					<li>Health: <strike>600</strike> → 400</li>
-					<li>Energy Cost: <strike>544</strike> → 1275</li>
-					<li>Mass Cost: <strike>64</strike> → 150</li>
-					<li>Build Time: <strike>80</strike> → 127.5</li>
-					<li>Maintenace Cost: <strike>10</strike> → 20</li>
-					<li>Sonar Radius: <strike>115</strike> → 160</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Health: <strike>1400</strike> → 800</li>
-					<li>Energy Cost: <strike>3600</strike> → 7200</li>
-					<li>Mass Cost: <strike>150</strike> → 300</li>
-					<li>Build Time: <strike>845</strike> → 1680</li>
-					<li>Sonar Radius: <strike>230</strike> → 290</li>
-				</ul>
+            <b><u>Aeon</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Health: <strike>500</strike> → 400</li>
+              <li>Energy Cost: <strike>544</strike> → 1275</li>
+              <li>Mass Cost: <strike>64</strike> → 150</li>
+              <li>Build Time: <strike>80</strike> → 127.5</li>
+              <li>Maintenace Cost: <strike>10</strike> → 20</li>
+              <li>Sonar Radius: <strike>115</strike> → 160</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Health: <strike>1000</strike> → 800</li>
+              <li>Energy Cost: <strike>3600</strike> → 7200</li>
+              <li>Mass Cost: <strike>150</strike> → 300</li>
+              <li>Build Time: <strike>845</strike> → 1680</li>
+              <li>Sonar Radius: <strike>230</strike> → 290</li>
+            </ul>
 
-			<b><u>Cybran</u></b><br>
-				Tech 1
-				<ul>
-					<li>Energy Cost: <strike>544</strike> → 1275</li>
-					<li>Mass Cost: <strike>64</strike> → 150</li>
-					<li>Build Time: <strike>80</strike> → 127.5</li>
-					<li>Maintenace Cost: <strike>10</strike> → 20</li>
-					<li>Sonar Radius: <strike>115</strike> → 160</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Health: <strike>625</strike> → 800</li>
-					<li>Energy Cost: <strike>3600</strike> → 7200</li>
-					<li>Mass Cost: <strike>150</strike> → 300</li>
-					<li>Build Time: <strike>845</strike> → 1680</li>
-					<li>Sonar Radius: <strike>230</strike> → 290</li>
-				</ul>
-				<b style="color: var(--new);">New</b> Tech 3
-				<ul>
-					<li>Maintenace Cost: <strike>700</strike> → 600</li>
-					<li>Radar Stealth Field Radius: <strike>70</strike> → 40</li>
-					<li>Sonar Stealth Field Radius: <strike>70</strike> → 40</li>
-				</ul>
+            <b><u>UEF</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Health: <strike>600</strike> → 400</li>
+              <li>Energy Cost: <strike>544</strike> → 1275</li>
+              <li>Mass Cost: <strike>64</strike> → 150</li>
+              <li>Build Time: <strike>80</strike> → 127.5</li>
+              <li>Maintenace Cost: <strike>10</strike> → 20</li>
+              <li>Sonar Radius: <strike>115</strike> → 160</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Health: <strike>1400</strike> → 800</li>
+              <li>Energy Cost: <strike>3600</strike> → 7200</li>
+              <li>Mass Cost: <strike>150</strike> → 300</li>
+              <li>Build Time: <strike>845</strike> → 1680</li>
+              <li>Sonar Radius: <strike>230</strike> → 290</li>
+            </ul>
 
-			<b><u>Seraphim</u></b><br>
-				Tech 1
-				<ul>
-					<li>Energy Cost: <strike>544</strike> → 1275</li>
-					<li>Mass Cost: <strike>64</strike> → 150</li>
-					<li>Build Rate: <strike>13.01</strike> → 14.08</li>
-					<li>Build Time: <strike>80</strike> → 127.5</li>
-					<li>Maintenace Cost: <strike>10</strike> → 20</li>
-					<li>Sonar Radius: <strike>115</strike> → 180</li>
-				</ul>
-				Tech 2
-				<ul>
-					<li>Health: <strike>1000</strike> → 1400</li>
-					<li>Energy Cost: <strike>6000</strike> → 9600</li>
-					<li>Build Time: <strike>600</strike> → 2120</li>
-				</ul>
-		</div>
+            <b><u>Cybran</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Energy Cost: <strike>544</strike> → 1275</li>
+              <li>Mass Cost: <strike>64</strike> → 150</li>
+              <li>Build Time: <strike>80</strike> → 127.5</li>
+              <li>Maintenace Cost: <strike>10</strike> → 20</li>
+              <li>Sonar Radius: <strike>115</strike> → 160</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Health: <strike>625</strike> → 800</li>
+              <li>Energy Cost: <strike>3600</strike> → 7200</li>
+              <li>Mass Cost: <strike>150</strike> → 300</li>
+              <li>Build Time: <strike>845</strike> → 1680</li>
+              <li>Sonar Radius: <strike>230</strike> → 290</li>
+            </ul>
+            <b style="color: var(--new)">New</b> Tech 3
+            <ul>
+              <li>Maintenace Cost: <strike>700</strike> → 600</li>
+              <li>Radar Stealth Field Radius: <strike>70</strike> → 40</li>
+              <li>Sonar Stealth Field Radius: <strike>70</strike> → 40</li>
+            </ul>
 
-		<div id="radar" class="card">
-			<h3>Radar</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/5019">5019</a></p>
+            <b><u>Seraphim</u></b
+            ><br />
+            Tech 1
+            <ul>
+              <li>Energy Cost: <strike>544</strike> → 1275</li>
+              <li>Mass Cost: <strike>64</strike> → 150</li>
+              <li>Build Rate: <strike>13.01</strike> → 14.08</li>
+              <li>Build Time: <strike>80</strike> → 127.5</li>
+              <li>Maintenace Cost: <strike>10</strike> → 20</li>
+              <li>Sonar Radius: <strike>115</strike> → 180</li>
+            </ul>
+            Tech 2
+            <ul>
+              <li>Health: <strike>1000</strike> → 1400</li>
+              <li>Energy Cost: <strike>6000</strike> → 9600</li>
+              <li>Build Time: <strike>600</strike> → 2120</li>
+            </ul>
+          </div>
 
-			<p>How long it take for the structure to work again after powerstalling.</p>
+          <div id="radar" class="card">
+            <h3>Radar</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/5019">5019</a>
+            </p>
 
-			<b><u>Reactivation Time</u></b>
-			<ul>
-				<li>T1: 2 Seconds</li>
-				<li>T2: 4 Seconds</li>
-				<li>T3: 6 Seconds</li>
-			</ul>
+            <p>
+              How long it take for the structure to work again after
+              powerstalling.
+            </p>
 
+            <b><u>Reactivation Time</u></b>
+            <ul>
+              <li>T1: 2 Seconds</li>
+              <li>T2: 4 Seconds</li>
+              <li>T3: 6 Seconds</li>
+            </ul>
+          </div>
 
-		</div>
-		
-		<div id="energystorage" class="card">
-			<h3>Energy Storage</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/5016">5016</a></p>
+          <div id="energystorage" class="card">
+            <h3>Energy Storage</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/5016">5016</a>
+            </p>
 
-			<ul>
-				<li>Capacity: <strike>5000</strike> → 10000</li>
-				<li>Storage Adjacency: Increased by x2</li>
-			</ul>
+            <ul>
+              <li>Capacity: <strike>5000</strike> → 10000</li>
+              <li>Storage Adjacency: Increased by x2</li>
+            </ul>
+          </div>
 
-		</div>
+          <div id="sams" class="card">
+            <h3><b style="color: var(--new)">New</b> SAMS</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/5049">5049</a>
+            </p>
 
-		<div id="sams" class="card">
-			<h3><b style="color: var(--new);">New</b> SAMS</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/5049">5049</a></p>
+            <ul>
+              <li>HP: <strike>7000</strike> → 5000</li>
+            </ul>
+          </div>
 
-			<ul>
-				<li>HP: <strike>7000</strike> → 5000</li>
-			</ul>
+          <h2>Mechanics</h2>
 
-		</div>
+          <div id="reclaim" class="card">
+            <h3>Reclaim</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/4705">4705</a>
+            </p>
 
-		<h2>Mechanics</h2>
+            <p>
+              Reduce the amount of reclaim that units and structures leave
+              behind based on their tech level.
+            </p>
+            <p>
+              This is to promotes aggression in the lategame as attacking
+              becomes less punishing
+            </p>
 
-		<div id="reclaim" class="card">
-			<h3>Reclaim</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/4705">4705</a></p>
+            <ul>
+              <li>Tech 1: 0.9 * 0.9 (81%)</li>
+              <li>
+                Tech 2: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.8 (72%)
+              </li>
+              <li>
+                Tech 3: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.7 (63%)
+              </li>
+              <li>
+                Experimental: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.6 (54%)
+              </li>
+            </ul>
+          </div>
 
-			<p>Reduce the amount of reclaim that units and structures leave behind based on their tech level.</p>
-			<p>This is to promotes aggression in the lategame as attacking becomes less punishing</p>
+          <div id="torpedo" class="card">
+            <h3>Torpedo Interaction Overhall</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/4979">4979</a>
+            </p>
 
-			<ul>
-				<li>Tech 1: 0.9 * 0.9 (81%)</li>
-				<li>Tech 2: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.8 (72%)</li>
-				<li>Tech 3: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.7 (63%)</li>
-				<li>Experimental: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.6 (54%)</li>
-			</ul>
-		</div>
+            <h4>Torpedo bombers</h4>
+            <p>
+              All projectiles dropped by Torpedo Bombers now interact with anti
+              torpedo defenses. This includes both the projectile-based and the
+              flare-based anti torpedo defenses. All torpedo bombers drop their
+              ordinance in a similar arc as strategic bombers.
+            </p>
+            <p>
+              One exception is that when aiming a torpedo bomber aims on the
+              current position of the unit instead of aiming where the unit is
+              predicted to be when the projectiles impacts. This is done to
+              guarantee a valid firing solution so that all torpedo bombers will
+              always drop their ordinance.
+            </p>
+            <p>
+              Ordinance dropped by torpedo bombers have their velocity reset as
+              they hit the water surface. This prevents the projectile from
+              immediately impacting with the ocean floor when the water is too
+              shallow. The projectile accelerate to full speed in about 3 to 4
+              seconds.
+            </p>
 
-		<div id="torpedo" class="card">
-			<h3>Torpedo Interaction Overhall</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/4979">4979</a></p>
+            <h4>Torpedo behavior</h4>
+            <p>
+              All projectiles that are considered a torpedo have their
+              properties standardized, with minor factional differences. They
+              used to be all over the place. Roughly speaking:
+            </p>
+            <ul>
+              <li>
+                For all factions: each projectile has an acceleration range of
+                2, with a base acceleration of 5. As a result the acceleration
+                of a projectile is any value between <3, 7>, This prevents the
+                uncanny effect where multiple torpedo's follow the exact same
+                trajectory. All projectiles have a minimum life time of 10
+                seconds, ordinance from torpedo bombers have a minimum life time
+                of 15 seconds
+              </li>
+              <li>
+                Cybran faction: each torpedo has a turn rate of 180 and a minor
+                'zig zag' factor.
+              </li>
+              <li>
+                UEF Faction: each torpedo has a turn rate of 165 and a minor
+                'zig zag' factor.
+              </li>
+              <li>
+                Aeon faction: each torpedo has a turn rate of 190 and a decent
+                'zig zag' factor.
+              </li>
+              <li>
+                Seraphim faction: each torpedo has a turn rate of 200 and no
+                'zig zag' factor.
+              </li>
+            </ul>
 
-			<h4>Torpedo bombers</h4>
-			<p>All projectiles dropped by Torpedo Bombers now interact with anti torpedo defenses. This includes both the projectile-based and the flare-based anti torpedo defenses. All torpedo bombers drop their ordinance in a similar arc as strategic bombers.</p>
-			<p>One exception is that when aiming a torpedo bomber aims on the current position of the unit instead of aiming where the unit is predicted to be when the projectiles impacts. This is done to guarantee a valid firing solution so that all torpedo bombers will always drop their ordinance.</p>
-			<p>Ordinance dropped by torpedo bombers have their velocity reset as they hit the water surface. This prevents the projectile from immediately impacting with the ocean floor when the water is too shallow. The projectile accelerate to full speed in about 3 to 4 seconds.</p>
+            <h4>Flare-based torpedo defenses</h4>
+            <p>
+              All flare-based torpedo defenses now have a maximum number of
+              torpedo's that they can redirect.
+            </p>
 
-			<h4>Torpedo behavior</h4>
-			<p>All projectiles that are considered a torpedo have their properties standardized, with minor factional differences. They used to be all over the place. Roughly speaking:</p>
-			<ul>
-				<li>For all factions: each projectile has an acceleration range of 2, with a base acceleration of 5. As a result the acceleration of a projectile is any value between <3, 7>, This prevents the uncanny effect where multiple torpedo's follow the exact same trajectory. All projectiles have a minimum life time of 10 seconds, ordinance from torpedo bombers have a minimum life time of 15 seconds</li>
-				<li>Cybran faction: each torpedo has a turn rate of 180 and a minor 'zig zag' factor.</li>
-				<li>UEF Faction: each torpedo has a turn rate of 165 and a minor 'zig zag' factor.</li>
-				<li>Aeon faction: each torpedo has a turn rate of 190 and a decent 'zig zag' factor.</li>
-				<li>Seraphim faction: each torpedo has a turn rate of 200 and no 'zig zag' factor.</li>
-			</ul>
+            <h4>Projectile-based torpedo defenses</h4>
+            <p>
+              All projectile-based torpedo defenses act in a similar, smart
+              fashion to tactical missile defenses where they try to not
+              overshoot a single torpedo.
+            </p>
 
-			<h4>Flare-based torpedo defenses</h4>
-			<p>All flare-based torpedo defenses now have a maximum number of torpedo's that they can redirect.</p>
+            <h4>Other changes</h4>
+            <p>
+              Fixes all sorts of inconsistencies across the code base, including
+              but not limited to:
+            </p>
+            <ul>
+              <li>Wrong base class</li>
+              <li>Lack of use of effects</li>
+              <li>Improper use of effects</li>
+              <li>Duplicated code across the hierarchy</li>
+              <li>Missmatch of sound with number of projectiles</li>
+            </ul>
+          </div>
 
-			<h4>Projectile-based torpedo defenses</h4>
-			<p>All projectile-based torpedo defenses act in a similar, smart fashion to tactical missile defenses where they try to not overshoot a single torpedo.</p>
+          <div id="overcharge" class="card">
+            <h3>OverCharge</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/pull/5016">5016</a>
+            </p>
 
-			<h4>Other changes</h4>
-			<p>Fixes all sorts of inconsistencies across the code base, including but not limited to:</p>
-			<ul>
-				<li>Wrong base class</li>
-				<li>Lack of use of effects</li>
-				<li>Improper use of effects</li>
-				<li>Duplicated code across the hierarchy</li>
-				<li>Missmatch of sound with number of projectiles</li>
-			</ul>
-		</div>
+            <p>
+              We want the player to have to make a conscious decision and
+              sacrifice some eco to set up OC plays, instead of it being just a
+              no-brainer that makes the ACU nearly all-powerful in the earlygame
+            </p>
 
-		<div id="overcharge" class="card">
-			<h3>OverCharge</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/pull/5016">5016</a></p>
+            <ul>
+              <li>Energy Required: <strike>5000</strike> → 7500</li>
+            </ul>
+          </div>
 
-			<p>We want the player to have to make a conscious decision and sacrifice some eco to set up OC plays, instead of it being just a no-brainer that makes the ACU nearly all-powerful in the earlygame</p>
+          <h2>ACU</h2>
 
-			<ul>
-				<li>Energy Required: <strike>5000</strike> → 7500</li>
-			</ul>
-		</div>
+          <div id="aeongunrange" class="card">
+            <h3>Aeon Gun Range Enhancement</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5014">5014</a>
+            </p>
 
-		<h2>ACU</h2>
+            <p>
+              The Aeon gun range upgrade is quite powerful with the current
+              cost. We have split it to allow it to still be strong later but
+              not oppressive in the t1/early t2 phase of the game. This along
+              with the OC nerf should make the Aeon gun com far less oppressive
+              while still being viable.
+            </p>
 
-		<div id="aeongunrange" class="card">
-			<h3>Aeon Gun Range Enhancement</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/issues/5014">5014</a></p>
+            <b><u>First Range Upgrade</u></b>
+            <ul>
+              <li>Energy Cost: <strike>15000</strike> → 6000</li>
+              <li>Mass Cost: <strike>500</strike> → 300</li>
+              <li>Build Time: <strike>500</strike> → 350</li>
+              <li>New Range: <strike>35</strike> → 30</li>
+            </ul>
 
-			<p>The Aeon gun range upgrade is quite powerful with the current cost. We have split it to allow it to still be strong later but not oppressive in the t1/early t2 phase of the game. This along with the OC nerf should make the Aeon gun com far less oppressive while still being viable.</p>
+            <b><u>Second Range Upgrade</u></b>
+            <ul>
+              <li>Requires First Range upgrade</li>
+              <li>Energy Cost: 31000</li>
+              <li>Mass Cost: 900</li>
+              <li>Build Time: 1100</li>
+              <li>New Range: 35</li>
+            </ul>
+          </div>
 
-			<b><u>First Range Upgrade</u></b>
-			<ul>
-				<li>Energy Cost: <strike>15000</strike> → 6000</li>
-				<li>Mass Cost: <strike>500</strike> → 300</li>
-				<li>Build Time: <strike>500</strike> → 350</li>
-				<li>New Range: <strike>35</strike> → 30</li>
-			</ul>	
+          <div id="uefbubble" class="card">
+            <h3>
+              <b style="color: var(--new)">New</b> UEF Bubble Shield Enhancement
+            </h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5014">5014</a>
+            </p>
 
-			<b><u>Second Range Upgrade</u></b>
-			<ul>
-				<li>Requires First Range upgrade</li>
-				<li>Energy Cost: 31000</li>
-				<li>Mass Cost: 900</li>
-				<li>Build Time: 1100</li>
-				<li>New Range: 35</li>
-			</ul>	
+            <p>
+              This splits the shield upgrades so you decide either to have the
+              personal shield or the bubble shield
+            </p>
 
-		</div>
+            <ul>
+              <li>Split from Personal Shield</li>
+              <li>Mass Cost: <strike>3600</strike> → 2300</li>
+              <li>Energy Cost: <strike>450000</strike> → 112500</li>
+              <li>Build Time: <strike>3400</strike> → 2100</li>
+              <li>Maintenance Cost: <strike>500</strike> → 250</li>
+              <li>Shield HP: <strike>36000</strike> → 9000</li>
+            </ul>
+          </div>
 
-		<div id="uefbubble" class="card">
-			<h3><b style="color: var(--new);">New</b> UEF Bubble Shield Enhancement</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/issues/5014">5014</a></p>
+          <div id="chrono" class="card">
+            <h3>
+              <b style="color: var(--new)">New</b> Aeon Chrono Dampener
+              Enhancement
+            </h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5015">5015</a>
+            </p>
 
-			<p>This splits the shield upgrades so you decide either to have the personal shield or the bubble shield</p>
+            <p>
+              Change the chrono upgrade's range to the range of the current acu
+              main gun.
+            </p>
+          </div>
 
-			<ul>
-				<li>Split from Personal Shield </li>
-				<li>Mass Cost: <strike>3600</strike> → 2300</li>
-				<li>Energy Cost: <strike>450000</strike> → 112500</li>
-				<li>Build Time: <strike>3400</strike> → 2100</li>
-				<li>Maintenance Cost: <strike>500</strike> → 250</li>
-				<li>Shield  HP: <strike>36000</strike> → 9000</li>
-			</ul>	
-		</div>
+          <div id="Cybran" class="card">
+            <h3><b style="color: var(--new)">New</b> Cybran ACU</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5054">5054</a>
+            </p>
 
-		<div id="chrono" class="card">
-			<h3><b style="color: var(--new);">New</b> Aeon Chrono Dampener Enhancement</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/issues/5015">5015</a></p>
+            <p>
+              To go along with other planned changes and this is to ensure that
+              it is not a decrese the affectiveness of the cybran acu. This will
+              make it so that the stelth is not useless with the vision changes
+              but also make it so there is a mid-game upgrade too with a slight
+              decrese to the laser due to stealth and nano upgrade.
+            </p>
 
-			<p>Change the chrono upgrade's range to the range of the current acu main gun.</p>
+            <b><u>Base ACU</u></b>
 
-		</div>
+            <ul>
+              <li>Regen: <strike>15</strike> → 20</li>
+            </ul>
 
-		<div id="Cybran" class="card">
-			<h3><b style="color: var(--new);">New</b> Cybran ACU</h3>
-			<p>GitHub: <a href="https://github.com/FAForever/fa/issues/5054">5054</a></p>
+            <b><u>Stealth Enhancement</u></b>
 
-			<p>To go along with other planned changes and this is to ensure that it is not a decrese the affectiveness of the cybran acu. This will make it so that the stelth is not useless with the vision changes but also make it so there is a mid-game upgrade too with a slight decrese to the laser due to stealth and nano upgrade.</p>
+            <ul>
+              <li>Regen: <strike>0</strike> → 20</li>
+            </ul>
 
-			<b><u>Base ACU</u></b>
-			
-			<ul>
-				<li>Regen: <strike>15</strike> → 20</li>
-			</ul>
+            <b><u>Nano Enhancement</u></b>
 
-			<b><u>Stealth Enhancement</u></b>
-			
-			<ul>
-				<li>Regen: <strike>0</strike> → 20</li>
-			</ul>	
+            <ul>
+              <li>Intermediat Upgrade Between Stealth and Cloak</li>
+              <li>Mass Cost: 1000</li>
+              <li>Energy Cost: 35000</li>
+              <li>Build Time: 1000</li>
+              <li>Regen: 50</li>
+              <li>HP: 3500</li>
+            </ul>
 
-			<b><u>Nano Enhancement</u></b>
+            <b><u>Cloak Enhancement</u></b>
 
-			<ul>
-				<li>Intermediat Upgrade Between Stealth and Cloak</li>
-				<li>Mass Cost: 1000</li>
-				<li>Energy Cost: 35000</li>
-				<li>Build Time: 1000</li>
-				<li>Regen: 50</li>
-				<li>HP: 3500</li>
-			</ul>
+            <ul>
+              <li>HP: <strike>15000</strike> → 11500</li>
+            </ul>
 
-			<b><u>Cloak Enhancement</u></b>
-
-			<ul>
-				<li>HP: <strike>15000</strike> → 11500</li>
-			</ul>	
-
-			<!--
+            <!--
 			<b><u>Lazer Upgrade</u></b>
 
 			<ul>
 				<li>HP: <strike>4000</strike> → 3000</li>
 			</ul>	-->
-		</div>
+          </div>
 
+          <p style="height: 1000px"></p>
+        </td>
 
-		<p style="height: 1000px"></p>
-	</td>
-	
-	<td id="sidebar">
-		<div id="icongrid">
-		<h2><a href="#container">Contents</a></h2>
-		
-		Land
-		<br>
-		<a href="#spirit"><img src="images/spirit.png"></a>
-		<a href="#scathis"><img src="images/scathis.png"></a>
-		<a href="#rangebots"><img src="images/mongoose.png"></a>
-		<a href="#gc"><img src="images/galacticcolossus.png"></a>
-		<a href="#amphib"><img src="images/riptide.png"></a>
-		<br><br>
+        <td id="sidebar">
+          <div id="icongrid">
+            <h2><a href="#container">Contents</a></h2>
 
-		Navy
-		<br>
-		<a href="#navytmd"><img src="images/battleship.png"></a>
-		<a href="#destroyer"><img src="images/salem.png"></a>
-		<a href="#frigate"><img src="images/frig.png"></a>
-		<a href="#cruiser"><img src="images/cybrancruiser.png"></a>
-		<a href="#sub"><img src="images/Sera_T1_Sub.png"></a>
-		<a href="#carrier"><img src="images/Cybran_T3_Aircraft_Carrier.png"></a>
-		<a href="#atlantis"><img src="images/atlantis.png"></a>
-		<a href="#cooperatlantis"><img src="images/cooper.png"></a>
-		<a href="#shard"><img src="images/shard.png"></a>
-		<a href="#tempest"><img	src="images/tempest.png"></a>
-		<br><br>
+            Land
+            <br />
+            <a href="#spirit"><img src="images/spirit.png" /></a>
+            <a href="#scathis"><img src="images/scathis.png" /></a>
+            <a href="#rangebots"><img src="images/mongoose.png" /></a>
+            <a href="#gc"><img src="images/galacticcolossus.png" /></a>
+            <a href="#amphib"><img src="images/riptide.png" /></a>
+            <br /><br />
 
-		Air
-		<br>
-		<a href="#transports"><img src="images/Aeon_T2_Transport.png"></a>
-		<a href="#elevations"><img src="images/seraairscout.png"></a>
-		<a href="#mercy"><img src="images/mercy.png"></a>
-		<a href="#intercepter"><img src="images/t1inti.png"></a>
-		<a href="#strats"><img src="images/serastrat.png"></a>
-		<br><br>
+            Navy
+            <br />
+            <a href="#navytmd"><img src="images/battleship.png" /></a>
+            <a href="#destroyer"><img src="images/salem.png" /></a>
+            <a href="#frigate"><img src="images/frig.png" /></a>
+            <a href="#cruiser"><img src="images/cybrancruiser.png" /></a>
+            <a href="#sub"><img src="images/Sera_T1_Sub.png" /></a>
+            <a href="#carrier"
+              ><img src="images/Cybran_T3_Aircraft_Carrier.png"
+            /></a>
+            <a href="#atlantis"><img src="images/atlantis.png" /></a>
+            <a href="#cooperatlantis"><img src="images/cooper.png" /></a>
+            <a href="#shard"><img src="images/shard.png" /></a>
+            <a href="#tempest"><img src="images/tempest.png" /></a>
+            <br /><br />
 
-		Structures
-		<br>
-		<a href="#harms"><img src="images/harms.png"></a>
-		<a href="#torpdef"><img src="images/t2torpdef.png"></a>
-		<a href="#sonar"><img src="images/sonar.png"></a>
-		<a href="#radar"><img src="images/UEF_T2_Radar.png"></a>
-		<a href="#energystorage"><img src="images/estorage.png"></a>
-		<a href="#sams"><img src="images/sam.png"></a>
-		<br><br>
+            Air
+            <br />
+            <a href="#transports"><img src="images/Aeon_T2_Transport.png" /></a>
+            <a href="#elevations"><img src="images/seraairscout.png" /></a>
+            <a href="#mercy"><img src="images/mercy.png" /></a>
+            <a href="#intercepter"><img src="images/t1inti.png" /></a>
+            <a href="#strats"><img src="images/serastrat.png" /></a>
+            <br /><br />
 
-		Mechanics
-		<br>
-		<a href="#reclaim"><img src="images/Reclaim_icon.png"></a>
-		<a href="#torpedo"><img src="images/mechanic.png"></a>
-		<a href="#overcharge"><img src="images/overcharge.png"></a>
-		<br><br>
+            Structures
+            <br />
+            <a href="#harms"><img src="images/harms.png" /></a>
+            <a href="#torpdef"><img src="images/t2torpdef.png" /></a>
+            <a href="#sonar"><img src="images/sonar.png" /></a>
+            <a href="#radar"><img src="images/UEF_T2_Radar.png" /></a>
+            <a href="#energystorage"><img src="images/estorage.png" /></a>
+            <a href="#sams"><img src="images/sam.png" /></a>
+            <br /><br />
 
-		ACU
-		<br>
-		<a href="#aeongunrange"><img src="images/Enhancements/aeon/range.png"></a>
-		<a href="#uefbubble"><img src="images/Enhancements/uef/bubbleshield.png"></a>
-		<a href="#chrono"><img src="images/Enhancements/aeon/chrono.png"></a>
-		<a href="#cybran"><img src="images/cybrancom.png"></a>
+            Mechanics
+            <br />
+            <a href="#reclaim"><img src="images/Reclaim_icon.png" /></a>
+            <a href="#torpedo"><img src="images/mechanic.png" /></a>
+            <a href="#overcharge"><img src="images/overcharge.png" /></a>
+            <br /><br />
 
-		</div>
-	</td>
-	</tr>
-</table>
-</body>
-<footer>
-
-</footer>
+            ACU
+            <br />
+            <a href="#aeongunrange"
+              ><img src="images/Enhancements/aeon/range.png"
+            /></a>
+            <a href="#uefbubble"
+              ><img src="images/Enhancements/uef/bubbleshield.png"
+            /></a>
+            <a href="#chrono"
+              ><img src="images/Enhancements/aeon/chrono.png"
+            /></a>
+            <a href="#cybran"><img src="images/cybrancom.png" /></a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <footer></footer>
 </html>
