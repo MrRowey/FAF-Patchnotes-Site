@@ -44,7 +44,7 @@ body {
 #icongrid {
   position: fixed;
   top: 20px;
-  width: 200px;
+  width: 250px;
   background: var(--primary-grid-bg-color);
   padding: 0 20px 20px 20px;
   margin-left: 20px;
