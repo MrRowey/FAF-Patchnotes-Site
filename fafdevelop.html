@@ -91,8 +91,6 @@
 
           <h2>Graphics</h2>
 
-          A lot of the work in this section is with thanks to BlackYps.
-
           <div id="water-ramp" class="card">
             <h3>Water ramp</h3>
             <p>
@@ -135,9 +133,10 @@
             <br />
           </div>
 
-          <div id="water-reflections" class="card">
+          <div id="water-sun-reflections" class="card">
             <h3>Water sun reflections</h3>
             <p>
+              GitHub references:
               <a href="https://github.com/FAForever/fa/pull/4931">4931</a>
             </p>
 
@@ -163,6 +162,35 @@
             <br />
           </div>
 
+          <div id="water-sun-reflections" class="card">
+            <h3>Water unit reflections</h3>
+            <p>
+              GitHub references:
+              <a href="https://github.com/FAForever/fa/pull/4696">4696</a>
+            </p>
+
+            <p>
+              A common effect for water is that it refracts what is underwater.
+              There was a bug in the shader code that would also reflect bits of
+              units that are above water, creating an odd orange haze on the 
+              water surface.
+            </p>
+
+            <div class="image-slider">
+              <div>
+                <img
+                  src="images/develop-iteration-ii/water-unit-reflections-before.png"
+                />
+              </div>
+              <img
+                src="images/develop-iteration-ii/water-unit-reflections-after.png"
+              />
+            </div>
+
+            <br />
+            <br />
+          </div>
+
           <p style="height: 1000px"></p>
         </td>
 
@@ -179,7 +207,7 @@
             Graphics
             <br />
             <a href="#water-ramp"><img src="images/salem.png" /></a>
-            <a href="#water-reflections"><img src="images/salem.png" /></a>
+            <a href="#water-sun-reflections"><img src="images/salem.png" /></a>
             <br /><br />
           </div>
         </td>
