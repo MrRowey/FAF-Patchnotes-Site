@@ -9,6 +9,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="patchnotes.css" />
+    <link rel="stylesheet" href="slider.css" />
   </head>
   <body>
     <table id="container">
@@ -162,7 +163,7 @@
             <br />
           </div>
 
-          <div id="water-sun-reflections" class="card">
+          <div id="water-unit-reflections" class="card">
             <h3>Water unit reflections</h3>
             <p>
               GitHub references:
@@ -170,10 +171,10 @@
             </p>
 
             <p>
-              A common effect for water is that it refracts what is underwater.
-              There was a bug in the shader code that would also reflect bits of
-              units that are above water, creating an odd orange haze on the 
-              water surface.
+              The water color was not applied on the whole water surface due to
+              a bug in the shader code. Near the edges of units the uncolored
+              sea floor could be seen. Now the water color is applied on the
+              whole surface as it should.
             </p>
 
             <div class="image-slider">
@@ -208,6 +209,7 @@
             <br />
             <a href="#water-ramp"><img src="images/salem.png" /></a>
             <a href="#water-sun-reflections"><img src="images/salem.png" /></a>
+            <a href="#water-unit-reflections"><img src="images/salem.png" /></a>
             <br /><br />
           </div>
         </td>
