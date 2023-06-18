@@ -91,7 +91,9 @@
 
           <h2>Graphics</h2>
 
-          <div id="water" class="card">
+          A lot of the work in this section is with thanks to BlackYps.
+
+          <div id="water-ramp" class="card">
             <h3>Water ramp</h3>
             <p>
               GitHub references:
@@ -103,10 +105,9 @@
               The water ramp is a texture that helps a map author tweak the
               appearance of (deep) water. Up to now the water ramp was only
               applied to the terrain. Units would receive only the water surface
-              color. With thanks to BlackYps we now have an approach to apply
-              the water ramp to units, props and shields too. This improves the
-              overall immersion where units now truly feel like they are
-              underwater. 
+              color. We now have an approach to apply the water ramp to units,
+              props and shields too. This improves the overall immersion where
+              units now truly feel like they are underwater.
             </p>
 
             <div class="image-slider">
@@ -134,6 +135,34 @@
             <br />
           </div>
 
+          <div id="water-reflections" class="card">
+            <h3>Water sun reflections</h3>
+            <p>
+              <a href="https://github.com/FAForever/fa/pull/4931">4931</a>
+            </p>
+
+            <p>
+              You can't reflect something that is occluded. Previously the water
+              would still reflect the sun, regardless whether it was occluded.
+              The change is subtle, but it adds a lot to the final image once
+              you see it.
+            </p>
+
+            <div class="image-slider">
+              <div>
+                <img
+                  src="images/develop-iteration-ii/water-reflections-before.png"
+                />
+              </div>
+              <img
+                src="images/develop-iteration-ii/water-reflections-after.png"
+              />
+            </div>
+
+            <br />
+            <br />
+          </div>
+
           <p style="height: 1000px"></p>
         </td>
 
@@ -149,7 +178,8 @@
 
             Graphics
             <br />
-            <a href="#water"><img src="images/salem.png" /></a>
+            <a href="#water-ramp"><img src="images/salem.png" /></a>
+            <a href="#water-reflections"><img src="images/salem.png" /></a>
             <br /><br />
           </div>
         </td>
