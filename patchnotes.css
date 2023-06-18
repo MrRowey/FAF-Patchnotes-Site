@@ -13,19 +13,11 @@
 }
 
 body {
-<<<<<<< HEAD
-  background: #333;
-  font-family: sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: #fff;
-=======
   background: var(--primary-bg-color);
   font-family: sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: var(--primary-text-color);
->>>>>>> afed0ffdff4a14407d7a3341f03e87cb8e1a29a0
 }
 
 #container {
@@ -37,11 +29,7 @@ body {
 }
 
 #intro p {
-<<<<<<< HEAD
-  color: #ddd;
-=======
   color: var(--primary-text-color-light);
->>>>>>> afed0ffdff4a14407d7a3341f03e87cb8e1a29a0
 }
 
 #sidebar {
@@ -49,30 +37,18 @@ body {
 }
 
 #sidebar h2 a {
-<<<<<<< HEAD
-  color: #fff;
-=======
   color: var(--primary-text-color);
->>>>>>> afed0ffdff4a14407d7a3341f03e87cb8e1a29a0
   text-decoration: none;
 }
 
 #icongrid {
   position: fixed;
   top: 20px;
-<<<<<<< HEAD
-  width: 200px;
-  background: #4d5c50;
-  padding: 0 20px 20px 20px;
-  margin-left: 20px;
-  color: #f2f2f2;
-=======
   width: 250px;
   background: var(--primary-grid-bg-color);
   padding: 0 20px 20px 20px;
   margin-left: 20px;
   color: var(--primary-text-color);
->>>>>>> afed0ffdff4a14407d7a3341f03e87cb8e1a29a0
   text-align: justify;
   border-radius: 15px;
 }
@@ -88,19 +64,11 @@ body {
 }
 
 .card {
-<<<<<<< HEAD
-  background: #f2f2f2;
-  border-radius: 15px;
-  margin: 10px;
-  padding: 5px 25px;
-  color: #3d3c40;
-=======
   background: var(--primary-card-bg-color);
   border-radius: 15px;
   margin: 10px;
   padding: 5px 25px;
   color: var(--seconday-text-color);
->>>>>>> afed0ffdff4a14407d7a3341f03e87cb8e1a29a0
   margin-bottom: 20px;
 }
 
