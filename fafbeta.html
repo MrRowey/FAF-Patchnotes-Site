@@ -623,6 +623,21 @@
               <li>Rate of Fire: <strike>5s</strike> → 8s</li>
             </ul>
           </div>
+          <!--
+          <div id="torps" class="card">
+            <h3><b style="color: var(--new)">New</b> Torpedo Bombers</h3>
+            <p>
+              GitHub:
+              <a href="https://github.com/FAForever/fa/issues/5045">5045</a>
+            </p>
+
+            <p> All of the Tech 2 Torpedo Bombers to have the same number of projectiles.</p>
+
+            <ul>
+              <li>UEF: <strike>2</strike> → 3</li>
+              <li>Cybran: <strike>2</strike> → 3</li>
+            </ul>
+          </div> -->
 
           <h2>Structures</h2>
 
@@ -911,7 +926,7 @@
           <h2>Mechanics</h2>
 
           <div id="reclaim" class="card">
-            <h3>Reclaim</h3>
+            <h3><b style="color: var(--new)">New</b> Reclaim</h3>
             <p>
               GitHub:
               <a href="https://github.com/FAForever/fa/pull/4705">4705</a>
@@ -927,16 +942,15 @@
             </p>
 
             <ul>
-              <li>Tech 1: 0.9 * 0.9 (81%)</li>
-              <li>
-                Tech 2: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.8 (72%)
-              </li>
-              <li>
-                Tech 3: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.7 (63%)
-              </li>
-              <li>
-                Experimental: <strike>0.9 * 0.9 (81%)</strike> → 0.9 * 0.6 (54%)
-              </li>
+              <li> Tech 1: 0.9 (81%)</li>
+              <li> Tech 2: <strike>0.9 (81%)</strike> → 0.8 (72%)</li>
+              <li> Tech 3: <strike>0.9 (81%)</strike> → 0.7 (63%)</li>
+              <li> Experimental: <strike>0.9 (81%)</strike> → 0.6 (54%)</li>
+            </ul>
+
+            <p>On top of the Tech, level reclaim nerfs we have increased the base reclaim modifier for naval recks to bring them back closer to what they currently are.</p>
+            <ul>
+              <li> Naval Base: <strike>0.5 (45%)</strike> → 0.6 (54%)</li>
             </ul>
           </div>
 
@@ -1122,10 +1136,11 @@
           </div>
 
           <div id="cybran" class="card">
-            <h3>Cybran ACU</h3>
+            <h3><b style="color: var(--new)">New</b> Cybran ACU</h3>
             <p>
               GitHub:
-              <a href="https://github.com/FAForever/fa/issues/5054">5054</a>
+              <a href="https://github.com/FAForever/fa/issues/5054">5054</a> &
+              <a href="https://github.com/FAForever/fa/issues/5094">5094</a>
             </p>
 
             <p>
@@ -1139,30 +1154,37 @@
             <b><u>Base ACU</u></b>
 
             <ul>
-              <li>Regen: <strike>15</strike> → 20</li>
+              <li>Regen: <strike>15</strike> → 18</li>
             </ul>
 
             <b><u>Stealth Enhancement</u></b>
 
             <ul>
               <li>Regen: <strike>0</strike> → 20</li>
+              <li>HP: <strike>2000</strike> → 1500</li>
             </ul>
 
+            <b><u>Torp Enhancement</u></b>
+            <ul>
+              <li>Damage: <strike>250</strike> → 500</li>
+              <li>Projectile Count: <strike>4</strike> → 2</li>
+            </ul>
+            
             <b><u>Nano Enhancement</u></b>
 
             <ul>
               <li>Intermediat Upgrade Between Stealth and Cloak</li>
-              <li>Mass Cost: 1000</li>
-              <li>Energy Cost: 35000</li>
+              <li>Mass Cost: 1600</li>
+              <li>Energy Cost: 50000</li>
               <li>Build Time: 1000</li>
-              <li>Regen: 50</li>
-              <li>HP: 3500</li>
+              <li>Regen: 70</li>
+              <li>HP: 1500</li>
             </ul>
 
             <b><u>Cloak Enhancement</u></b>
 
             <ul>
-              <li>HP: <strike>15000</strike> → 11500</li>
+              <li>HP: <strike>15000</strike> → 14000</li>
             </ul>
 
             <b><u>Lazer Enhancement</u></b>
@@ -1170,12 +1192,6 @@
             <ul>
               <li>DPS: <strike>4000</strike> → 3000</li>
             </ul>
-            <!--
-			<b><u>Lazer Upgrade</u></b>
-
-			<ul>
-				<li>HP: <strike>4000</strike> → 3000</li>
-			</ul>	-->
           </div>
 
           <p style="height: 1000px"></p>
@@ -1216,6 +1232,7 @@
             <a href="#mercy"><img src="images/mercy.png" /></a>
             <a href="#intercepter"><img src="images/t1inti.png" /></a>
             <a href="#strats"><img src="images/serastrat.png" /></a>
+            <!--<a href="#torps"><img src="images/torps.png" /></a>-->
             <br /><br />
 
             Structures
@@ -1226,7 +1243,7 @@
             <a href="#radar"><img src="images/UEF_T2_Radar.png" /></a>
             <a href="#energystorage"><img src="images/estorage.png" /></a>
             <a href="#sams"><img src="images/sam.png" /></a>
-            <a href="#eco"><img src="images/UEF_T3_Mass_Fabricator.png" /></a>
+            <a href="#eco"><img src="images/t1mex.png" /></a>
             <br /><br />
 
             Mechanics
@@ -1238,15 +1255,9 @@
 
             ACU
             <br />
-            <a href="#aeongunrange"
-              ><img src="images/Enhancements/aeon/range.png"
-            /></a>
-            <a href="#uefbubble"
-              ><img src="images/Enhancements/uef/bubbleshield.png"
-            /></a>
-            <a href="#chrono"
-              ><img src="images/Enhancements/aeon/chrono.png"
-            /></a>
+            <a href="#aeongunrange"><img src="images/Enhancements/aeon/range.png"/></a>
+            <a href="#uefbubble"><img src="images/Enhancements/uef/bubbleshield.png"/></a>
+            <a href="#chrono"><img src="images/Enhancements/aeon/chrono.png"/></a>
             <a href="#cybran"><img src="images/cybrancom.png" /></a>
           </div>
         </td>
