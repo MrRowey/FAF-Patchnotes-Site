@@ -106,3 +106,8 @@ strike {
 img {
   vertical-align: middle;
 }
+
+hr.rounded {
+  border-top: 6px solid #bbb;
+  border-radius: 4px;
+}
