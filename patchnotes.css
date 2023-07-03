@@ -21,10 +21,6 @@ body {
   color: var(--primary-text-color);
 }
 
-a {
-  color: var(--primary-text-color);
-}
-
 #container {
   margin: auto;
 }
