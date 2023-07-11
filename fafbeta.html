@@ -41,591 +41,616 @@
 
           <h2>Land</h2>
 
-          <div id="spirit" class="card">
-            <h3><img src="images/spirit.png"> Spirit</h3>
-            <p>
-              Brings the Spirit's speed in line with the other t1 scouts. This
-              plays a small role in reducing the effectiveness of tree breaking as
-              well.
-            </p>
-            <ul>
-              <li>Max Speed: <strike>5</strike> → 4.6</li>
-              <li>Max Acceleration: <strike>5</strike> → 4.6</li>
-            </ul>
-          </div>
+          <div id="land"> 
 
-          <div id="rangebots" class="card">
-            <h3>Mongoose and Hoplite</h3>
-            <p>
-              The following changes make it so the unit stays on target more when
-              moving.
-            </p>
-
-            <img src="images/mongoose.png"><b><u>Mongoose</u></b>
-            <ul>
-              <li>Turn Rate: <strike>90</strike> → 80</li>
-              <li>Rack Salvo Charge Time: <strike>2</strike> → 1</li>
-              <li>Rack Salvo Reload Time: <strike>1</strike> → 2</li>
-              <li>Turret Yaw Speed: <strike>80</strike> → 90</li>
-            </ul>
-
-            <img src="images/hoplite.png"><b><u>Hoplite</u></b>
-            <ul>
-              <li>Turn Rate: <strike>90</strike> → 80</li>
-              <li>Muzzle Velocity: <strike>15</strike> → 20</li>
-              <li>Turret Yaw Speed: <strike>60</strike> → 130</li>
-            </ul>
-          </div>     
-          
-          <div id="deceiver" class="card">
-            <h3> <img src="images/deceiver.png"> Deceiver </h3>
-
-            <p> This change is to go along with the vision change to ensure that the deceiver is not obsolete. </p>
-
-            <ul>
-              <li>Stealth Range: <strike>20</strike> → 23</li>
-            </ul>
-
-          </div>
-
-          <div id="AmphibTanks" class="card">
-
-            <div id="t2amphib">
-              <h3>Tech 2 Amphibious Tanks </h3>
-  
-              <p>This change is to go along with the vision change to make it so that their base range is at the same range as their weapon before the +15% is added.</p>
-              
-              <p>Also the Wagner Topbedoes get a buff when underwater.</p>
-  
-              <img src="images/riptide.png"><b><u>Riptide</u></b>
-              <ul>
-                <li>Vision Radius: <strike>15</strike> → 18</li>
-              </ul>
-              
-              <img src="images/wagner.png"><b><u>Wagner</u></b>
-              <ul>
-                <li>Vision Radius: <strike>15</strike> → 22</li>
-                <li>Water Vision Radius: <strike>20</strike> → 22</li>
-                <li>Torpedo Damage: <strike>15</strike> → 30</li>
-              </ul>
-  
-              <img src="images/yenzyne.png"><b><u>Yenzyne</u></b>
-              <ul>
-                <li>Vision Radius: <strike>15</strike> → 24</li>
-              </ul>
-  
-              <img src="images/blaze.png"><b><u>Blaze</u></b>
-              <ul>
-                <li>Vision Radius: <strike>15</strike> → 20</li>
-              </ul>
-            </div>
-
-            <div id="t3amphib">
-              <br>
-              <h3> Tech 3 Amphibious Tanks </h3>
-  
-              <p> Based on a Pull Request by Basilisk3 we have decided to go ahead and buff the torp and anit-torps of the T3 Amphibious Tanks. This will make them a bit more viable when their underwater</p>
-  
-              <img src="images/brick.png"><b><u>Brick</u></b>
-              <ul>
-                <li>Damage: <strike>8</strike> → 15</li>
-                <li>Anit Torp Flare RoF: <strike>0.065</strike> → 0.05</li>
-              </ul>
-  
-              <img src="images/othuum.png"><b><u>Othumn</u></b>
-              <ul>
-                <li>Damage: <strike>30</strike> → 60</li>
-              </ul>
-            </div>
-
-          </div>
-
-          <div id="mml" class="card">
-            <h3><img src="images/spearhead.png"> Mobile Missile Launchers and Spearhead </h3>
-
-            <p>This change Makes it so the missile of the MMLS and Spearhead is a bit faster than normally used to be.</p>
-
-            <ul>
-              <li>Incressed Missle Speed by 1.75x</li>
-            </ul>
-
-          </div>
-
-          <div id="sniper" class="card">
-            <h3><img src="images/serasniper.png"> Seraphim Sniper Bot </h3>
-
-            <p> Before this, the Seraphim sniper bot implemented its sniper mode as a separate weapon on the same turret. Having these two separate weapons meant that, through careful toggling and management of the firing cycles, more damage than was intended could be extracted from both of them at once.</p>
-
-            <p>Now, the sniper mode changes the behaviour of the main gun instead of enabling the sniper gun. The sniper gun (and dummy weapon) is kept for compatibility as a sort of data container, though the weapon callbacks no longer go through it.</p>
-
-            <ul>
-              <li>Fix ability when switching between the 2 weapon states with it deal more damage than it should.</li>
-            </ul>
-
-          </div>
-
-          <div id="Experimentals" class="card">
-            <h3>Land Experimentals</h3>
-
-            <div id="scathis">
-              <h3><img src="images/scathis.png"> Scathis</h3>
-
+            <div id="spirit" class="card">
+              <h3><img src="images/spirit.png"> Spirit</h3>
               <p>
-                This unit was far more inaccurate than desired or indicated by the
-                reticle. Some shots still go outside the reticle but with this
-                change, this is fixed for the most part. Increasing its accuracy
-                further buffed its performance against shielded bases too much.
-              </p>
-              
-              <ul>
-                <li>Fixed Spread Radius: <strike>80</strike> → 70</li>
-              </ul>
-            </div>
-
-            <div id="gc">
-              <h3><img src="images/galacticcolossus.png"> Galactic Colossus</h3>
-  
-              <p>
-                Removal of Omni as it is doesn't make sense that it only relies upon
-                upon counters the cybran acu.
+                Brings the Spirit's speed in line with the other t1 scouts. This
+                plays a small role in reducing the effectiveness of tree breaking as
+                well.
               </p>
               <ul>
-                <li>Omni Removed</li>
+                <li>Max Speed: <strike>5</strike> → 4.6</li>
+                <li>Max Acceleration: <strike>5</strike> → 4.6</li>
               </ul>
             </div>
+
+            <div id="rangebots" class="card">
+              <h3>Mongoose and Hoplite</h3>
+              <p>
+                The following changes make it so the unit stays on target more when
+                moving.
+              </p>
+
+              <img src="images/mongoose.png"><b><u>Mongoose</u></b>
+              <ul>
+                <li>Turn Rate: <strike>90</strike> → 80</li>
+                <li>Rack Salvo Charge Time: <strike>2</strike> → 1</li>
+                <li>Rack Salvo Reload Time: <strike>1</strike> → 2</li>
+                <li>Turret Yaw Speed: <strike>80</strike> → 90</li>
+              </ul>
+
+              <img src="images/hoplite.png"><b><u>Hoplite</u></b>
+              <ul>
+                <li>Turn Rate: <strike>90</strike> → 80</li>
+                <li>Muzzle Velocity: <strike>15</strike> → 20</li>
+                <li>Turret Yaw Speed: <strike>60</strike> → 130</li>
+              </ul>
+            </div>     
+
+            <div id="deceiver" class="card">
+              <h3> <img src="images/deceiver.png"> Deceiver </h3>
+
+              <p> This change is to go along with the vision change to ensure that the deceiver is not obsolete. </p>
+
+              <ul>
+                <li>Stealth Range: <strike>20</strike> → 23</li>
+              </ul>
+
+            </div>
+
+            <div id="AmphibTanks" class="card">
+
+              <div id="t2amphib">
+                <h3>Tech 2 Amphibious Tanks </h3>
+              
+                <p>This change is to go along with the vision change to make it so that their base range is at the same range as their weapon before the +15% is added.</p>
+
+                <p>Also the Wagner Topbedoes get a buff when underwater.</p>
+              
+                <img src="images/riptide.png"><b><u>Riptide</u></b>
+                <ul>
+                  <li>Vision Radius: <strike>15</strike> → 18</li>
+                </ul>
+
+                <img src="images/wagner.png"><b><u>Wagner</u></b>
+                <ul>
+                  <li>Vision Radius: <strike>15</strike> → 22</li>
+                  <li>Water Vision Radius: <strike>20</strike> → 22</li>
+                  <li>Torpedo Damage: <strike>15</strike> → 30</li>
+                </ul>
+              
+                <img src="images/yenzyne.png"><b><u>Yenzyne</u></b>
+                <ul>
+                  <li>Vision Radius: <strike>15</strike> → 24</li>
+                </ul>
+              
+                <img src="images/blaze.png"><b><u>Blaze</u></b>
+                <ul>
+                  <li>Vision Radius: <strike>15</strike> → 20</li>
+                </ul>
+              </div>
+
+              <div id="t3amphib">
+                <br>
+                <h3> Tech 3 Amphibious Tanks </h3>
+              
+                <p> Based on a Pull Request by Basilisk3 we have decided to go ahead and buff the torp and anit-torps of the T3 Amphibious Tanks. This will make them a bit more viable when their underwater</p>
+              
+                <img src="images/brick.png"><b><u>Brick</u></b>
+                <ul>
+                  <li>Damage: <strike>8</strike> → 15</li>
+                  <li>Anit Torp Flare RoF: <strike>0.065</strike> → 0.05</li>
+                </ul>
+              
+                <img src="images/othuum.png"><b><u>Othumn</u></b>
+                <ul>
+                  <li>Damage: <strike>30</strike> → 60</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div id="mml" class="card">
+              <h3><img src="images/spearhead.png"> Mobile Missile Launchers and Spearhead </h3>
+
+              <p>This change Makes it so the missile of the MMLS and Spearhead is a bit faster than normally used to be.</p>
+
+              <ul>
+                <li>Incressed Missle Speed by 1.75x</li>
+              </ul>
+
+            </div>
+
+            <div id="sniper" class="card">
+              <h3><img src="images/serasniper.png"> Seraphim Sniper Bot </h3>
+
+              <p> Before this, the Seraphim sniper bot implemented its sniper mode as a separate weapon on the same turret. Having these two separate weapons meant that, through careful toggling and management of the firing cycles, more damage than was intended could be extracted from both of them at once.</p>
+
+              <p>Now, the sniper mode changes the behaviour of the main gun instead of enabling the sniper gun. The sniper gun (and dummy weapon) is kept for compatibility as a sort of data container, though the weapon callbacks no longer go through it.</p>
+
+              <ul>
+                <li>Fix ability when switching between the 2 weapon states with it deal more damage than it should.</li>
+              </ul>
+
+            </div>
+
+            <div id="Experimentals" class="card">
+              <h3>Land Experimentals</h3>
+
+              <div id="scathis">
+                <h3><img src="images/scathis.png"> Scathis</h3>
+
+                <p>
+                  This unit was far more inaccurate than desired or indicated by the
+                  reticle. Some shots still go outside the reticle but with this
+                  change, this is fixed for the most part. Increasing its accuracy
+                  further buffed its performance against shielded bases too much.
+                </p>
+
+                <ul>
+                  <li>Fixed Spread Radius: <strike>80</strike> → 70</li>
+                </ul>
+              </div>
+
+              <div id="gc">
+                <h3><img src="images/galacticcolossus.png"> Galactic Colossus</h3>
+              
+                <p>
+                  Removal of Omni as it is doesn't make sense that it only relies upon
+                  upon counters the cybran acu.
+                </p>
+                <ul>
+                  <li>Omni Removed</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
 
           <h2>Navy</h2>
 
-          <div id="frigate" class="card">
-            <h3>Frigates</h3>
+          <div id="navy">
 
-            <p>
-              Considering its decreased range, the previous Nerf to Cybran frig cost is a bit too much of a decrease Similarly, Aeon frigs got a nice buff in both cost and range, this turned out to be too much, so we are removing the cost change for that too.
-            </p>
+            <div id="frigate" class="card">
+              <h3>Frigates</h3>
 
-            <img src="images/aeonfrigiate.png"><b><u>Aeon</u></b>
-            <ul>
-              <li>Energy Cost: <strike>2800</strike> → 2900</li>
-              <li>Mass Cost: <strike>280</strike> → 290</li>
-              <li>Build Time: <strike>1400</strike> → 1450</li>
-            </ul>
-
-            <img src="images/cybranfrigate.png"><b><u>Cybran</u></b>
-            <ul>
-              <li>Energy Cost: <strike>2600</strike> → 2500</li>
-              <li>Mass Cost: <strike>260</strike> → 250</li>
-              <li>Build Time: <strike>1300</strike> → 1250</li>
-            </ul>
-          </div>
-
-          <div id="sub" class="card">
-            <h3>Tech 1 Subs</h3>
-            <p>
-              Allows subs to take 2 hits from torp bombers. This does not apply to
-              Sera, but they have anti torp which will accomplish the same
-              result.
-            </p>
-
-            <img src="images/aeont1sub.png"><b><u>Aeon</u></b>
-            <ul>
-              <li>HP: <strike>550</strike> → 775</li>
-            </ul>
-
-            <img src="images/ueft1sub.png"><b><u>UEF</u></b>
-            <ul>
-              <li>HP: <strike>600</strike> → 800</li>
-            </ul>
-
-            <img src="images/cybrant1sub.png"><b><u>Cybran</u></b>
-            <ul>
-              <li>HP: <strike>525</strike> → 775</li>
-            </ul>
-
-            <img src="images/serat1sub.png"><b><u>Seraphim</u></b>
-            <ul>
-              <li>HP: <strike>400</strike> → 550</li>
-            </ul>
-          </div>
-
-          <div id="shard" class="card">
-            <h3><img src="images/shard.png"> Shard</h3>
-
-            <p>
-              The Shard is a unit that is rarely used due to low damage this change is to make it more viable.              
-            </p>
-
-            <ul>
-              <li>Build Time: <strike>800</strike> → 600</li>
-              <li>Damage: <strike>6</strike> → 7.5</li>
-            </ul>
-          </div>
-
-          <div id="destroyer" class="card">
-            <h3><img src="images/salem.png"> Cybran Destroyer</h3>
-            <p>
-              We increased the range for the Salem before and found it to still be
-              lacking considering the decrease in their frigates. This should
-              help bring their early navy in line with the other factions.
-            </p>
-
-            <ul>
-              <li>Max Range: <strike>80</strike> → 85</li>
-            </ul>
-          </div>
-
-          <div id="cruiser" class="card">
-            <h3>Cruisers</h3>
-            <p>
-              This change will make sending torps directly into cruisers much
-              less efficient. Instead picking off ships out of range will be
-              favored. The TMD change is to make it so that they can deal with a large number of missiles.
-            </p>
-
-            <img src="images/aeoncruiser.png"><b><u>Aeon</u></b>
-            <ul>
-              <li>HP: <strike>3250</strike> → 3850</li>
-              <li>AA Range: <strike>75</strike> → 60</li>
-            </ul>
-
-            <img src="images/uefcruiser.png"><b><u>UEF</u></b>
-            <ul>
-              <li>HP: <strike>2500</strike> → 3100</li>
-              <li>AA Range: <strike>75</strike> → 60</li>
-              <li>TMD:</li>
-                <ul>
-                  <li>Range: <strike>50</strike> → 60</li>
-                  <li>Rate of Fire (Rof): <strike>0.5</strike> → 0.25</li>
-                </ul>
-            </ul>
-
-            <img src="images/cybrancruiser.png"><b><u>Cybran</u></b>
-            <ul>
-              <li>HP: <strike>3000</strike> → 3600</li>
-              <li>AA Range: <strike>75</strike> → 60</li>
-              <li>TMD:</li>
-                <ul>
-                  <li>Range: <strike>50</strike> → 60</li>
-                  <li>Rate of Fire (RoF): <strike>0.5</strike> → 0.25</li>
-                </ul>
-            </ul>
-
-            <img src="images/seracruiser.png"><b><u>Seraphim</u></b>
-            <ul>
-              <li>HP: <strike>2400</strike> → 3000</li>
-              <li>AA Range: <strike>65</strike> → 55</li>
-              <li>TMD:</li>
-                <ul>
-                  <li>Range: <strike>50</strike> → 60</li>
-                  <li>Rate of Fire (RoF): <strike>0.5</strike> → 0.25</li>
-                </ul>
-            </ul>
-          </div>
-          
-          <div id="cooper" class="card">
-            <h3><img src="images/cooper.png"> Cooper</h3>
-
-            <p>
-              The Coopers will be getting a tight formation so they cover
-              each other better with their torp defence. Additionally, they get
-              multiple stat changes to get an overall buff.
-            </p>
-
-            <ul>
-              <li>Energy Cost: <strike>7200</strike> → 6480</li>
-              <li>Mass Cost: <strike>900</strike> → 810</li>
-              <li>Build Time: <strike>3600</strike> → 3240</li>
-              <li>Footprint: Made Cooper Fit tighter and better in formation</li>
-              <li>Max Range: <strike>50</strike> → 55</li>
-              <li>Water Vision: <strike>45</strike> → 55</li>
-            </ul>
-          </div>
-
-          <div id="carrier" class="card">
-            <h3>T3 Carriers</h3>
-            <p> The increased Vision and Water Vision Radius will allow the carriers to see further and detect subs. The Aeon and Seraphim carriers will also get TMD to help them deal with large quantities of missiles. Cybran TMD also gets a small buff</p>
-
-            <img src="images/cybrancarrier.png"><b><u>Cybran</u></b>
-            <ul>
-              <li>Water Vision Radius: <strike>36</strike> → 100</li>
-              <li>Vision Radius: <strike>85</strike> → 100</li>
-              <li>TMD:</li>
-                <ul>
-                  <li>Range: <strike>50</strike> → 60</li>
-                  <li>Rate of Fire (RoF): <strike>0.5</strike> → 0.25</li>
-                </ul>
-            </ul>
-
-            <img src="images/aeoncarrier.png"><b><u>Aeon</u></b>
-            <ul>
-              <li>Water Vision Radius: <strike>36</strike> → 100</li>
-              <li>Vision Radius: <strike>85</strike> → 100</li>
-              <li>Added TMD</li>
-            </ul>
-
-            <img src="images/seracarrier.png"><b><u>Seraphim</u></b>
-            <ul>
-              <li>Water Vision Radius: <strike>36</strike> → 100</li>
-              <li>Vision Radius: <strike>85</strike> → 100</li>
-              <li>Added TMD</li>
-            </ul>
-          </div>
-          
-          <div id="battleship" class="card">
-            <h3>Battleships and Battlecruiser</h3>
-
-            <p>The TMD range of the battleships and battlecruisers has been nerfed in favour of making Cruisers and carriers a support role with their large tmd range.</p>
-
-            <img src="images/battleship.png"><b><u>Battleships</u></b>
-            <ul>
-              <li>TMD Range: <strike>50</strike> → 40</li>  
-              <li>Sera Speed: <strike>3</strike> → 3.2</li>
-              <li>Cybran Speed: <strike>3</strike> → 3.2</li>
-            </ul>
-
-            <img src="images/battlecruiser.png"><b><u>Battlecruiser</u></b>
-            <ul>
-              <li>TMD Range: <strike>50</strike> → 40</li>
-            </ul>
-          </div>
-
-          <div id="navalexperimentals" class="card">
-            <h3>Naval Experimentals</h3>
-
-            <div id="atlantis">
-              <h3><img src="images/atlantis.png"> Atlantis</h3>
               <p>
-                These changes should make Atlantis far more viable. The speed
-                increase will improve its micro ability while the size makes
-                ground firing less effective.
+                Considering its decreased range, the previous Nerf to Cybran frig cost is a bit too much of a decrease Similarly, Aeon frigs got a nice buff in both cost and range, this turned out to be too much, so we are removing the cost change for that too.
+              </p>
+
+              <img src="images/aeonfrigiate.png"><b><u>Aeon</u></b>
+              <ul>
+                <li>Energy Cost: <strike>2800</strike> → 2900</li>
+                <li>Mass Cost: <strike>280</strike> → 290</li>
+                <li>Build Time: <strike>1400</strike> → 1450</li>
+              </ul>
+
+              <img src="images/cybranfrigate.png"><b><u>Cybran</u></b>
+              <ul>
+                <li>Energy Cost: <strike>2600</strike> → 2500</li>
+                <li>Mass Cost: <strike>260</strike> → 250</li>
+                <li>Build Time: <strike>1300</strike> → 1250</li>
+              </ul>
+            </div>
+
+            <div id="sub" class="card">
+              <h3>Tech 1 Subs</h3>
+              <p>
+                Allows subs to take 2 hits from torp bombers. This does not apply to
+                Sera, but they have anti torp which will accomplish the same
+                result.
+              </p>
+
+              <img src="images/aeont1sub.png"><b><u>Aeon</u></b>
+              <ul>
+                <li>HP: <strike>550</strike> → 775</li>
+              </ul>
+
+              <img src="images/ueft1sub.png"><b><u>UEF</u></b>
+              <ul>
+                <li>HP: <strike>600</strike> → 800</li>
+              </ul>
+
+              <img src="images/cybrant1sub.png"><b><u>Cybran</u></b>
+              <ul>
+                <li>HP: <strike>525</strike> → 775</li>
+              </ul>
+
+              <img src="images/serat1sub.png"><b><u>Seraphim</u></b>
+              <ul>
+                <li>HP: <strike>400</strike> → 550</li>
+              </ul>
+            </div>
+
+            <div id="shard" class="card">
+              <h3><img src="images/shard.png"> Shard</h3>
+
+              <p>
+                The Shard is a unit that is rarely used due to low damage this change is to make it more viable.              
               </p>
 
               <ul>
-                <li>Uniform Scale: <strike>0.1</strike> → 0.09</li>
-                <li>Max Speed: <strike>2.8</strike> → 3.3</li>
-                <li>SelectionSizeX: <strike>1.8</strike> → 1.62</li>
-                <li>SelectionSizeZ: <strike>12.8</strike> → 11.52</li>
-                <li>SizeX: <strike>2.8</strike> → 2.52</li>
-                <li>SizeY: <strike>2.3</strike> → 2.07</li>
-                <li>SizeZ: <strike>20</strike> → 18</li>
+                <li>Build Time: <strike>800</strike> → 600</li>
+                <li>Damage: <strike>6</strike> → 7.5</li>
               </ul>
             </div>
 
-            <div id="tempest"> 
-              <h3><img src="images/tempest.png"> Tempest</h3>
-
-              <p>This is to improve the handling of the tempest.</p>
+            <div id="destroyer" class="card">
+              <h3><img src="images/salem.png"> Cybran Destroyer</h3>
+              <p>
+                We increased the range for the Salem before and found it to still be
+                lacking considering the decrease in their frigates. This should
+                help bring their early navy in line with the other factions.
+              </p>
 
               <ul>
-                <li>Back Up Distance: <strike>0</strike> → 45</li>
-                <li>Max Speed Reverse: <strike>0</strike> → 2.5</li>
-                <li>Rotate On Spot: <strike>true</strike> → false</li>
-                <li>Turn Rate: <strike>30</strike> → 35</li>
+                <li>Max Range: <strike>80</strike> → 85</li>
               </ul>
             </div>
 
-          </div>
+            <div id="cruiser" class="card">
+              <h3>Cruisers</h3>
+              <p>
+                This change will make sending torps directly into cruisers much
+                less efficient. Instead picking off ships out of range will be
+                favored. The TMD change is to make it so that they can deal with a large number of missiles.
+              </p>
+
+              <img src="images/aeoncruiser.png"><b><u>Aeon</u></b>
+              <ul>
+                <li>HP: <strike>3250</strike> → 3850</li>
+                <li>AA Range: <strike>75</strike> → 60</li>
+              </ul>
+
+              <img src="images/uefcruiser.png"><b><u>UEF</u></b>
+              <ul>
+                <li>HP: <strike>2500</strike> → 3100</li>
+                <li>AA Range: <strike>75</strike> → 60</li>
+                <li>TMD:</li>
+                  <ul>
+                    <li>Range: <strike>50</strike> → 60</li>
+                    <li>Rate of Fire (Rof): <strike>0.5</strike> → 0.25</li>
+                  </ul>
+              </ul>
+
+              <img src="images/cybrancruiser.png"><b><u>Cybran</u></b>
+              <ul>
+                <li>HP: <strike>3000</strike> → 3600</li>
+                <li>AA Range: <strike>75</strike> → 60</li>
+                <li>TMD:</li>
+                  <ul>
+                    <li>Range: <strike>50</strike> → 60</li>
+                    <li>Rate of Fire (RoF): <strike>0.5</strike> → 0.25</li>
+                  </ul>
+              </ul>
+
+              <img src="images/seracruiser.png"><b><u>Seraphim</u></b>
+              <ul>
+                <li>HP: <strike>2400</strike> → 3000</li>
+                <li>AA Range: <strike>65</strike> → 55</li>
+                <li>TMD:</li>
+                  <ul>
+                    <li>Range: <strike>50</strike> → 60</li>
+                    <li>Rate of Fire (RoF): <strike>0.5</strike> → 0.25</li>
+                  </ul>
+              </ul>
+            </div>
+
+            <div id="cooper" class="card">
+              <h3><img src="images/cooper.png"> Cooper</h3>
+
+              <p>
+                The Coopers will be getting a tight formation so they cover
+                each other better with their torp defence. Additionally, they get
+                multiple stat changes to get an overall buff.
+              </p>
+
+              <ul>
+                <li>Energy Cost: <strike>7200</strike> → 6480</li>
+                <li>Mass Cost: <strike>900</strike> → 810</li>
+                <li>Build Time: <strike>3600</strike> → 3240</li>
+                <li>Footprint: Made Cooper Fit tighter and better in formation</li>
+                <li>Max Range: <strike>50</strike> → 55</li>
+                <li>Water Vision: <strike>45</strike> → 55</li>
+              </ul>
+            </div>
+
+            <div id="carrier" class="card">
+              <h3>T3 Carriers</h3>
+              <p> The increased Vision and Water Vision Radius will allow the carriers to see further and detect subs. The Aeon and Seraphim carriers will also get TMD to help them deal with large quantities of missiles. Cybran TMD also gets a small buff</p>
+
+              <img src="images/cybrancarrier.png"><b><u>Cybran</u></b>
+              <ul>
+                <li>Water Vision Radius: <strike>36</strike> → 100</li>
+                <li>Vision Radius: <strike>85</strike> → 100</li>
+                <li>TMD:</li>
+                  <ul>
+                    <li>Range: <strike>50</strike> → 60</li>
+                    <li>Rate of Fire (RoF): <strike>0.5</strike> → 0.25</li>
+                  </ul>
+              </ul>
+
+              <img src="images/aeoncarrier.png"><b><u>Aeon</u></b>
+              <ul>
+                <li>Water Vision Radius: <strike>36</strike> → 100</li>
+                <li>Vision Radius: <strike>85</strike> → 100</li>
+                <li>Added TMD</li>
+              </ul>
+
+              <img src="images/seracarrier.png"><b><u>Seraphim</u></b>
+              <ul>
+                <li>Water Vision Radius: <strike>36</strike> → 100</li>
+                <li>Vision Radius: <strike>85</strike> → 100</li>
+                <li>Added TMD</li>
+              </ul>
+            </div>
+
+            <div id="battleship" class="card">
+              <h3>Battleships and Battlecruiser</h3>
+
+              <p>The TMD range of the battleships and battlecruisers has been nerfed in favour of making Cruisers and carriers a support role with their large tmd range.</p>
+
+              <img src="images/battleship.png"><b><u>Battleships</u></b>
+              <ul>
+                <li>TMD Range: <strike>50</strike> → 40</li>  
+                <li>Sera Speed: <strike>3</strike> → 3.2</li>
+                <li>Cybran Speed: <strike>3</strike> → 3.2</li>
+              </ul>
+
+              <img src="images/battlecruiser.png"><b><u>Battlecruiser</u></b>
+              <ul>
+                <li>TMD Range: <strike>50</strike> → 40</li>
+              </ul>
+            </div>
+
+            <div id="navalexperimentals" class="card">
+              <h3>Naval Experimentals</h3>
+
+              <div id="atlantis">
+                <h3><img src="images/atlantis.png"> Atlantis</h3>
+                <p>
+                  These changes should make Atlantis far more viable. The speed
+                  increase will improve its micro ability while the size makes
+                  ground firing less effective.
+                </p>
+
+                <ul>
+                  <li>Uniform Scale: <strike>0.1</strike> → 0.09</li>
+                  <li>Max Speed: <strike>2.8</strike> → 3.3</li>
+                  <li>SelectionSizeX: <strike>1.8</strike> → 1.62</li>
+                  <li>SelectionSizeZ: <strike>12.8</strike> → 11.52</li>
+                  <li>SizeX: <strike>2.8</strike> → 2.52</li>
+                  <li>SizeY: <strike>2.3</strike> → 2.07</li>
+                  <li>SizeZ: <strike>20</strike> → 18</li>
+                </ul>
+              </div>
+
+              <div id="tempest"> 
+                <h3><img src="images/tempest.png"> Tempest</h3>
+
+                <p>This is to improve the handling of the tempest.</p>
+
+                <ul>
+                  <li>Back Up Distance: <strike>0</strike> → 45</li>
+                  <li>Max Speed Reverse: <strike>0</strike> → 2.5</li>
+                  <li>Rotate On Spot: <strike>true</strike> → false</li>
+                  <li>Turn Rate: <strike>30</strike> → 35</li>
+                </ul>
+              </div>
+
+            </div>
   
+          </div>
+
           <h2>Air</h2>
 
-          <div id="elevations" class="card">
-            <h3><img src="images/air.png"> Air Elevations</h3>
+          <div id="air">
 
-            <p> Generally, targets flying lower are easier to hit with ground-to-air weapons. However, if they are brought too low, they can fire at shields in the case of interceptors or inside shields in the case of bombers. Therefore T2 planes are brought to an elevation just above T2 shields and T3 planes are brought to an elevation just above T3 shields.</p>
+            <div id="elevations" class="card">
+              <h3><img src="images/air.png"> Air Elevations</h3>
 
-            <ul>
-              <li>T1 Scout: <strike>20</strike> → 16</li>
-              <li>T1 Interceptor: <strike>18</strike> → 14</li>
-              <li>T1 Bomber: <strike>18</strike> → 14</li>
-              <li>T2 Combat Fighter: <strike>20</strike> → 18</li>
-              <li>T3 Scout: <strike>25</strike> → 22</li>
-              <li>T3 Air Superiority: <strike>20</strike> → 18</li>
-              <li>T3 Stratiegic Bomber: <strike>14</strike> → 18</li>
-              <li>T3 Torpedo Bomber: <strike>25</strike> → 18</li>
-              <li>T4 CZAR: <strike>25</strike> → 20</li>
-            </ul>
-          </div>
-
-          <div id="intercepter" class="card">
-            <h3>
-              Interceptors and Swiftwind
-            </h3>
-
-            <p>
-              This change helps balance out the transport changes. This also
-              makes Intis feel more responsive and better to micro.
-            </p>
-            
-            <div id="t1intie">
-              <h3><img src="images/t1inti.png"> Tech 1 Interceptors</h3>
-            
-              <ul>
-                <li>AutoLandTime: <strike>1</strike> → 2</li>
-                <li>BankFactor: <strike>2</strike> → 3</li>
-                <li>BreakOffDistance: <strike>5</strike> → 10</li>
-                <li>CombatTurnSpeed: <strike>1.5</strike> → 1.7</li>
-                <li>KLift: <strike>3</strike> → 2</li>
-                <li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
-                <li>KMove: <strike>1</strike> → 1.5</li>
-                <li>LiftFactor: <strike>7</strike> → 5</li>
-                <li>StartTurnDistance: <strike>5</strike> → 10</li>
-                <li>TurnSpeed: <strike>1.5</strike> → 1.7</li>
-              </ul>
-
-            </div>
-            
-            <div id="swiftwind">
-              <h3><img src="images/swiftwind.png"> Swiftwind</h3>
+              <p> Generally, targets flying lower are easier to hit with ground-to-air weapons. However, if they are brought too low, they can fire at shields in the case of interceptors or inside shields in the case of bombers. Therefore T2 planes are brought to an elevation just above T2 shields and T3 planes are brought to an elevation just above T3 shields.</p>
 
               <ul>
-                <li>BankFactor: <strike>2</strike> → 3</li>
-                <li>CombatTurnSpeed: <strike>1.5</strike> → 1.8</li>
-                <li>KLift: <strike>3</strike> → 2</li>
-                <li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
-                <li>KMove: <strike>1</strike> → 1.5</li>
-                <li>LiftFactor: <strike>7</strike> → 5</li>
-                <li>StartTurnDistance: <strike>5</strike> → 10</li>
-                <li>TurnSpeed: <strike>1.5</strike> → 1.8</li>
+                <li>T1 Scout: <strike>20</strike> → 16</li>
+                <li>T1 Interceptor: <strike>18</strike> → 14</li>
+                <li>T1 Bomber: <strike>18</strike> → 14</li>
+                <li>T2 Combat Fighter: <strike>20</strike> → 18</li>
+                <li>T3 Scout: <strike>25</strike> → 22</li>
+                <li>T3 Air Superiority: <strike>20</strike> → 18</li>
+                <li>T3 Stratiegic Bomber: <strike>14</strike> → 18</li>
+                <li>T3 Torpedo Bomber: <strike>25</strike> → 18</li>
+                <li>T4 CZAR: <strike>25</strike> → 20</li>
               </ul>
             </div>
-            
-          </div>
 
-          <div id="transports" class="card">
-            <h3>Transports</h3>
-            <p>
-              Adjust the movement of air transports to increase consistency and
-              responsiveness. This means that placing unload orders on the fly
-              will not cause a huge delay in unloading. It also makes transports
-              quite easy to micro, so we are giving interceptors similar changes
-              to help them against the new transports.
-            </p>
+            <div id="intercepter" class="card">
+              <h3>
+                Interceptors and Swiftwind
+              </h3>
 
-            <div id="t1transport">
-              <h3><img src="images/serat1transport.png">Tech 1 Transports</h3>
+              <p>
+                This change helps balance out the transport changes. This also
+                makes Intis feel more responsive and better to micro.
+              </p>
 
-              <ul>
-                <li>Elevation: 8</li>
-                <li>AutoLandTime: <strike>1</strike> → 2</li>
-                <li>BankFactor: <strike>0.1</strike> → 0.2</li>
-                <li>BankForward: <strike>False</strike> → True</li>
-                <li>KMove: <strike>0.95</strike> → 2</li>
-                <li>KTurn: <strike>1</strike> → 2</li>
-                <li>KTurnDamping: <strike>4</strike> → 2</li>
-                <li>LiftFactor: <strike>8</strike> → 2</li>
-                <li>TransportHoverHeight: <strike>6</strike> → 4</li>
-                <li>CollisionOffsetY: <strike>0</strike> → -0.25</li>
-              </ul>
+              <div id="t1intie">
+                <h3><img src="images/t1inti.png"> Tech 1 Interceptors</h3>
+              
+                <ul>
+                  <li>AutoLandTime: <strike>1</strike> → 2</li>
+                  <li>BankFactor: <strike>2</strike> → 3</li>
+                  <li>BreakOffDistance: <strike>5</strike> → 10</li>
+                  <li>CombatTurnSpeed: <strike>1.5</strike> → 1.7</li>
+                  <li>KLift: <strike>3</strike> → 2</li>
+                  <li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
+                  <li>KMove: <strike>1</strike> → 1.5</li>
+                  <li>LiftFactor: <strike>7</strike> → 5</li>
+                  <li>StartTurnDistance: <strike>5</strike> → 10</li>
+                  <li>TurnSpeed: <strike>1.5</strike> → 1.7</li>
+                </ul>
+
+              </div>
+
+              <div id="swiftwind">
+                <h3><img src="images/swiftwind.png"> Swiftwind</h3>
+
+                <ul>
+                  <li>BankFactor: <strike>2</strike> → 3</li>
+                  <li>CombatTurnSpeed: <strike>1.5</strike> → 1.8</li>
+                  <li>KLift: <strike>3</strike> → 2</li>
+                  <li>KLiftDamping: <strike>2.5</strike> → 2.0</li>
+                  <li>KMove: <strike>1</strike> → 1.5</li>
+                  <li>LiftFactor: <strike>7</strike> → 5</li>
+                  <li>StartTurnDistance: <strike>5</strike> → 10</li>
+                  <li>TurnSpeed: <strike>1.5</strike> → 1.8</li>
+                </ul>
+              </div>
 
             </div>
 
-            <div id="t2transport">
-              <h3><img src="images/cybrant2transport.png">Tech 2 Transports</h3>
+            <div id="transports" class="card">
+              <h3>Transports</h3>
+              <p>
+                Adjust the movement of air transports to increase consistency and
+                responsiveness. This means that placing unload orders on the fly
+                will not cause a huge delay in unloading. It also makes transports
+                quite easy to micro, so we are giving interceptors similar changes
+                to help them against the new transports.
+              </p>
 
-              <ul>
-                <li>Elevation: 9</li>
-                <li>AutoLandTime: <strike>1</strike> → 2</li>
-                <li>BankFactor: <strike>0.1</strike> → 0.2</li>
-                <li>BankForward: <strike>False</strike> → True</li>
-                <li>KMove: <strike>0.95</strike> → 2</li>
-                <li>KTurn: <strike>1</strike> → 2</li>
-                <li>KTurnDamping: <strike>4</strike> → 2</li>
-                <li>LiftFactor: <strike>8</strike> → 2</li>
-                <li>TransportHoverHeight: <strike>6</strike> → 4</li>
-                <li>CollisionOffsetY: <strike>0.1</strike> → -0.25</li>
-              </ul>
+              <div id="t1transport">
+                <h3><img src="images/serat1transport.png">Tech 1 Transports</h3>
+
+                <ul>
+                  <li>Elevation: 8</li>
+                  <li>AutoLandTime: <strike>1</strike> → 2</li>
+                  <li>BankFactor: <strike>0.1</strike> → 0.2</li>
+                  <li>BankForward: <strike>False</strike> → True</li>
+                  <li>KMove: <strike>0.95</strike> → 2</li>
+                  <li>KTurn: <strike>1</strike> → 2</li>
+                  <li>KTurnDamping: <strike>4</strike> → 2</li>
+                  <li>LiftFactor: <strike>8</strike> → 2</li>
+                  <li>TransportHoverHeight: <strike>6</strike> → 4</li>
+                  <li>CollisionOffsetY: <strike>0</strike> → -0.25</li>
+                </ul>
+
+              </div>
+
+              <div id="t2transport">
+                <h3><img src="images/cybrant2transport.png">Tech 2 Transports</h3>
+
+                <ul>
+                  <li>Elevation: 9</li>
+                  <li>AutoLandTime: <strike>1</strike> → 2</li>
+                  <li>BankFactor: <strike>0.1</strike> → 0.2</li>
+                  <li>BankForward: <strike>False</strike> → True</li>
+                  <li>KMove: <strike>0.95</strike> → 2</li>
+                  <li>KTurn: <strike>1</strike> → 2</li>
+                  <li>KTurnDamping: <strike>4</strike> → 2</li>
+                  <li>LiftFactor: <strike>8</strike> → 2</li>
+                  <li>TransportHoverHeight: <strike>6</strike> → 4</li>
+                  <li>CollisionOffsetY: <strike>0.1</strike> → -0.25</li>
+                </ul>
+
+              </div>
+
+              <div id="t3transport">
+                <h3><img src="images/ueft3transport.png">Tech 3 Transports</h3>
+
+                <ul>
+                  <li>T3 Elevation: 10</li>
+                  <li>AutoLandTime: <strike>1</strike> → 2</li>
+                  <li>BankFactor: <strike>0.1</strike> → 0.2</li>
+                  <li>BankForward: <strike>False</strike> → True</li>
+                  <li>KLift: <strike>1</strike> → 2</li>
+                  <li>KLiftDamping: <strike>1.25</strike> → 2</li>
+                  <li>KMove: <strike>0.8</strike> → 2</li>
+                  <li>KTurn: <strike>1</strike> → 2</li>
+                  <li>KTurnDamping: <strike>4</strike> → 2</li>
+                  <li>LiftFactor: <strike>7</strike> → 4</li>
+                  <li>CollisionOffsetY: <strike>-0.1</strike> → -0.25</li>
+                </ul>
+
+              </div>
 
             </div>
 
-            <div id="t3transport">
-              <h3><img src="images/ueft3transport.png">Tech 3 Transports</h3>
+            <div id="drones" class="card">
+              <h3><img src="images/kenneldrone.png"> Drones</h3>
 
-              <ul>
-                <li>T3 Elevation: 10</li>
-                <li>AutoLandTime: <strike>1</strike> → 2</li>
-                <li>BankFactor: <strike>0.1</strike> → 0.2</li>
-                <li>BankForward: <strike>False</strike> → True</li>
-                <li>KLift: <strike>1</strike> → 2</li>
-                <li>KLiftDamping: <strike>1.25</strike> → 2</li>
-                <li>KMove: <strike>0.8</strike> → 2</li>
-                <li>KTurn: <strike>1</strike> → 2</li>
-                <li>KTurnDamping: <strike>4</strike> → 2</li>
-                <li>LiftFactor: <strike>7</strike> → 4</li>
-                <li>CollisionOffsetY: <strike>-0.1</strike> → -0.25</li>
-              </ul>
+              <p> Gives all drones the ability to reclaim on a patrol move.</p>
 
             </div>
 
-          </div>
+            <div id="acudrone" class="card">
+              <h3><img src="images/acudrone.png">ACU and SCU Drones</h3>
 
-          <div id="drones" class="card">
-            <h3><img src="images/kenneldrone.png"> Drones</h3>
+              <p>Updated the ACU and SCU Drone HP to 50 to be the same as the kennel Drones</p>
 
-            <p> Gives all drones the ability to reclaim on a patrol move.</p>
-          </div>
+              <ul>
+                <li>Health: <strike>6</strike> → 50</li>
+              </ul>
+            </div>
 
-          <div id="mercy" class="card">
-            <h3><img src="images/mercy.png">Mercy</h3>
-            <p>
-              Based on <a
-                href="https://forum.faforever.com/topic/1834/ideas-for-mercy-changes"
-                >Deribus's suggestion</a
-              > A while ago, this changes the mercy's role from a sniping unit to a low-damage AOE unit.
-            </p>
+            <div id="mercy" class="card">
+              <h3><img src="images/mercy.png">Mercy</h3>
+              <p>
+                Based on <a
+                  href="https://forum.faforever.com/topic/1834/ideas-for-mercy-changes"
+                  >Deribus's suggestion</a
+                > A while ago, this changes the mercy's role from a sniping unit to a low-damage AOE unit.
+              </p>
 
-            <p>
-              We have tweaked the setting a bit more and added it so you're able to see the area of effect when Mercy is deployed.
-            </p>
+              <p>
+                We have tweaked the setting a bit more and added it so you're able to see the area of effect when Mercy is deployed.
+              </p>
 
-            <ul>
-              <li>Max Speed: <strike>10</strike> → 13</li>
-              <li>Min Speed: <strike>10</strike> → 3</li>
-              <li>Turning Speed: <strike>1.5</strike> → 1</li>
-              <li>Health: <strike>10</strike> → 90</li>
-              <li>VisionRadius: <strike>15</strike> → 10</li>
-              <li>Elevation: <strike>18</strike> → 12</li>
-              <li>Damage: <strike>2400</strike> → 79 (Still Dose 600 Damage. High Damage number due to Projectile Change)</li>
-              <li>DamageRadius: <strike>3</strike> → 7.5</li>
-              <li>Damage Ticks: <strike>0</strike> → 20</li>
-              <li>Damage Time: <strike>0</strike> → 10</li>
-              <li>Fuel Duration: <strike>110</strike> → 400</li>
-              <li>Added Vision Projectile on impact</li>
-            </ul>
-          </div>
+              <ul>
+                <li>Max Speed: <strike>10</strike> → 13</li>
+                <li>Min Speed: <strike>10</strike> → 3</li>
+                <li>Turning Speed: <strike>1.5</strike> → 1</li>
+                <li>Health: <strike>10</strike> → 90</li>
+                <li>VisionRadius: <strike>15</strike> → 10</li>
+                <li>Elevation: <strike>18</strike> → 12</li>
+                <li>Damage: <strike>2400</strike> → 79 (Still Dose 600 Damage. High Damage number due to Projectile Change)</li>
+                <li>DamageRadius: <strike>3</strike> → 7.5</li>
+                <li>Damage Ticks: <strike>0</strike> → 20</li>
+                <li>Damage Time: <strike>0</strike> → 10</li>
+                <li>Fuel Duration: <strike>110</strike> → 400</li>
+                <li>Added Vision Projectile on impact</li>
+              </ul>
+            </div>
 
-          <div id="torps" class="card">
-            <h3><img src="images/torps.png"> Torpedo Bombers</h3>
+            <div id="torps" class="card">
+              <h3><img src="images/torps.png"> Torpedo Bombers</h3>
 
-            <p> All of the Tech 2 Torpedo Bombers to have the same number of projectiles.</p>
+              <p> All of the Tech 2 Torpedo Bombers to have the same number of projectiles.</p>
 
-            <b><u>UEF</u></b>
-            <ul>
-              <li>Projectile Count: <strike>2</strike> → 3</li>
-            </ul>
+              <b><u>UEF</u></b>
+              <ul>
+                <li>Projectile Count: <strike>2</strike> → 3</li>
+              </ul>
 
-            <b><u>Cybran</u></b>
-            <ul>
-              <li>Projectile Count: <strike>2</strike> → 3</li>
-            </ul>
-          </div>
+              <b><u>Cybran</u></b>
+              <ul>
+                <li>Projectile Count: <strike>2</strike> → 3</li>
+              </ul>
+            </div>
 
-          <div id="strats" class="card">
-            <h3><img src="images/cybranstrat.png"> Strategic Bombers</h3>
+            <div id="strats" class="card">
+              <h3><img src="images/cybranstrat.png"> Strategic Bombers</h3>
 
-            <p>
-              A slight decrease in cost and build time as well as the
-              reload time
-            </p>
+              <p>
+                A slight decrease in cost and build time as well as the
+                reload time
+              </p>
 
-            <ul>
-              <li>Mass Cost: <strike>2100</strike> → 1750</li>
-              <li>Energy Cost: <strike>144k</strike> → 180k</li>
-              <li>Buildtime: <strike>9.6k</strike> → 12k</li>
-              <li>Rate of Fire: <strike>5s</strike> → 8s</li>
-            </ul>
+              <ul>
+                <li>Mass Cost: <strike>2100</strike> → 1750</li>
+                <li>Energy Cost: <strike>144k</strike> → 180k</li>
+                <li>Buildtime: <strike>9.6k</strike> → 12k</li>
+                <li>Rate of Fire: <strike>5s</strike> → 8s</li>
+              </ul>
+            </div>
+
           </div>
 
           <h2>Structures</h2>
+
+          <div id="structure">
 
           <div id="harms" class="card">
             <h3><img src="images/harms.png"> HARMS</h3>
@@ -905,8 +930,12 @@
             </div>
 
           </div>
+
+          </div>  
           
           <h2>Mechanics</h2>
+
+          <div id="mechanics">
 
           <div id="reactivation" class="card">
             <h3><img src="images/orders/reactivation.png">Reactivation Time</h3>
@@ -1068,7 +1097,11 @@
             </p>
           </div>
 
+          </div>
+
           <h2>ACU</h2>
+
+          <div id="acu">
 
           <div id="aeonacu" class="card">
             <h3>Aeon ACU</h3>
@@ -1202,6 +1235,8 @@
             </div>
           </div>
 
+          </div>
+
           <h2>Contributors</h2>
 
           <div class="card">
@@ -1230,8 +1265,8 @@
             <br />
             <a href="#spirit"><img src="images/spirit.png" /></a>
             <a href="#rangebots"><img src="images/mongoose.png" /></a>
-            <a href="#t2amphib"><img src="images/riptide.png" /></a>
             <a href="#deceiver"><img src="images/deceiver.png" /></a>
+            <a href="#t2amphib"><img src="images/riptide.png" /></a>
             <a href="#t3amphib"><img src="images/brick.png" /></a>
             <a href="#mml"><img src="images/spearhead.png"></a>
             <a href="#sniper"><img src="images/serasniper.png"></a>
@@ -1241,8 +1276,8 @@
 
             Navy
             <br />
-            <a href="#frigate"><img src="images/frig.png"/></a>
-            <a href="#sub"><img src="images/aeont1sub.png"/></a>
+            <a href="#frigate"><img src="images/aeonfrigiate.png"/></a>
+            <a href="#sub"><img src="images/ueft1sub.png"/></a>
             <a href="#shard"><img src="images/shard.png" /></a>
             <a href="#destroyer"><img src="images/salem.png" /></a>
             <a href="#cruiser"><img src="images/cybrancruiser.png" /></a>
@@ -1259,6 +1294,8 @@
             <a href="#t1intie"><img src="images/t1inti.png" /></a>
             <a href="#swiftwind"><img src="images/swiftwind.png" /></a>            
             <a href="#transports"><img src="images/cybrant2transport.png" /></a>
+            <a href="#drone"><img src="images/kenneldrone.png" /></a>
+            <a href="#acudrone"><img src="images/acudrone.png" /></a>
             <a href="#mercy"><img src="images/mercy.png" /></a>
             <a href="#torps"><img src="images/torps.png" /></a>
             <a href="#strats"><img src="images/cybranstrat.png" /></a>
