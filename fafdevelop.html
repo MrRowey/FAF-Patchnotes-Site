@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Development iteration II</title>
+    <title>Development iteration III</title>
     <link
       href="http://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
@@ -16,203 +16,18 @@
       <tr>
         <td id="main">
           <div id="intro">
-            <h1>Development iteration II</h1>
+            <h1>Development iteration III</h1>
             <p>
-              This page reflects some of the work that the game team has done
-              the past few months. This page is maintained separately. It may
-              not reflect the latest changes. If you'd like to remain up to date
-              on then we recommend you review the
+              You can learn more about the third developer's iteration by reading the release
               <a
-                href="https://github.com/FAForever/fa/commits/deploy/fafdevelop"
+                href="https://github.com/FAForever/fa/releases/tag/3765"
               >
-                history
+                release
               </a>
-              on Github.
+              on Github. This page merely acts as a stumb to redirect you.
             </p>
             <p>Jip</p>
           </div>
-
-          <h2>Bug fixes</h2>
-
-          <div id="drones" class="card">
-            <h3>Construction drones</h3>
-            <p>
-              GitHub references:
-              <a href="https://github.com/FAForever/fa/pull/5040">5040</a> and
-              <a href="https://github.com/FAForever/fa/pull/5028">5028</a>
-            </p>
-
-            <p>
-              The construction drones of the UEF faction are prime candidates
-              for various tasks. Due to a bug they could be ignored as a target
-              as anti air weapons scan for targets in their vicinity. As a
-              result the drones are now a lot more vulnerable to anti air.
-            </p>
-
-            <ul>
-              <li>
-                Rover drones (from the kennel) are no longer ignored as a target
-                after docking once
-              </li>
-              <li>
-                Shoulder drones (of the UEF ACU) are now ignored as a target by
-                weapons when they are docked on the shoulders
-              </li>
-            </ul>
-          </div>
-
-          <div id="missile" class="card">
-            <h3>Missile construction</h3>
-            <p>
-              GitHub references:
-              <a href="https://github.com/FAForever/fa/pull/5034">5034</a>,
-              <a href="https://github.com/FAForever/fa/pull/4867">4867</a> and
-              <a href="https://github.com/FAForever/FA-Binary-Patches/pull/15">
-                15
-              </a>
-            </p>
-
-            <p>
-              There have been long standing problems with missile construction
-              that have been confusing players for years. With thanks to an
-              assembly patch we can tackle two of these problems.
-            </p>
-
-            <ul>
-              <li>
-                An adjacency bonus to structures building a missile is processed
-                immediately
-              </li>
-              <li>
-                The progress of the missile construction is restored when a unit
-                changes army
-              </li>
-            </ul>
-          </div>
-
-          <h2>Graphics</h2>
-
-          <div id="water-ramp" class="card">
-            <h3>Water ramp</h3>
-            <p>
-              GitHub references:
-              <a href="https://github.com/FAForever/fa/pull/4964">4964</a> and
-              <a href="https://github.com/FAForever/fa/pull/5005">5005</a>
-            </p>
-
-            <p>
-              The water ramp is a texture that helps a map author tweak the
-              appearance of (deep) water. Up to now the water ramp was only
-              applied to the terrain. Units would receive only the water surface
-              color. We now have an approach to apply the water ramp to units,
-              props and shields too. This improves the overall immersion where
-              units now truly feel like they are underwater.
-            </p>
-
-            <div class="image-slider">
-              <div>
-                <img src="images/develop-iteration-ii/water-ramp-before.png" />
-              </div>
-              <img src="images/develop-iteration-ii/water-ramp-after.png" />
-            </div>
-
-            <br />
-            <br />
-
-            <div class="image-slider">
-              <div>
-                <img
-                  src="images/develop-iteration-ii/water-ramp-shields-before.png"
-                />
-              </div>
-              <img
-                src="images/develop-iteration-ii/water-ramp-shields-after.png"
-              />
-            </div>
-
-            <br />
-            <br />
-          </div>
-
-          <div id="water-sun-reflections" class="card">
-            <h3>Water sun reflections</h3>
-            <p>
-              GitHub references:
-              <a href="https://github.com/FAForever/fa/pull/4931">4931</a>
-            </p>
-
-            <p>
-              You can't reflect something that is occluded. Previously the water
-              would still reflect the sun, regardless whether it was occluded.
-              The change is subtle, but it adds a lot to the final image once
-              you see it.
-            </p>
-
-            <div class="image-slider">
-              <div>
-                <img
-                  src="images/develop-iteration-ii/water-reflections-before.png"
-                />
-              </div>
-              <img
-                src="images/develop-iteration-ii/water-reflections-after.png"
-              />
-            </div>
-
-            <br />
-            <br />
-          </div>
-
-          <div id="water-unit-reflections" class="card">
-            <h3>Water unit reflections</h3>
-            <p>
-              GitHub references:
-              <a href="https://github.com/FAForever/fa/pull/4696">4696</a>
-            </p>
-
-            <p>
-              The water color was not applied on the whole water surface due to
-              a bug in the shader code. Near the edges of units the uncolored
-              sea floor could be seen. Now the water color is applied on the
-              whole surface as it should.
-            </p>
-
-            <div class="image-slider">
-              <div>
-                <img
-                  src="images/develop-iteration-ii/water-unit-reflections-before.png"
-                />
-              </div>
-              <img
-                src="images/develop-iteration-ii/water-unit-reflections-after.png"
-              />
-            </div>
-
-            <br />
-            <br />
-          </div>
-
-          <p style="height: 1000px"></p>
-        </td>
-
-        <td id="sidebar">
-          <div id="icongrid">
-            <h2><a href="#container">Contents</a></h2>
-
-            Bug fixes
-            <br />
-            <a href="#drones"><img src="images/kenneldrone.png" /></a>
-            <a href="#missile"><img src="images/nukelauncher.png" /></a>
-            <br /><br />
-
-            Graphics
-            <br />
-            <a href="#water-ramp"><img src="images/salem.png" /></a>
-            <a href="#water-sun-reflections"><img src="images/salem.png" /></a>
-            <a href="#water-unit-reflections"><img src="images/salem.png" /></a>
-            <br /><br />
-          </div>
-        </td>
       </tr>
     </table>
   </body>
