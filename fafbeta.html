@@ -329,6 +329,14 @@
             </ul>
           </div>
 
+          <div id="mercy" class="card">
+            <h3><img src="/images/mercy.png"> Mercy</h3>
+            <p>Will now deal 1k damage over 10s</p>
+            <ul>
+              <li>Damage: <strike>30</strike> → 50</li>
+            </ul>
+          </div>
+
           <div id="asf" class="card">
             <h3><img src="/images/wasp.png"> ASF </h3>
               <p>Reduce the size of ASF blobs in the lategame. Reduce ASF effectiveness vs interceptors (due to larger overkill). Bring ASF mass cost more in line with other T3 units.</p>
@@ -376,17 +384,6 @@
 
         <div id="structure">
 
-          <div id="airhq" class="card">
-            <h3><img src="/images/airhq.png">Air HQ</h3>
-            <p>Brings the t2 and t3 air in line with land and slows down the tech progression for air, which often outpaces land in teamgames.</p>
-
-            <ul>
-              <li>T2 Build Time: <strike>2000</strike> → 2300</li>
-              <li>T3 Build Time: <strike>10400</strike> → 12100</li>
-            </ul>
-
-          </div>
-
           <div id="wall" class="card">
             <h3><img src="/images/wall.png" alt="wall">Walls</h3>
             <p>After patching to the game walls are better at blocking projectiles so this balances them out more.</p>
@@ -397,6 +394,57 @@
               <li>Mass Cost: <strike>2</strike> → 3 </li>
               <li>Build Time: <strike>20</strike> → 15 </li>
             </ul>
+          </div>
+
+          <div id="landfac" class="card">
+            <h3><img src="/images/Cybran_T2_Land_Factory_HQ.png">Land Factories</h3>
+
+            HQs
+            <ul>
+              <li>T3 Build Time: <strike>12100</strike> → 12000</li>
+            </ul>
+
+            Support
+            <ul>
+              <li>T2 Build Time: <strike>1600</strike> → 1200</li>
+              <li>T3 Build Time: <strike>4000</strike> → 3200</li>
+            </ul>
+
+          </div>
+
+          <div id="airfac" class="card">
+            <h3><img src="/images/airhq.png">Air HQ</h3>
+            <p>Brings the t2 and t3 air in line with land and slows down the tech progression for air, which often outpaces land in teamgames.</p>
+
+            HQs
+            <ul>
+              <li>T3 Build Time: <strike>12100</strike> → 120000</li>
+            </ul>
+
+            Support
+            <ul>
+              <li>T2 Build Time: <strike>1300</strike> → 1200</li>
+              <li>T3 Build Time: <strike>4000</strike> → 3200</li>
+            </ul>
+
+          </div>
+
+          <div id="navalfac" class="card">
+            <h3><img src="/images/UEF_T2_Naval_Factory.png">Naval Factorys</h3>
+            <p>Standardizes build time across all factories to make more sense and be more balanced. No longer will the T2 -&gt; T3 Support factory upgrade be ~4 times faster than the T1 -&gt; T2 upgrade.</p>
+
+            HQs
+            <ul>
+              <li>T2 Build Time: <strike>3600</strike> → 3200</li>
+              <li>T3 Build Time: <strike>11250</strike> → 21600</li>
+            </ul>
+
+            Support
+            <ul>
+              <li>T2 Build Time: <strike>3000</strike> → 2000</li>
+              <li>T3 Build Time: <strike>3500</strike> → 10800</li>
+            </ul>
+
           </div>
 
           <div id="t2arty" class="card">
@@ -430,6 +478,17 @@
 
           </div>
 
+          <!--
+          <div id="pgen" class="card">
+            <h3><img src="/images/t3pgen.png"> Tech 3 Power Generators Adjacacy</h3>
+            <p>T3 pgens adjacency is extremely efficient and scaling your grid by adding extra T3 pgens and support air factories is the only viable choice. With this change, we hope to force players to make a conscious decision if they wish to quickly scale their production by increasing the assistance on their HQ or rip the long-term benefits of expanding their air grid. This change also simply makes spamming higher amounts of ASFs harder.</p>
+            <ul>
+              <li>AdjacenyBuff: <strike>-0.1875</strike> → -0.1562 </li>
+            </ul>
+          </div>
+          -->
+
+
         </div>
 
         <h2>ACUs</h2>
@@ -449,6 +508,15 @@
               <li>Shield Regen Rate: <strike>60</strike> → 67</li>
             </ul>
 
+          </div>
+
+          <div id="ueftelly" class="card">
+            <h3><img src="/images/Enhancements/uef/teleport.png"> UEF Teleport</h3>
+            <p>Allows for teleport to be used with billy nuke, while not allowing for the ACU to also have a T3 upgrade.</p>
+
+            <ul>
+              <li>UpgradePosition: <strike>Back</strike> → Left</li>
+            </ul>
           </div>
 
         </div>
@@ -495,19 +563,24 @@
           <a href="#janus"><img src="/images/janus.png"/></a>
           <a href="#gunship"><img src="/images/ueft2gunship.png"/></a>            
           <a href="#torp"><img src="/images/torps.png"/></a>            
+          <a href="#mercy"><img src="/images/mercy.png"/></a>            
           <a href="#asf"><img src="/images/wasp.png"/></a>
           <br /><br />
 
           Structures
           <br />
-          <a href="#airhq"><img src="/images/airhq.png"/></a>
           <a href="#wall"><img src="/images/wall.png"/></a>
+          <a href="#landfac"><img src="/images/Cybran_T2_Land_Factory_HQ.png"/></a>
+          <a href="#airhq"><img src="/images/airhq.png"/></a>
+          <a href="#navalfac"><img src="/images/UEF_T2_Naval_Factory.png"/></a>
           <a href="#t2arty"><img src="/images/uefT2StaticArty.png"/></a>
+          <!--<a href="#pgen"><img src="/images/t3pgen.png"/></a>-->
           <br /><br/>
 
           ACUs
           <br>
           <a href="#uefbubble"><img src="/images/Enhancements/uef/bubblesheild.png"/></a>
+          <a href="#ueftelly"><img src="/images/Enhancements/uef/teleport.png"/></a>
           <br><br>
 
         </div>
