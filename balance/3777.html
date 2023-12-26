@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="FAF Patch 3775 page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patch 3777</title>
+    <link rel="stylesheet" href="../style/balance.css" />
+</head>
+
+<body>
+    <main class="grid">
+        <div class="content">
+
+            <div id="intro">
+                <h1>Patch 3775</h1>
+                <h2>Date:<i> December 24th 2023</i></h2>
+                <p>Welcome to the patchnotes for the 3777.</p>
+                <p>This is a Small patch that aims at fixes a few minor units and added the new Torrent Change as well as the ability to use billy nuke & teleport.</p>
+                <p>We wish you good luck and much fun playing with the new patch!</p>
+                <h4>-- Balance Team</h4>
+                <hr>
+            </div>
+
+            <h2>Land</h2>
+
+            <div id="land">
+
+                <div id="deceiver" class="card">
+                    <h3><img src="/images/deceiver.png"> Deceiver</h3>
+                    <p>Unlike what the game makes you believe, intel works in a grid-like fashion. The cell size of stealth field intel is 4. Therefore, the previous increase of the radius from 20 to 23 has effectively no impact. The Deceiver now receives the buff it was intended to receive after increasing the vision range of a wide range of units.</p>
+
+                    <ul>
+                        <li>Stealth Range: <strike>23</strike> → 24</li>
+                    </ul>
+
+                </div>
+
+                <div id="othuum" class="card">
+                    <h3><img src="/images/othuum.png">Othuum</h3>
+        
+                    <ul>
+                      <li>MaxSpeedReverse: <strike>0</strike> → 2.85</li>
+                      <li>BackUpDistance: <strike>0</strike> → 15</li>
+                      <li>RotateOnSpot: <strike>true</strike> → false</li>
+                    </ul>
+                </div>
+
+                <div id="scathis" class="card">
+                    <h3><img src="/images/scathis.png"> Scathis</h3>
+
+                    <p> The Scathis now has the same selection priority as other experimental artillery. </p>
+
+                </div>
+
+            </div>
+
+            <h2>Navy</h2>
+
+            <div id="navy">
+
+                <div id="bulwark" class="card">
+                    <h3><img src="/images/UEF_T2_Shield_Boat.png"> Bulwark</h3>
+
+                    <p>The range of the dummy weapon indicates where the shield hits the water line. The dummy weapon prevents the Bulwark from sailing right into the enemy fleet when you issue an attack move order. It roughly remains at the same range as frigates.</p>
+                </div>
+
+                <div id="nuke-sub" class="card">
+                    <h3><img src="/images/nukesub.png">Nuke Subs</h3>
+                    <p>All non-experimental units with strategic missile launchers now have a 10-second reload time on their strategic missile launchers. The stationary strategic missile launchers were already affected by this reload time. It primarily applies to the strategic submarines and the Seraphim battleship.
+                    </p>
+                </div>
+
+                <div id="torrent" class="card">
+                    <h3><img src="/images/torrent.png"> Missile Ship</h3>
+
+                    <p>The Aeon tech 3 missile ship is now cheaper to build. It fires more missiles that deal less damage but in a larger damage radius. The unit is now more equipped to overwhelm tactical missile defenses and deal damage in a wide area surrounding the target.</p>
+
+                    <ul>
+                        <li>Health: <strike>15000</strike> → 7500</li>
+                        <li>Mass Cost: <strike>8000</strike> → 4000</li>
+                        <li>Energy Cost: <strike>80000</strike> → 40000</li>
+                        <li>Damage: <strike>800</strike> → 200</li>
+                        <li>Damage Radius: <strike>2</strike> → 3</li>
+                        <li>SalvoSize: <strike>5</strike> → 10</li>
+                        <li>SalvoDelay: <strike>1</strike> → 0.6</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <h2>Air</h2>
+
+            <div id="air">
+                <div id="bombers" class="card">
+                    <h3><img src="/images/janus.png"> bombers</h3>
+
+                    <p>Fix bombers with multiple unpropelled ordinances from being able to track the target while dropping the ordinance</p>
+
+                    <p>This primarily impacts the Zeus, Scorcher, and the Janus. The behavior is only different when the target is trying to evade the bomber. The overall behavior should be more consistent now with that of other bombers.</p>
+                </div>
+            </div>
+
+            <h2>ACUs</h2>
+
+            <div id="uef">
+
+                <div id="uefteleport" class="card">
+                    <h3><img src="/images/Enhancements/uef/teleport.png">UEF ACU Teleport</h3>
+
+                    <ul>
+                        <li>Upgrade Slot: <strike>Back</strike> → Left</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <h2>Mechanics</h2>
+            <div id="mechanics">
+                <div id="ench" class="card">
+                    <h3><img src="/images/orders/mechanic.png"> Enchancements</h3>
+
+                    <ul>
+                        <li>Enhancements are now taken into account when dispersing veterancy.</li>
+                        <li>Enhancements are now taken into account when computing the mass value of a wreck.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="backtotop">
+                <button>
+                    <a class="toptext" href="#top">Back to Top</a>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+
+            <div class="icongrid">
+                <h2>Contents</h2>
+                <br>
+
+                Land
+                <br />
+                <a href="#deceiver"><img src="/images/deceiver.png" /></a>
+                <a href="#othuum"><img src="/images/othuum.png" /></a>
+                <a href="#scathis"><img src="/images/scathis.png" /></a>
+                <br /><br />
+
+                Navy
+                <br />
+                <a href="#bulwark"><img src="/images/UEF_T2_Shield_Boat.png" /></a>
+                <a href="#nuke-sub"><img src="/images/nukesub.png" /></a>
+                <a href="#torrent"><img src="/images/torrent.png" /></a>
+                <br /><br />
+
+                Air
+                <br />
+                <a href="#bombers"><img src="/images/janus.png" /></a>
+                <br /><br />
+
+
+                ACUs
+                <br />
+                <a href="#uefteleport"><img src="/images/Enhancements/uef/bubblesheild.png" /></a>
+                <br /><br />
+
+                Mechanics
+                <br />
+                <a href="#ench"><img src="/images/orders/mechanic.png" /></a>
+                <br /><br />
+
+            </div>
+
+        </div>
+    </main>
+</body>
+<footer>
+    <a href="../index.html">Back to Patchnote List</a>
+    <p>© 2015-2023 FAForever</p>
+</footer>
+</html>
