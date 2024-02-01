@@ -1,6 +1,26 @@
 {
     "balance": [
         {
+            "patch": "3779",
+            "link": "balance/3779.html",
+            "date": " - January 22 2024"
+        },
+        {
+            "patch": "3778",
+            "link": "balance/3778.html",
+            "date": " - December 31 2023"
+        },
+        {
+            "patch": "3777",
+            "link": "balance/3777.html",
+            "date": " - December 24 2023"
+        },
+        {
+            "patch": "3775",
+            "link": "balance/3775.html",
+            "date": " - November 19 2023"
+        },
+        {
             "patch": "3761",
             "link": "balance/3761.html",
             "date": " - July 15 2023"
@@ -92,6 +112,21 @@
         }
     ],
     "game": [
+        {
+            "patch": "3781",
+            "link": "game/3781.html",
+            "date": " - January 26 2024"
+        },
+        {
+            "patch": "3780",
+            "link": "game/3780.html",
+            "date": " - January 26 2024"
+        },
+        {
+            "patch": "3779",
+            "link": "game/3779.html",
+            "date": " - January 22 2024"
+        },
         {
             "patch": "3778",
             "link": "game/3778.html",

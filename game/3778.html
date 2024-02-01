@@ -4,57 +4,102 @@
     <meta charset="UTF-8">
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Patch 3762</title>
+    <title>Game Patch 3778</title>
     <link rel="stylesheet" href="/style/game.css">
   </head>
   <body>
     <main class="grid">
       <div class="content">
         <div id="intro">
-            <h1>Patch 3765</h1>
-            <h2>Date: June 27th 2023</h2>
-            <p>This release is a hotfix. Unlike other hotfixes it has no in-game notification.</p>
+            <h1>Patch 3778</h1>
+            <h2>Date: Dec 31st 2023</h2>
+            <p>A hotfix addressing lingering issues of the year 2023.</p>
+            <p>With gratitude to all those who took the time to report issues.</p>
             <p>-- Jip</p>
           <hr>
         </div>
 
         <h2 id="bugs">Bug Fixes</h2>
+        <div id="1">
 
-        <div id="3">
+          <div class="card">
+            <h3>Fix the Aeon TMD firing its flare too late for incoming missiles.</h3>
+            <p>Due to a bug, the Volcano had a target check interval of 1.0 seconds instead of 0.4 seconds, making it unable to reliably catch Seraphim tactical missiles due to their speed.</p>
+          </div>
+
+          <div class="card">
+            <h3>Fix the Aeon TMD locking onto missiles that it can't intercept.</h3>
+            <p>This would prevent other TMD with a better chance at intercepting the missile from locking on.</p>
+          </div>
+
           <div class="card">
             <ul>
-              <li>Fix one actively used exploit for breaking the lobby</li>
+              <li>Fix rapid-fire on Aeon and Seraphim tech 2 stationary flak.</li>
+              <li>Fix the Aeon TMD being unable to prevent the Billy from exploding.</li>
+              <li>Fix the Aeon TMD not tracking its intercept count.</li>
             </ul>
           </div>
 
         </div>
 
+        <h2 id="features">Features</h2>
+        <div id="2">
+
+          <div class="card">
+            <h3>Introduce a game option to scale strategic icons.</h3>
+            <p>Also scales the pause and stun icons. Useful on monitors with high pixel density. A scale of 150% may distort the strategic icons.</p>
+          </div>
+
+          <div class="card">
+            <h3>Add the ability to compute a detailed path for AIs.</h3>
+            <p>The function is in <code>NavUtils.lua</code> and is named <code>DetailedPathTo</code>. The function is expensive in comparison to the standard <code>PathTo</code> function.</p>
+          </div>
+
+        </div>
+
+        <h2 id="graphics">Graphics</h2>
+        <div id="3">
+
+          <div class="card">
+            <h3>Add new, high-quality strata layers and decals.</h3>
+            <p>These assets are available through the FAF editor after retrieving the latest patch. The new biome is named 'New Realms.'</p>
+          </div>
+
+        </div>
 
         <h2>Contributors</h2>
 
         <div class="card">
           <p>With thanks to the following people who contributed through coding:
             <ul>
+              <li>lL1l1</li>
               <li>Garanas (Jip)</li>
-              <li>BlackYps</li>
-              <li>The-Balthazar</li>
-              <li>HudoraX</li>
+              <li>Basilisk3</li>
+            </ul>
+          </p>
+          <p>With thanks to the following people who contributed through model, texture, description and effect changes:
+            <ul>
+              <li>Sting</li>
             </ul>
           </p>
           <p>With thanks to the following people who contributed through binary patches:
             <ul>
-              <li>Hdt80bro</li>
+              <li>4z0t</li>
+              <li>KionX</li>
             </ul>
           </p>
           <p>And, last but certainly not least - with thanks to those that took part in constructive discussions:
             <ul>
-              <li>Deribus</li>
-              <li>ChessBerry</li>
+              <li>Sladow</li>
               <li>Sheikah45</li>
-              <li>Magge</li>
+              <li>Deribus</li>
+              <li>CxZy</li>
+              <li>gordenwunderlich (Nex37)</li>
+              <li>Aranei</li>
+              <li>Ravandel</li>
+              <li>Youknowhedead</li>
+              <li>Samofflive</li>
               <li>MostLostNoob</li>
-              <li>Fichom</li>
-              <li>MrRowey</li>
             </ul>
           </p>
         </div>
@@ -70,10 +115,9 @@
         <div>
           <h2><u>Contents</u></h2>
           
-          <h3>&gt; <a href="#features">Features</a></h3>
-          <h3>&gt; <a href="#ai">AI</a></h3>
           <h3>&gt; <a href="#bugs">Bug Fixes</a></h3>
-          <h3>&gt; <a href="#other">Other</a></h3>
+          <h3>&gt; <a href="#features">Features</a></h3>
+          <h3>&gt; <a href="#graphics">Graphics</a></h3>
         </div>
       </div>
     </main>

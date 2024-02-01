@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Patch 3762</title>
+    <title>Game Patch 3773</title>
     <link rel="stylesheet" href="/style/game.css">
   </head>
   <body>
     <main class="grid">
       <div class="content">
         <div id="intro">
-            <h1>Patch 3765</h1>
-            <h2>Date: June 27th 2023</h2>
-            <p>This release is a hotfix. Unlike other hotfixes it has no in-game notification.</p>
+            <h1>Patch 3773</h1>
+            <h2>Date: Nov 4th 2023</h2>
+            <p>Please refer to the notes of versions 3771 and 3772 for the full patch notes.</p>
+            <p>This patch ships with a new executable that tackles game crashes related to the memory address '0x0128CACC'.</p>
+            <p>With gratitude to all those who took the time to report issues.</p>
             <p>-- Jip</p>
           <hr>
         </div>
 
         <h2 id="bugs">Bug Fixes</h2>
 
-        <div id="3">
+        <div id="1">
+
+          <div class="card">
+            <h3>Fix various bugs with the recent tactical missile changes</h3>
+            <p>The minimum range is increased for various weapons that fire tactical missiles. Reduced the chance that non-zigzagging tactical missiles end up missing their target.</p>
+          </div>
+
+          <div class="card">
+            <h3>Revert an accidental parameter change related to path finding</h3>
+            <p>Units should now be as responsive as before.</p>
+          </div>
+
           <div class="card">
             <ul>
-              <li>Fix one actively used exploit for breaking the lobby</li>
+              <li>Fix various bugs that could occur with AI</li>
             </ul>
           </div>
 
         </div>
 
+        <h2 id="other">Other</h2>
+        <div id="2">
+          <ul>
+            <li>Improve the code style of the navigational mesh</li>
+          </ul>
+        </div>
 
         <h2>Contributors</h2>
 
@@ -36,25 +55,20 @@
           <p>With thanks to the following people who contributed through coding:
             <ul>
               <li>Garanas (Jip)</li>
-              <li>BlackYps</li>
-              <li>The-Balthazar</li>
-              <li>HudoraX</li>
             </ul>
           </p>
           <p>With thanks to the following people who contributed through binary patches:
             <ul>
-              <li>Hdt80bro</li>
+              <li>KionX</li>
+              <li>4z0t</li>
             </ul>
           </p>
           <p>And, last but certainly not least - with thanks to those that took part in constructive discussions:
             <ul>
               <li>Deribus</li>
-              <li>ChessBerry</li>
               <li>Sheikah45</li>
-              <li>Magge</li>
               <li>MostLostNoob</li>
-              <li>Fichom</li>
-              <li>MrRowey</li>
+              <li>maudlin27</li>
             </ul>
           </p>
         </div>
@@ -70,8 +84,6 @@
         <div>
           <h2><u>Contents</u></h2>
           
-          <h3>&gt; <a href="#features">Features</a></h3>
-          <h3>&gt; <a href="#ai">AI</a></h3>
           <h3>&gt; <a href="#bugs">Bug Fixes</a></h3>
           <h3>&gt; <a href="#other">Other</a></h3>
         </div>
