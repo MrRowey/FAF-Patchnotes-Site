@@ -81,7 +81,14 @@ ul { columns: 3;}
 
 .balanceChanges {
     padding: 10px;
-    grid-column: 2 / span 2;
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+}
+
+.support {
+    padding: 10px;
+    grid-column: 3;
     grid-row: 4;
     text-align: center;
 }
