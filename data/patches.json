@@ -133,6 +133,21 @@
     ],
     "game": [
         {
+            "patch": "3803",
+            "link": "game/3803.html",
+            "date": " - March 17 2024"
+        },
+        {
+            "patch": "3802",
+            "link": "game/3802.html",
+            "date": " - March 17 2024"
+        },
+        {
+            "patch": "3801",
+            "link": "game/3801.html",
+            "date": " - March 13 2024"
+        },
+        {
             "patch": "3781",
             "link": "game/3781.html",
             "date": " - January 26 2024"
@@ -401,41 +416,6 @@
             "patch": "3724",
             "link": "game/3724.html",
             "date": " - October 4 2021"
-        },        
-        {
-            "patch": "3717",
-            "link": "game/3717.html",
-            "date": " - September 13 2020"
-        },        
-        {
-            "patch": "3716",
-            "link": "game/3716.html",
-            "date": " - September 12 2020"
-        },        
-        {
-            "patch": "3715",
-            "link": "game/3715.html",
-            "date": " - September 12 2020"
-        },        
-        {
-            "patch": "3713",
-            "link": "game/3713.html",
-            "date": " - April 6 2020"
-        },        
-        {
-            "patch": "3712",
-            "link": "game/3712.html",
-            "date": " - April 4 2020"
-        },        
-        {
-            "patch": "3711",
-            "link": "game/3711.html",
-            "date": " - March 15 2020"
-        },        
-        {
-            "patch": "3710",
-            "link": "game/3710.html",
-            "date": " - January 26 2020"
         }
     ]
 }
