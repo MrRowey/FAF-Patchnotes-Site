@@ -133,6 +133,21 @@
     ],
     "game": [
         {
+            "patch": "3806",
+            "link": "game/3806.html",
+            "date": " - April 1 2024"
+        },
+        {
+            "patch": "3805",
+            "link": "game/3805.html",
+            "date": " - March 24 2024"
+        },
+        {
+            "patch": "3804",
+            "link": "game/3804.html",
+            "date": " - March 24 2024"
+        },
+        {
             "patch": "3803",
             "link": "game/3803.html",
             "date": " - March 17 2024"
