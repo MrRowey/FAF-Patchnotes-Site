@@ -5,7 +5,7 @@ function background(x){
     } 
     else
     {
-        var imgs = ['./imagesbackgrounds/1.jpg','./images/backgrounds/2.jpg','./images/backgrounds/3.jpg','./images/backgrounds/4.jpg','./images/backgrounds/5.jpg','./images/backgrounds/6.jpg',];
+        var imgs = ['./images/backgrounds/1.jpg','./images/backgrounds/2.jpg','./images/backgrounds/3.jpg','./images/backgrounds/4.jpg','./images/backgrounds/5.jpg','./images/backgrounds/6.jpg',];
 
         var img = imgs[Math.floor(Math.random()*imgs.length)];
     
