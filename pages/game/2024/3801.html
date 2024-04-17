@@ -5,12 +5,12 @@
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Patch 3801</title>
-    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="../../../style/game.css">
   </head>
   <body>
-    <main class="grid">
-      <div class="content">
-        <div id="intro">
+    <main class="Grid">
+      <div class="Content">
+        <div id="Intro">
             <h1>Patch 3801</h1>
             <h2>Date: March 16th 2024</h2>
             <hr>
@@ -27,17 +27,17 @@
 
         <h2 id="bugs">Bug Fixes</h2>
         <div id="1">
-          <div class="card">
+          <div class="Card">
             <h3>Fix the bug related to capture time and costs for factories that are building units.</h3>
             <p>The unit they were constructing would inflate the capture time and cost of the factory itself.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix collision shapes of various units</h3>
             <p>This reduces the chance that beam weapons miss.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Fix wrecks that sink to end up below the terrain.</li>
               <li>Fix Corona and Swiftwind being unable to hit landed air units.</li>
@@ -54,7 +54,7 @@
 
         <h2 id="feature">Features</h2>
         <div id="2">
-          <div class="card">
+          <div class="Card">
             <h3>Variable teleport duration and costs.</h3>
             <video src="/images/game/3801/tellychnage.mp4" class="imgFeature" controls></video>
             <br>
@@ -63,7 +63,7 @@
             <p>The expected costs of the teleport are displayed next to the cursor when you're trying to issue a teleport order. This uses the distance from the world position of the cursor to the unit. When you hold shift it instead uses the distance from the world position of the cursor to the last move and/or teleport order of the unit.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Further improve the context-based templates feature.</h3>
             <p>You can now cycle through templates of a given context in the following order:</p>
             <ul>
@@ -76,12 +76,12 @@
             <p>The templates you are cycling through are now preserved until you exit command mode. That means once you enter command mode by cycling you keep on cycling through the same templates.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Further improvements to the behavior of tactical missiles.</h3>
             <p>A single (non-aeon) tactical missile defense can now protect itself against a missile with 2 hit points again. In general Aeon, UEF and Cybran missiles have a reduced velocity. The Seraphim missiles still have the same velocity, but decrease in velocity as they get closer to the target.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Add the ability to load into transports by right clicking the transport button.</h3>
             <p>This triggers the same behavior as the 'Load into transports' hotkey.</p>
           </div>
@@ -90,18 +90,18 @@
 
         <h2 id="graphics">Graphics</h2>
         <div id="3">
-          <div class="card">
+          <div class="Card">
             <h3>Significant improvements to the graphics of the various UEF units.</h3>
             <p>With thanks to Ajamajan the Mongoose, Frigate and Destroyer finally received the attention that they needed. The quality of the textures of the first level of detail (LOD0) have improved significantly and the units are now visually on-par with the rest of the UEF arsenal.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Improve the effects surrounding Seraphim torpedo's.</h3>
             <p>The split effect is now applied when Seraphim torpedo's split.</p>
             <p>Seraphim stationary torpedo defenses now drop their torpedo's into the water instead of them flying across the water surface.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Update the impact effects of various tactical missiles.</h3>
             <p>All significant tactical missiles now have separate faction-specific effects from insignificant tactical missiles. This makes it easier to understand the origin of the tactical missile. Significant tactical missiles also have a larger strategic icon (4 pixels instead of 1 or 2). The Billy has a new, unique strategic icon.</p>
           </div>
@@ -109,12 +109,12 @@
 
         <h2 id="ai">AI</h2>
         <div id="4">
-          <div class="card">
+          <div class="Card">
             <h3>Improve the behavior surrounding AI rating.</h3>
             <p>They are now taking into account when computing the game quality.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Fix submarines surfacing when leaving the factory.</li>
               <li>Reduce the overhead of various navigational functions.</li>
@@ -125,38 +125,38 @@
 
         <h2 id="other">Other</h2>
         <div id="5">
-          <div class="card">
+          <div class="Card">
             <h3>Update the categories of various units.</h3>
             <p>These are used by key bindings and the UI to understand what the units are capable of.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Reduce the lifetime of scorchmarks created by forest fires.</h3>
             <p>They would previously last between 300 to 90.000 seconds. They now last between 60 to 120 seconds.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix a framerate drop when selecting units.</h3>
             <p>This was most notable for players with many user-made build templates. All the user-made build templates would be deep copied for each new selection. The average user-made build template easily has a footprint of several kilobytes in memory. With all the user-made build templates combined it could rack up to a megabyte worth of copied memory.</p>
             <p>The solution was to cache the templates so that they are only allocated once.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>The Novax Satalite System is no longer disabled when air is restricted.</h3>
             <p>The Novax Satalite System can be restricted separately.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Reduce the logging of enabled UI mods.</h3>
             <p>Especially UI mods with (large) changelogs would cause (a large) stutter in the first two seconds of the game.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Improve the testing suite to check for (in)valid rate of fire values.</h3>
             <p>This is to guarantee that when the rate of fire values are tweaked that they always represent the actual value that the game will use.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Improve the descriptions of a wide range of units.</li>
               <li>Improve the naming scheme of all UEF drones and update their descriptions and Tech levels.</li>
@@ -171,7 +171,7 @@
 
         <h2>Contributors</h2>
 
-        <div class="card">
+        <div class="Card">
           <p>With thanks to the following people who contributed through coding:
             <ul>
               <li>Basilisk3</li>
@@ -212,7 +212,7 @@
         </div>
 
       </div>
-      <div class="sidebar">
+      <div class="Sidebar">
         <div>
           <h2><u>Contents</u></h2>
           
@@ -226,7 +226,7 @@
     </main>
   </body>
   <footer>
-    <div class="backtotop"><button><a class="toptext" href="#top">Back to Top</a></button></div><br>
+    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
     <a href="/../index.html">Back to Patchnote List</a>
     <p>© 2015-2024 FAForever</p>
 </footer>

@@ -5,12 +5,12 @@
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Patch 3762</title>
-    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="../../../style/game.css">
   </head>
   <body>
-    <main class="grid">
-      <div class="content">
-        <div id="intro">
+    <main class="Grid">
+      <div class="Content">
+        <div id="Intro">
             <h1>Patch 3765</h1>
             <h2>Date: June 27th 2023</h2>
             <p>The third developer's iteration contains more new features than any release in the past two years. It opens up new ways for players to approach the game.</p>
@@ -25,14 +25,14 @@
         <h2 id="feature">Features</h2>
 
         <div id="1">
-          <div class="card">
+          <div class="Card">
             <h3><a href="https://github.com/FAForever/fa/issues?q=label%3A%22feature%3A+mobile+factories%22">Mobile Factories</a></h3>
             <p>A long-standing functional myth has now become a part of the FAForever experience! All Tech 3 Aircraft Carriers, plus the Tempest, the Atlantis, and the Fatboy, can now build using a separate build module attached to the unit. The build module is located at the back of the unit. Clicking just over the back (on land/water) will select the build module. All factory hotkeys interact with these build modules.</p>
             <p>We're open to ideas from players on how we can further improve this feature, especially in terms of user interactions.</p>
             <p>The Megalith remains unchanged, while the CZAR temporarily loses its ability to build. We were unable to finalize it, but we hope to include it in a future patch.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3><a href="https://github.com/FAForever/fa/issues?q=label%3A%22feature%3A+distribute+orders%22">Advanced orders</a></h3>
             <p>We're enhancing existing advanced orders and introducing new ones. The most notable change is the complete reimplementation of the Spread Attack feature from the ground up. This wouldn't have been possible without the dedicated work of Strogo, RTD, and KionX.</p>
             <p>All of the mentioned orders are linked to hotkeys. In the key bindings menu, you'll find new world-wide-web icons next to hotkeys. If the world-wide-web icon is present, you can click on it to learn more about the hotkey on the FAForever wiki. We highly recommend checking out the Wiki; it even includes short videos that can explain concepts better than a thousand words ever could.</p>
@@ -48,7 +48,7 @@
             </p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3><a href="https://github.com/FAForever/fa/issues?q=label%3A%22area%3A+graphics%22">Advanced map shaders</a></h3>
             <p>We're excited to announce the introduction of advanced map shaders that map authors can now apply to their new maps. Existing maps will remain unchanged. These new shaders enable you to incorporate properties such as shadows, ambient occlusion, normals, and albedo textures directly into the terrain. This integration makes them an integral part of the rendering pipeline, rather than applying them on top of the terrain, as decals typically do.</p>
             <img src="/images/game/3765/img1.png" class="imgFeature">
@@ -57,7 +57,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3><a href="https://github.com/FAForever/fa/issues?q=+label%3A%22feature%3A+context-based+templates%22">Context based templates</a></h3>
             <p>An alternative use of the build templates system! With this new feature, you can cycle through build templates that adapt to the context of your selection and your mouse location. FAForever includes a set of default templates for this feature. The functionality is fully customizable, allowing you to remove existing templates or add your own to cycle through via UI mods.</p>
             <p>You can find the hotkey by searching for 'Context.' It defaults to 'Tab' for new players or those who have reset their keybindings.</p>
@@ -67,15 +67,15 @@
         <h2 id="other">Other</h2>
 
         <div id="2">
-          <div class="card">
+          <div class="Card">
             <h3>We've improved CPU resource utilization to reduce frame stuttering for CPUs with 6 or more logical cores.</h3>
             <p>In practice, many CPUs have 6 or more logical cores. If we detect that your CPU has sufficient cores, we change the process affinity to ignore the first compute core. The first compute core is often used by processes, including the OS. When the game ignores the first compute core, the render thread (which is otherwise locked to the first compute core) has more room to operate and is less influenced by other processes and the OS. As a result, you'll experience fewer stutters and overall better frame times.</p>
           </div>
-          <div class="card">
+          <div class="Card">
             <h3>On average, there is a 5% performance improvement (both in simulation and UI) across the board.</h3>
             <p>A free Cybran Cookie for anyone who can explain how it works without asking the assembly magicians.</p>
           </div>
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Pausing engineers will also pause reclaiming props.</li>
               <li>The score graph now uses square root scaling to make it easier to view the first few minutes.</li>
@@ -95,7 +95,7 @@
         <h2 id="bugs">Bug Fixes</h2>
 
         <div id="3">
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Bombers with multiple projectiles are now less likely to miss their target when micromanaging them.</li>
               <li>Gifted structures now properly copy the orientation.</li>
@@ -114,7 +114,7 @@
 
         <h2>Contributors</h2>
 
-        <div class="card">
+        <div class="Card">
           <p>Unlike previous changelogs we no longer list the commits of each individual contributor.</p>
 
           <p>With thanks to the following people who contributed through coding:
@@ -178,7 +178,7 @@
         </div>
 
       </div>
-      <div class="sidebar">
+      <div class="Sidebar">
         <div>
           <h2><u>Contents</u></h2>
           
@@ -189,8 +189,9 @@
       </div>
     </main>
   </body>
-  <footer>
-    <a href="./index.html">Back to Patchnote List</a>
-    <p>© 2014-2024 FAForever</p>
-  </footer>
+<footer >
+    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
+    <a href="/../index.html">Back to Patchnote List</a>
+    <p>© 2015-2024 FAForever</p>
+</footer>
 </html>

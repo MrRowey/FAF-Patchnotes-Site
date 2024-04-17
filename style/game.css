@@ -1,6 +1,9 @@
 @import './root.css';
+@import '../style/components/card.css';
+@import '../style/components/images.css';
+@import '../style/components/video.css';
 
-.grid {
+.Grid {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -8,34 +11,34 @@
     margin: 10px;
 }
 
-.content {
+.Content {
     grid-column: 2 ;
 }
 
-.card a {
+.Card a {
     color: var(--Link-Card);
     text-decoration: underline;
 }
 
-.card a:hover {
+.Card a:hover {
     color: var(--Link-Hover);
 }
 
-.intro p {
+.Intro p {
     color: var(--Primary-Text-light);
 }
 
-.sidebar {
+.Sidebar {
     grid-column: 3;
     position: relative;
 }
 
-.sidebar h2 a {
+.Sidebar h2 a {
     color: var(--Primary-Text);
     text-decoration: none;
 }
 
-.icongrid {
+.IconGrid {
     position: sticky;
     top: 20px;
     background: var(--Primary-Grid-BG);
@@ -46,11 +49,11 @@
     border-radius: 15px;
 }
 
-.icongrid h2 {
+.IconGrid h2 {
     margin: 10px 0 0 0;
 }
 
-.icongrid img {
+.IconGrid img {
     width: 45px;
     height: 45px;
 }
@@ -61,17 +64,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-.backtotop {
+.BackToTop {
   text-align: center;  
   border-radius: 50%;
 }
 
-.backtotop a {
+.BackToTop a {
     text-decoration: none;
     color: var(--Seconday-Text);
 }
 
-.toptext {
+.TopText {
     font-size: 20px;
 }
 

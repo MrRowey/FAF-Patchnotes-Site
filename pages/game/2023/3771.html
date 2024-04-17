@@ -5,12 +5,12 @@
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Patch 3771</title>
-    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="../../../style/game.css">
   </head>
   <body>
-    <main class="grid">
-      <div class="content">
-        <div id="intro">
+    <main class="Grid">
+      <div class="Content">
+        <div id="Intro">
             <h1>Patch 3771</h1>
             <h2>Date: Oct 29th 2023</h2>
             <p>This patch introduces a number of significant changes that once again affect the game's balance. The balance team is fully aware of this and is actively making adjustments to adapt to these changes. If you want to experience the latest in balancing, be sure to select the FAF Beta game type when hosting a game; it contains the most up-to-date improvements. We encourage you to provide feedback on the forums and through Discord.</p>
@@ -24,7 +24,7 @@
         <h2 id="features">Features</h2>
         <div id="1">
 
-          <div class="card">
+          <div class="Card">
             <h3>Physically based rendering (PBR) shaders</h3>
 
             <p>We've been discussing shader improvements, and the initial changes are now live! PBR shaders have been implemented for all units, including mods, when you have the high fidelity preset selected. The medium fidelity preset now corresponds to the previous high fidelity setting, while the low fidelity preset remains unaffected.</p>
@@ -35,7 +35,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Tactical missiles</h3>
 
             <p>They've been left neglected for a considerable amount of time, but that's about to change! Tactical missiles have undergone extensive adjustments to enhance their behavior and introduce added immersion. These changes encompass alterations to their trajectory, velocity, and impact or intercept effects. Additionally, tactical missiles now exhibit distinct behaviors based on their faction:
@@ -50,7 +50,7 @@
             <img src="/images/game/3771/tml.png" class="imgFeature">
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Anti-projectile weaponry</h3>
 
             <p>In a previous developer iteration, we addressed the issue of excessive "overkill" by anti-projectile weaponry. The concept was to "lock on" to a projectile, which would prevent other anti-projectile weaponry from locking on, and this generally worked well. However, there were exceptions when a weapon maintained the lock on a projectile while reloading.</p>
@@ -59,7 +59,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Mobile Factories</h3>
 
             <p>In the previous developer iteration, we introduced the mobile factories feature, and thanks to valuable player feedback, we've made some improvements:
@@ -76,7 +76,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Navigational Mesh</h3>
             <p>The navigational mesh plays a crucial role in helping AI entities decipher and navigate the map. In this iteration, we've implemented several improvements:
               <ul>
@@ -91,33 +91,33 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Introducing a wall overspill mechanic</h3>
             <p>Walls now have an overspill mechanic similar to Shields. They overspill damage to directly adjacent walls. The overspill factor is 20%. For example, when a wall receives 10 damage, all adjacent walls receive an additional 2 damage.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Enhancing the performance of end-game score graphs</h3>
             <p>The score graphs now render significantly faster, thanks to the same optimizations applied to speed up the simulation.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Resource deposit detection in context-based templates while zoomed out</h3>
             <p>The search radius for resource deposits now extends as you zoom out, making it easier to build and place extractors.</p>
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Context-based templates can now trigger on your build preview</h3>
             <p>Context-based templates no longer rely solely on the context of the mouse. With this change, they can also use the build preview as context to cycle through templates. For instance, if you have a Tech 2 Radar in the build preview, you can cycle to a build template that surrounds the radar with power generators. Similarly, if a Tech 3 Power Generator is in the build preview, you can switch to a build template that surrounds the power generator with air factories. These new templates can be edited, extended, or replaced just like the old ones.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Assistance in copying the command queue of an engineer</h3>
             <p>This feature can be enabled in the game options. When holding CTRL and assisting, an engineer will now copy the command queue of the engineer being assisted and apply it to your current selection, making engineering tasks more efficient.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>The toggle to select drones now selects all drones from all drone carriers within your selection.</li>
               <li>When you right-click a control group, it appends your current selection to the control group.</li>
@@ -134,7 +134,7 @@
 
         <div id="2">
 
-          <div class="card">
+          <div class="Card">
             <h3>Resolving the bug where projectiles hit the wrong unit</h3>
 
             <p>In the past, there was an issue where projectiles would occasionally strike the incorrect unit. This problem typically occurred when a projectile intersected with multiple units at the same time, resulting in it targeting the last unit it encountered. This bug was particularly noticeable when walls positioned behind a point defense structure absorbed most of the damage, causing walls to function unreliably. The bug was most prevalent with tightly packed units or high-velocity projectiles, such as those fired by the Rhino.</p>
@@ -143,19 +143,19 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Units no longer rotate drastically as they finish building.</h3>
             <p>This would happen when a change to the rally point would change the roll off point. Instead the unit now rolls off the direction it is facing and the next unit will be properly orientated again at the start of building</p>
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Icon mods now apply immediately without requiring the next game to be loaded.</h3>
             <p>However, this change is made at the expense of disabling asset prefetching during the lobby, ensuring that icon mods behave as users expect.</p>
           </div>
 
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Corrected the issue of beam weapons sometimes missing various (hover) units.</li>
               <li>Addressed the problem of missing targeting bones in various (structure) units.</li>
@@ -177,7 +177,7 @@
 
         <h2>Contributors</h2>
 
-        <div class="card">
+        <div class="Card">
           <p>With thanks to the following people who contributed through coding:
             <ul>
               <li>clyfordv (clyf)</li>
@@ -233,7 +233,7 @@
         </div>
 
       </div>
-      <div class="sidebar">
+      <div class="Sidebar">
         <div>
           <h2><u>Contents</u></h2>
           
@@ -243,8 +243,9 @@
       </div>
     </main>
   </body>
-  <footer>
-    <a href="./index.html">Back to Patchnote List</a>
-    <p>© 2014-2024 FAForever</p>
-  </footer>
+<footer >
+    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
+    <a href="/../index.html">Back to Patchnote List</a>
+    <p>© 2015-2024 FAForever</p>
+</footer>
 </html>

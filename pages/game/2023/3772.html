@@ -5,12 +5,12 @@
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Patch 3772</title>
-    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="../../../style/game.css">
   </head>
   <body>
-    <main class="grid">
-      <div class="content">
-        <div id="intro">
+    <main class="Grid">
+      <div class="Content">
+        <div id="Intro">
             <h1>Patch 3772</h1>
             <h2>Date: Nov 2nd 2023</h2>
             <p>Please refer to the notes of versions 3771 for the full patch notes.</p>
@@ -22,7 +22,7 @@
         <h2 id="feature">Features</h2>
         <div id="1">
 
-          <div class="card">
+          <div class="Card">
             <h3>Rebalance walls</h3>
             <p>With the latest patch, walls now reliably block projectiles, even for units hiding behind them. This can create nearly impenetrable defenses without the need for artillery. In collaboration with the balance team, we have decided to implement the following balance changes for all wall sections:
               <ul>
@@ -36,7 +36,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Allow engineers to change orientation when done constructing</h3>
             <p>In the recent patch, units no longer automatically rotate towards the optimal rollout point upon completing construction. The old behavior, especially noticeable with large units (e.g., naval units), could be quite awkward. We have decided to make an exception for engineers since an incorrectly oriented engineer at the beginning of the game can significantly slow down your build order, costing valuable seconds.</p>
 
@@ -49,7 +49,7 @@
         <h2 id="ai">AI</h2>
         <div id="2">
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Enhance 'PathToWithThreatThreshold' to also provide information about the threat location.</li>
               <li>Introduce 'DirectionsFromWithThreatThreshold' for obtaining a secure landing location.</li>
@@ -65,22 +65,22 @@
 
         <div id="3">
 
-          <div class="card">
+          <div class="Card">
             <h3>Resolve factory modules (of mobile factories) causing issues with campaign objectives.</h3>
             <p>Factory modules are still part of the objective. It is up to the author of the campaign map to exclude them in the script files if they do not want them to be part of the objective</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Prevent the 'OnEnterWater' event of projectiles triggering when intersecting with the terrain.</h3>
             <p>This bug was addressed through an assembly patch, which was noticeable due to water splashes appearing on land. This issue was particularly prominent with transports crashing, but it also affected the average projectile, creating small water splashes.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Rectify a bug where a projectile would intersect with the terrain while there's a unit in between.</h3>
             <p>This bug was fixed through an assembly patch, primarily affecting the Stinger's ability to target specific, smaller units.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Correct Zappers (Cybran TMD) from intercepting the wrong missiles.</li>
               <li>Adjust the walking animation rate of various units.</li>
@@ -98,7 +98,7 @@
         <h2 id="other">Other</h2>
         <div id="4">
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Reintroduce Seraphim-specific scorch splats.</li>
               <li>Include the damage of the Colossus' claw in the blueprint, facilitating modding.</li>
@@ -110,7 +110,7 @@
 
         <h2>Contributors</h2>
 
-        <div class="card">
+        <div class="Card">
           <p>With thanks to the following people who contributed through coding:
             <ul>
               <li>Garanas (Jip)</li>
@@ -144,7 +144,7 @@
         </div>
 
       </div>
-      <div class="sidebar">
+      <div class="Sidebar">
         <div>
           <h2><u>Contents</u></h2>
           
@@ -156,8 +156,9 @@
       </div>
     </main>
   </body>
-  <footer>
-    <a href="./index.html">Back to Patchnote List</a>
-    <p>© 2014-2024 FAForever</p>
-  </footer>
+<footer >
+    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
+    <a href="/../index.html">Back to Patchnote List</a>
+    <p>© 2015-2024 FAForever</p>
+</footer>
 </html>

@@ -5,12 +5,12 @@
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Patch 3778</title>
-    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="../../../style/game.css">
   </head>
   <body>
-    <main class="grid">
-      <div class="content">
-        <div id="intro">
+    <main class="Grid">
+      <div class="Content">
+        <div id="Intro">
             <h1>Patch 3778</h1>
             <h2>Date: Dec 31st 2023</h2>
             <p>A hotfix addressing lingering issues of the year 2023.</p>
@@ -22,17 +22,17 @@
         <h2 id="bugs">Bug Fixes</h2>
         <div id="1">
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix the Aeon TMD firing its flare too late for incoming missiles.</h3>
             <p>Due to a bug, the Volcano had a target check interval of 1.0 seconds instead of 0.4 seconds, making it unable to reliably catch Seraphim tactical missiles due to their speed.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix the Aeon TMD locking onto missiles that it can't intercept.</h3>
             <p>This would prevent other TMD with a better chance at intercepting the missile from locking on.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Fix rapid-fire on Aeon and Seraphim tech 2 stationary flak.</li>
               <li>Fix the Aeon TMD being unable to prevent the Billy from exploding.</li>
@@ -45,12 +45,12 @@
         <h2 id="features">Features</h2>
         <div id="2">
 
-          <div class="card">
+          <div class="Card">
             <h3>Introduce a game option to scale strategic icons.</h3>
             <p>Also scales the pause and stun icons. Useful on monitors with high pixel density. A scale of 150% may distort the strategic icons.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Add the ability to compute a detailed path for AIs.</h3>
             <p>The function is in <code>NavUtils.lua</code> and is named <code>DetailedPathTo</code>. The function is expensive in comparison to the standard <code>PathTo</code> function.</p>
           </div>
@@ -60,7 +60,7 @@
         <h2 id="graphics">Graphics</h2>
         <div id="3">
 
-          <div class="card">
+          <div class="Card">
             <h3>Add new, high-quality strata layers and decals.</h3>
             <p>These assets are available through the FAF editor after retrieving the latest patch. The new biome is named 'New Realms.'</p>
           </div>
@@ -69,7 +69,7 @@
 
         <h2>Contributors</h2>
 
-        <div class="card">
+        <div class="Card">
           <p>With thanks to the following people who contributed through coding:
             <ul>
               <li>lL1l1</li>
@@ -111,7 +111,7 @@
         </div>
 
       </div>
-      <div class="sidebar">
+      <div class="Sidebar">
         <div>
           <h2><u>Contents</u></h2>
           
@@ -122,8 +122,9 @@
       </div>
     </main>
   </body>
-  <footer>
-    <a href="./index.html">Back to Patchnote List</a>
-    <p>© 2014-2024 FAForever</p>
-  </footer>
+<footer >
+    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
+    <a href="/../index.html">Back to Patchnote List</a>
+    <p>© 2015-2024 FAForever</p>
+</footer>
 </html>

@@ -5,12 +5,12 @@
     <meta name="description" content="FAForever Game Patchnotes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Patch 3776</title>
-    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="../../../style/game.css">
   </head>
   <body>
-    <main class="grid">
-      <div class="content">
-        <div id="intro">
+    <main class="Grid">
+      <div class="Content">
+        <div id="Intro">
             <h1>Patch 3776</h1>
             <h2>Date: Dec 1st 2023</h2>
             <p>Please refer to the notes of version 3775 for the full patch notes.</p>
@@ -22,18 +22,18 @@
         <h2 id="rework">Reworks</h2>
         <div id="1">
 
-          <div class="card">
+          <div class="Card">
             <h3>Rework the impact effect of the Mercy</h3>
             <p>The Mercy now has its own distinct tune! The effect clearly indicates the area in which units can expect to receive damage over time. Special thanks to Deribus for his extended efforts in creating this effect.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Rework the appearance of the Janus</h3>
             <p>The Janus has undergone various visual upgrades, including a new mesh and a normal map that better resembles the shape of the plane. This rework, carried out by Ejsstiil, is one of the first units to receive proper attention after the introduction of PBR. For those interested, the pull request provides a comprehensive explanation of all the changes made.</p>
 
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Rework the mechanics of the flare-based anti-tactical missile weapons</h3>
             <p>The flare was lacking due to changes introduced to tactical missiles. Specifically, the velocity of certain tactical missiles posed problems. To address this, the muzzle velocity of the flare and the radius in which flares can pull in missiles are increased. The number of missiles a single flare can pull in is reduced to 3. Visual elements are introduced to help the player understand which missiles are being pulled in by a flare. Notably, the Volcano is now on par with other stationary tactical missile defenses.</p>
 
@@ -45,12 +45,12 @@
         <h2 id="features">Features</h2>
         <div id="2">
 
-          <div class="card">
+          <div class="Card">
             <h3>Add a highlight to the graph of the focus army</h3>
             <p>This change makes it easier to identify your part of the graph in the score screen.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Introduce additional roll off points for various (air) factories</h3>
             <p>The Seraphim air factories have no roll-off point anymore, as it is the only factory that hovers above the ground. The Aeon air factories have a third roll-off point towards the front of the factory.</p>
           </div>
@@ -61,27 +61,27 @@
         <h2 id="bug"> Bug Fixes</h2>
         <div id="3">
 
-          <div class="card">
+          <div class="Card">
             <h3>Add the bonus range to the Seraphim Mobile Missile launcher</h3>
             <p>As intended by the balance team.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix the Volcano being unable to intercept tactical missiles in a reliable fashion</h3>
             <p>The tactical missiles would use the retargeting mechanic introduced with the balance patch to find a new target and home in on the target. That is of course not what is supposed to happen.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix anti-projectile weapons being disabled forever</h3>
             <p>This bug would only affect units with multiple weapons. In particular, torpedo defenses were prone to falling into this trap, turning them inert.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <h3>Fix engineers being confused when a factory is damaged</h3>
             <p>The cycle of engineers trying to 'repair' the unit that is under construction has been severed! The engineers now simply assist the factory, regardless of what else is going on.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Fix the Striker being able to evade beams</li>
               <li>Fix being unable to issue attack orders with your gunships while they are landed on water.</li>
@@ -95,12 +95,12 @@
         <h2 id="other">Other</h2>
         <div id="4">
 
-          <div class="card">
+          <div class="Card">
             <h3>Normalize the velocity of the Riot guns of the UEF</h3>
             <p>The velocity would be all over the place. They now all have a steady muzzle velocity of 60.</p>
           </div>
 
-          <div class="card">
+          <div class="Card">
             <ul>
               <li>Frame time independent pulse animation for UI</li>
             </ul>
@@ -113,7 +113,7 @@
 
         <h2>Contributors</h2>
 
-        <div class="card">
+        <div class="Card">
           <p>With thanks to the following people who contributed through coding:
             <ul>
               <li>Garanas (Jip)</li>
@@ -151,7 +151,7 @@
         </div>
 
       </div>
-      <div class="sidebar">
+      <div class="Sidebar">
         <div>
           <h2><u>Contents</u></h2>
           
@@ -163,8 +163,9 @@
       </div>
     </main>
   </body>
-  <footer>
-    <a href="./index.html">Back to Patchnote List</a>
-    <p>© 2014-2024 FAForever</p>
-  </footer>
+<footer >
+    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
+    <a href="/../index.html">Back to Patchnote List</a>
+    <p>© 2015-2024 FAForever</p>
+</footer>
 </html>
