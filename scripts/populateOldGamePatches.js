@@ -1,5 +1,5 @@
 async function populate() {
-    const requestURL = 'https://raw.githubusercontent.com/FAForever/patchnotes/master/data/oldgamepatches.json';
+    const requestURL = '../assets/data/oldgamepatches.json';
     const request = new Request(requestURL);
 
     const response = await fetch(request);
