@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
-/* Declating Default Colors */
+/* Declaring Default Colors */
 
 :root{
 
@@ -12,7 +12,7 @@
     --Primary-Dark-BG: #222;
     --Primary-Light-BG: #666;
 
-    /* Seconday Backgrounds*/
+    /* Secondary Backgrounds*/
     --Secondary-BG: #fff;
 
     /* Primary Grid Background*/
@@ -96,4 +96,32 @@ a:active {
 video {
     width: 900px;
     height: 100%;
+}
+
+
+
+/* Faction Images */
+
+.UEF {
+    filter: invert(44%) sepia(87%) saturate(705%) hue-rotate(171deg) brightness(98%) contrast(94%);  
+    width: 35px;
+    height: 35px;
+}
+
+.AEON {
+    filter: invert(61%) sepia(12%) saturate(2280%) hue-rotate(73deg) brightness(95%) contrast(82%);
+    width: 35px;
+    height: 35px;
+}
+
+.CYBRAN {
+    filter: invert(20%) sepia(47%) saturate(2292%) hue-rotate(335deg) brightness(156%) contrast(107%);  
+    width: 35px;
+    height: 35px;
+}
+
+.SERAPHIM {
+    filter: invert(74%) sepia(39%) saturate(1931%) hue-rotate(353deg) brightness(105%) contrast(104%);  
+    width: 35px;
+    height: 35px;
 }
