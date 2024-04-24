@@ -8,28 +8,26 @@
 :root{
 
     /* Primary Backgrounds */
-    --Primary-BG: #333;
-    --Primary-Dark-BG: #222;
-    --Primary-Light-BG: #666;
+    --Primary-BG: #393e46;
 
     /* Secondary Backgrounds*/
-    --Secondary-BG: #fff;
+    --Secondary-BG: #EEEEEE;
 
     /* Primary Grid Background*/
     --Primary-Grid-BG: rgba(51,51,51,0.85);
 
     /* Primary IconGrid Background*/
-    --Primary-IconGrid-BG: #4d5c50;
+    --Primary-IconGrid-BG: #222831;
 
     /* Primary Text Color */
-    --Primary-Text: #fff;
-    --Primary-Text-light: #ddd;
+    --Primary-Text: #EEEEEE;
+    --Primary-Text-light: #EEEEEE;
 
     /* Secondary Text Color */
     --Secondary-Text: #000;
 
     /* Primary Card Color */
-    --Primary-Card: #fff;
+    --Primary-Card: #222831;
 
     /* Tags */
     --buff: rgba(86,167,39,.7);
@@ -46,7 +44,7 @@
     --Link-Hover: #c2a732;
 
     /* Other */
-    --Strike: #888; 
+    --Strike: #999; 
     --Footer: #666;
     --DM-HR : #444;
     --LM-HR : #555;
@@ -64,6 +62,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
+h1, h2, h3, h4 {
+    color: var(--Primary-Text);
+}
+
+ul, li {
+    color: var(--Primary-Text);
+}
+
+
 
 h1 {font-size: 30px;}
 h2 {font-size: 25px;}
