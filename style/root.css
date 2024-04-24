@@ -8,7 +8,7 @@
 :root{
 
     /* Primary Backgrounds */
-    --Primary-BG: #393e46;
+    --Primary-BG: #222831;
 
     /* Secondary Backgrounds*/
     --Secondary-BG: #EEEEEE;
@@ -17,7 +17,7 @@
     --Primary-Grid-BG: rgba(51,51,51,0.85);
 
     /* Primary IconGrid Background*/
-    --Primary-IconGrid-BG: #222831;
+    --Primary-IconGrid-BG: #393e46;
 
     /* Primary Text Color */
     --Primary-Text: #EEEEEE;
@@ -27,7 +27,7 @@
     --Secondary-Text: #000;
 
     /* Primary Card Color */
-    --Primary-Card: #222831;
+    --Primary-Card: #393e46;
 
     /* Tags */
     --buff: rgba(86,167,39,.7);
