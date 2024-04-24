@@ -27,6 +27,7 @@ footer a:hover {
     text-decoration: none;
 }
 
+
 .Grid {
     padding: 10px;
     display: grid;
@@ -37,6 +38,15 @@ footer a:hover {
 
 .Content {
     grid-column: 2 ;
+}
+
+.FlexboxContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.FlexGrow1 {
+    flex-grow: 1;
 }
 
 .Card a {
