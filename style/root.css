@@ -71,6 +71,10 @@ ul, li {
     color: var(--Primary-Text);
 }
 
+p {
+    color: var(--Primary-Text);
+}
+
 
 
 h1 {font-size: 30px;}
