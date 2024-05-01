@@ -2,6 +2,7 @@
 @import '../style/components/card.css';
 @import '../style/components/images.css';
 @import '../style/components/video.css';
+@import '../style/components/button.css';
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
