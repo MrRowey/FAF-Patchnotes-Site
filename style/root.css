@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
-/* Declaring Default Colors */
+/* Declaring Default Color */
 
 :root{
 
-    /* Background Colors */
+    /* Background Color */
     --Background: #222831;
+    --FooterBackground: #393e46;
     --IndexGridBackground: rgba(57,62,70,0.85);
     --IconGridBackground: #393e46;
 
@@ -26,7 +27,7 @@
     --removed: rgba(190,92,0,.6);
     --added: rgba(31,52,172,.7);
 
-    /* Link Colors */
+    /* Link Color */
     --Link: #fff;
     --Link-Card: #000;
     --Link-Unvisited: #87cefa;
@@ -35,10 +36,10 @@
 
     /* Other */
     --Strike: #999; 
-    --Footer: #666;
     --Line : #444; /* #444 & #555 */
     --LM-HR : #555;
-    --ButtonBackground: #1f375e;
+    --ButtonBackground: #4474c1;
+    --ButtonText: #fff;
 }
 
 /* Base Elemets */
@@ -97,6 +98,15 @@ a:active {
 video {
     width: 900px;
     height: 100%;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: var(--Text);
+    background: var(--FooterBackground);
+    margin: 0px;
+    padding: 10px 0 5px 0;
 }
 
 
