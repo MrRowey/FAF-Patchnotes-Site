@@ -28,7 +28,7 @@
     --added: rgba(31,52,172,.7);
 
     /* Link Color */
-    --Link: #fff;
+    --Link: #eee;
     --Link-Card: #000;
     --Link-Unvisited: #87cefa;
     --Link-Visited: #dc143c;
@@ -79,20 +79,6 @@ img {
     vertical-align: middle;
     width: 60px;
     height: 60px;
-}
-
-a {
-    color: var(--Link-Unvisited);
-    text-decoration: none;
-}
-a:visited {
-    color: var(--Link-Visited);
-}
-a:hover {
-    color: var(--Link-Hover);
-}
-a:active {
-    color: var(--Link-Active);
 }
 
 video {

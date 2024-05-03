@@ -22,6 +22,20 @@ li { list-style-type: none; }
 
 ul { columns: 3;}
 
+a {
+    color: var(--Link-Unvisited);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--Link-Visited);
+}
+a:hover {
+    color: var(--Link-Hover);
+}
+a:active {
+    color: var(--Link-Active);
+}
+
 /* Classes*/
 
 .Grid {
