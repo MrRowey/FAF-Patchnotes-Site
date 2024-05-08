@@ -122,3 +122,17 @@ footer {
     width: 35px;
     height: 35px;
 }
+
+
+.FlexboxContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.FlexGrow1 {
+    flex-grow: 1;
+}
+
+.FlexGrow4 {
+    flex-grow: 4;
+}
