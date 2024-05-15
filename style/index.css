@@ -107,21 +107,34 @@ a:active {
 }
 
 
-@media screen and (max-width: 1700px) {
+/* For Desktops */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+/* For Laptops */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     ul {
         columns: 2;
     }
 }
 
-@media screen and (max-width: 1200px) {
+
+/* For Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     ul {
         columns: 1;
     }
 }
 
-@media screen and (max-width: 650px ) {
+
+/* For Mobile  */
+@media only screen and (max-width: 767px ) {
     ul {
-        columns: 2;
+        columns: 1;
     }
     .grid {
         grid-template-columns: 1fr;
