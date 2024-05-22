@@ -1,6 +1,6 @@
 @import 'root.css';
 
-/* Tags*/
+/* Tags */
 html {
     background-size: cover;
     background-repeat: no-repeat;   
@@ -11,7 +11,7 @@ body {
     background: none;
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -20,24 +20,19 @@ h1,h2,h3,h4 {
 
 li { list-style-type: none; }
 
-ul { columns: 3;}
+ul { 
+    columns: 3;
+}
 
 a {
     color: var(--Link-Unvisited);
     text-decoration: none;
 }
-a:visited {
-    color: var(--Link-Visited);
-}
-a:hover {
-    color: var(--Link-Hover);
-}
-a:active {
-    color: var(--Link-Active);
-}
+a:visited { color: var(--Link-Visited); }
+a:hover { color: var(--Link-Hover); }
+a:active { color: var(--Link-Active); }
 
-/* Classes*/
-
+/* Classes */
 .Grid {
     display: grid;
     padding: 10px;
@@ -52,20 +47,20 @@ a:active {
     backdrop-filter: blur(10px);
 }
 
-.Space {
+.Space, .Title, .BalanceContainer, .GameContainer, .BalanceDev, .Support, .BalanceJSONList, .GameJSONList {
     padding: 10px;
     text-align: center;
+}
+
+.Space {
     grid-row: 1;
     grid-column: 2 / span 2;
 }
 
 .Title {
-    padding: 10px;
-    text-align: center;
     grid-row: 2;
     grid-column: 2 / span 2;
 }
-
 .Title h1 {
     font-size: 40px;
 }
@@ -75,45 +70,33 @@ a:active {
 }
 
 .BalanceContainer {
-    padding: 10px;
-    grid-column: 2 ;
-    grid-row: 3;
-}
-.BalanceJSONList {
+    grid-column: 2;
     grid-row: 3;
 }
 
 .GameContainer {
-    padding: 10px;
-    grid-column: 3 ;
-    grid-row: 3;
-}
-.GameJSONList {
+    grid-column: 3;
     grid-row: 3;
 }
 
 .BalanceDev {
-    padding: 10px;
-    grid-column: 2;
     grid-row: 4;
-    text-align: center;
+    grid-column: 2 / span 1;
 }
 
 .Support {
-    padding: 10px;
-    grid-column: 3;
     grid-row: 4;
-    text-align: center;
+    grid-column: 3 / span 1;
 }
 
+.BalanceJSONList, .GameJSONList {
+    grid-row: 3;
+}
 
-/* For Desktops */
+/* Media Queries */
 @media only screen and (min-width: 1200px) {
-    
+    /* Custom styles for desktops if any */
 }
-
-
-/* For Laptops */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     ul {
@@ -121,50 +104,43 @@ a:active {
     }
 }
 
-
-/* For Tablets */
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     ul {
         columns: 1;
     }
 }
 
-
-/* For Mobile  */
-@media only screen and (max-width: 767px ) {
+@media only screen and (max-width: 767px) {
     ul {
         columns: 1;
     }
-    .grid {
+    .Grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .title {
+    .Title {
         grid-row: 1;
     }
-    .balance {
+    .BalanceContainer {
         grid-row: 2;
-        grid-column: 2 /span 2;
+        grid-column: 1;
     }
-    .game {
+    .GameContainer {
         grid-row: 4;
-        grid-column: 2 /span 2;
+        grid-column: 1;
     }
-    .balanceChanges {
+    .BalanceDev, .Support {
         grid-row: 3;
-        grid-column: 2 /span 2;
+        grid-column: 1;
     }
 }
 
-@media screen and (max-width: 500px ) {
+@media screen and (max-width: 500px) {
     ul {
         columns: 1;
     }
-
-    .title h1 {
+    .Title h1 {
         font-size: 40px;
         line-height: normal;
     }
-
 }
