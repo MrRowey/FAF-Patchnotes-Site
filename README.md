@@ -5,8 +5,6 @@ This Simple website contains All Current and Previous Patchnotes for Game and Ba
 
 # Patchnotes Faforever
 
-![Patchnotes Faforever](https://patchnotes.faforever.com/assets/images/logo.png)
-
 This repository contains the source code and documentation for the Patchnotes Faforever website. Patchnotes Faforever is a platform that provides comprehensive patch notes for the popular real-time strategy game, Forged Alliance Forever.
 
 ## About
