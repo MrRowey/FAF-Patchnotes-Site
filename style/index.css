@@ -91,6 +91,7 @@ a:active { color: var(--Link-Active); }
 
 .BalanceJSONList, .GameJSONList {
     grid-row: 3;
+    text-align: left;
 }
 
 /* Media Queries */
