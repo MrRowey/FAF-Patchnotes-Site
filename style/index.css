@@ -86,7 +86,7 @@ a:active { color: var(--Link-Active); }
 
 .Support {
     grid-row: 4;
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
 }
 
 .BalanceJSONList, .GameJSONList {
@@ -94,11 +94,11 @@ a:active { color: var(--Link-Active); }
 }
 
 /* Media Queries */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
     /* Custom styles for desktops if any */
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
     ul {
         columns: 2;
     }
@@ -120,18 +120,23 @@ a:active { color: var(--Link-Active); }
     }
     .Title {
         grid-row: 1;
+        grid-column: 1 / span 3;
     }
     .BalanceContainer {
         grid-row: 2;
-        grid-column: 1;
+        grid-column: 1 / span 2;
     }
     .GameContainer {
-        grid-row: 4;
-        grid-column: 1;
-    }
-    .BalanceDev, .Support {
         grid-row: 3;
-        grid-column: 1;
+        grid-column: 1 / span 2;
+    }
+    .BalanceDev {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+    }
+    .Support {
+        grid-row: 5;
+        grid-column: 1 / span 2;
     }
 }
 
