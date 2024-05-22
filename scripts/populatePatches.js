@@ -1,58 +1,45 @@
 async function populate() {
     const requestURL = '../assets/data/patches.json';
-    const request = new Request(requestURL);
 
-    const response = await fetch(request);
-    const patches = await response.json();
+    try {
+        const response = await fetch(requestURL);
 
-    BalancePatch(patches);
-    GamePatches(patches);
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
+
+        const patches = await response.json();
+
+        renderPatchList(patches.balance, ".BalanceJSONList");
+        renderPatchList(patches.game, ".GameJSONList");
+    } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    }
 }
 
-
-function BalancePatch(obj) {
-    const container = document.querySelector(".BalanceJSONList");
+function renderPatchList(patchList, containerSelector) {
+    const container = document.querySelector(containerSelector);
+    if (!container) {
+        console.error(`Container with selector ${containerSelector} not found`);
+        return;
+    }
     const list = document.createElement("ul");
 
-    const patches = obj.balance;
+    patchList.forEach(patch => {
+        const listItem = document.createElement("li");
 
-    for (const patch in patches) {
-        const listitem = document.createElement("li");
         const link = document.createElement("a");
+        link.textContent = patch.patch;
+        link.href = patch.link;
+
         const date = document.createElement("span");
-        
-        link.textContent = patches[patch].patch;
-        link.href = patches[patch].link;
+        date.textContent = patch.date;
 
-        date.textContent = patches[patch].date;
+        listItem.appendChild(link);
+        listItem.appendChild(date);
+        list.appendChild(listItem);
+    });
 
-        listitem.appendChild(link);
-        listitem.appendChild(date);
-        list.appendChild(listitem);
-    }
-    container.appendChild(list);
-}
-
-function GamePatches(obj) {
-    const container = document.querySelector(".GameJSONList");
-    const list = document.createElement("ul");
-
-    const patches = obj.game;
-
-    for (const patch in patches) {
-        const listitem = document.createElement("li");
-        const link = document.createElement("a");
-        const date = document.createElement("span");
-        
-        link.textContent = patches[patch].patch;
-        link.href = patches[patch].link;
-
-        date.textContent = patches[patch].date;
-
-        listitem.appendChild(link);
-        listitem.appendChild(date);
-        list.appendChild(listitem);
-    }
     container.appendChild(list);
 }
 
