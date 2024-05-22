@@ -1,34 +1,45 @@
 async function populate() {
     const requestURL = '../assets/data/oldgamepatches.json';
-    const request = new Request(requestURL);
 
-    const response = await fetch(request);
-    const patches = await response.json();
+    try {
+        const response = await fetch(requestURL);
 
-    GamePatches(patches);
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
+
+        const patches = await response.json();
+
+        renderPatchList(patches.game, ".gameList");
+    }
+    catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    }
 }
 
-function GamePatches(obj) {
-    const container = document.querySelector(".gameList");
+function renderPatchList(patchList, containerSelector) {
+    const container = document.querySelector(containerSelector);
+    if (!container) {
+        console.error(`Container with selector ${containerSelector} not found`);
+        return;
+    }
     const list = document.createElement("ul");
 
-    const patches = obj.game;
+    patchList.forEach(patch => {
+        const listItem = document.createElement("li");
 
-    for (const patch in patches) {
-        const listitem = document.createElement("li");
         const link = document.createElement("a");
+        link.textContent = patch.patch;
+        link.href = patch.link;
+
         const date = document.createElement("span");
-        
-        link.textContent = patches[patch].patch;
-        link.href = patches[patch].link;
+        date.textContent = patch.date;
 
-        date.textContent = patches[patch].date;
+        listItem.appendChild(link);
+        listItem.appendChild(date);
+        list.appendChild(listItem);
+    });
 
-        listitem.appendChild(link);
-        listitem.appendChild(date);
-        list.appendChild(listitem);
-    }
     container.appendChild(list);
 }
-
 populate();
