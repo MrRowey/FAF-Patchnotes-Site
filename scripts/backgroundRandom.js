@@ -1,8 +1,9 @@
-function setBackground(x){
+function setBackground({matches}){
     const htmlElement = document.documentElement;
 
-    if (x.matches) {
+    if (matches) {
         htmlElement.style.backgroundColor = "var(--Background)";
+        htmlElement.style.backgroundImage = "";
     } else {
         const imgs = [
             '../assets/images/backgrounds/1.jpg',
@@ -14,6 +15,7 @@ function setBackground(x){
         ];
         const randomImg = imgs[Math.floor(Math.random() * imgs.length)];
         htmlElement.style.backgroundImage = `url(${randomImg})`;
+        htmlElement.style.backgroundColor = "";
     }
 }
 
