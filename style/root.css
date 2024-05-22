@@ -42,7 +42,7 @@
 /* Base Elements */
 body {
     background: var(--Background);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: var(--Text);

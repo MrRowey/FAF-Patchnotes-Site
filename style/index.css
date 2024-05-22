@@ -86,7 +86,7 @@ a:active { color: var(--Link-Active); }
 
 .Support {
     grid-row: 4;
-    grid-column: 3 / span 1;
+    grid-column: 2 / span 1;
 }
 
 .BalanceJSONList, .GameJSONList {
