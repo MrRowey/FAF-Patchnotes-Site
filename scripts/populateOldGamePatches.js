@@ -3,16 +3,12 @@ async function populate() {
 
     try {
         const response = await fetch(requestURL);
-
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
         }
-
         const patches = await response.json();
-
         renderPatchList(patches.game, ".gameList");
-    }
-    catch (error) {
+    } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }
 }
@@ -23,20 +19,20 @@ function renderPatchList(patchList, containerSelector) {
         console.error(`Container with selector ${containerSelector} not found`);
         return;
     }
+
     const list = document.createElement("ul");
 
-    patchList.forEach(patch => {
+    patchList.forEach(({patch, link, date}) => {
         const listItem = document.createElement("li");
 
-        const link = document.createElement("a");
-        link.textContent = patch.patch;
-        link.href = patch.link;
+        const linkElement  = document.createElement("a");
+        linkElement .textContent = patch;
+        linkElement .href = link;
 
-        const date = document.createElement("span");
-        date.textContent = patch.date;
+        const dateElement  = document.createElement("span");
+        dateElement .textContent = date;
 
-        listItem.appendChild(link);
-        listItem.appendChild(date);
+        listItem.append(linkElement , dateElement );
         list.appendChild(listItem);
     });
 
