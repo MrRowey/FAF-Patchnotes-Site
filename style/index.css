@@ -33,18 +33,31 @@ a:hover { color: var(--Link-Hover); }
 a:active { color: var(--Link-Active); }
 
 /* Classes */
-.Grid {
+.GridContainer {
     display: grid;
     padding: 10px;
-    grid-template-columns: .25fr 2.5fr 2.5fr .25fr;
+    grid-template-columns: 0.25fr 2.5fr 2.5fr 0.25fr;
     grid-gap: 20px;
     margin: 10px;
 }
 
-.GridBackground {
+.GridItemBackground {
+    position: relative;
     background: var(--IndexGridBackground);
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.GridItemBackground::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(25px);
+    z-index: -1;
 }
 
 .Space, .Title, .BalanceContainer, .GameContainer, .BalanceDev, .Support, .BalanceJSONList, .GameJSONList {
@@ -63,6 +76,7 @@ a:active { color: var(--Link-Active); }
 }
 .Title h1 {
     font-size: 40px;
+    padding: 10px 0 10px 0; 
 }
 .Title p {
     font-size: 16px;
@@ -79,6 +93,10 @@ a:active { color: var(--Link-Active); }
     grid-row: 3;
 }
 
+.GameContainer p {
+    text-align: center;
+}
+
 .BalanceDev {
     grid-row: 4;
     grid-column: 2 / span 1;
@@ -87,6 +105,10 @@ a:active { color: var(--Link-Active); }
 .Support {
     grid-row: 4;
     grid-column: 3 / span 1;
+}
+
+.BalanceDev p, .Support p {
+    padding: 10px 0 10px 0;
 }
 
 .BalanceJSONList, .GameJSONList {

@@ -11,17 +11,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .Grid {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 3fr .75fr;
-    grid-gap: 20px;
-    margin: 0px;
+    padding: 10px; /* Space inside the grid container */
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr 3fr 0.75fr; /* Define column sizes */
+    gap: 20px; /* Space between grid items */
+    margin: 0; /* Remove default margin */
 }
 
 .Content {
     grid-column: 2 ;
 }
-
 
 #date {
     text-align: right;
@@ -41,76 +40,80 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--Text);
 }
 
+/* Sidebar */
 .Sidebar {
-    grid-column: 3;
-    position: relative;
+    grid-column: 3; /* Positioning within the grid */
+    position: relative; /* Relative positioning */
 }
 
+/* Sidebar Title */
 .Sidebar h2 a {
-    color: var(--Text);
-    text-decoration: none;
+    color: var(--Text); /* Text color */
+    text-decoration: none; /* Remove underline from links */
 }
 
+/*Icon Sidebar Container */
 .IconSidebar {
-    position: sticky;
-    top: 20px;
-    background: var(--IconGridBackground);
-    padding: 5px 20px 20px 20px;
-    margin-left: 5px;
-    color: var(--Text);
-    text-align: justify;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: auto;
+    position: sticky; /* Sticky positioning */
+    top: 20px; /* Distance from the top */
+    background: var(--IconGridBackground); /* Background color */
+    padding: 5px 20px 20px 20px; /* Padding */
+    margin-left: 5px; /* Margin from the left */
+    color: var(--Text); /* Text color */
+    text-align: justify; /* Text alignment */
+    border-radius: 15px; /* Border radius */
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four column layout */
+    row-gap: 5px; /* Space between rows */
+    column-gap: 5px; /* Space between columns */
 }
 
-.IconSidebarSpace {
-    grid-column: 1 / 4;
-    height: 20px;
+/* Title in Icon Sidebar */
+.IconSidebarTitle, .IconSidebarSubtitle {
+    grid-column: 1 / -1; /* Spanning full width */
+    text-align: center; /* Centred text */
+    margin: 0; /* Remove default margin */
 }
 
-.IconSidebarTitle {
-    grid-column: 1 / 4;
-    text-align: center;
-    margin: 0;
-}
-
-.IconSidebarSubtitle {
-    grid-column: 1 / 4;
-    text-align: left;
-    margin: 0;
-}
-
+/* Subgrid in Icon Sidebar */
 .IconSidebarSubgrid {
-    display: grid;
-    grid-template-columns: .15fr .15fr .15fr .15fr;
-    row-gap: 5px;
-    column-gap: 5px;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(4, 0.15fr);
+    gap: 5px; /* Space between grid items */
 }
 
+/* Icon in Subgrid */
 .IconSidebarSubgrid img {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Icon width */
+    height: 50px; /* Icon height */
+    text-decoration: none; /* Remove underline from links */
+    color: #3498db; /* Icon color */
+    transition: box-shadow 0.3s ease; /* Smooth box shadow transition */
+}
+.IconSidebarSubgrid img:hover {
+    box-shadow: 0 0 10px var(--IconGlow); /* Icon glow on hover */
 }
 
+/* Icon Grid Container */
 .IconGrid {
-    position: sticky;
-    top: 20px;
-    background: var(--IconGridBackgroundG);
-    padding: 5px 20px 20px 20px;
-    color: var(--Text);
-    text-align: justify;
-    border-radius: 15px;
+    position: sticky; /* Sticky positioning */
+    top: 20px; /* Distance from the top */
+    background: var(--IconGridBackgroundG); /* Background color */
+    padding: 5px 20px 20px;  /* Padding */
+    color: var(--Text); /* Text color */
+    text-align: justify; /* Text alignment */
+    border-radius: 15px; /* Rounded Corners */
 }
 
+/* Icon Grid Title */
 .IconGrid h2 {
-    margin: 10px 0 0 0;
+    margin: 10px; /* Margin */
 }
 
+/* Icons in Icon Grid */
 .IconGrid img {
-    width: 45px;
-    height: 45px;
+    width: 45px; /* Icon width */
+    height: 45px; /* Icon height */
 }
 
 .BackToTop {
