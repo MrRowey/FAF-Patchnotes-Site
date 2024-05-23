@@ -1,7 +1,7 @@
 function setBackground({matches}){
     const htmlElement = document.documentElement;
 
-    if (matches) {
+    if (matches.matches) {
         htmlElement.style.backgroundColor = "var(--Background)";
         htmlElement.style.backgroundImage = "";
     } else {
@@ -21,4 +21,6 @@ function setBackground({matches}){
 
 const mediaQuery = window.matchMedia("(max-width: 420px)");
 setBackground(mediaQuery);
-mediaQuery.addEventListener(`change`,setBackground);
+mediaQuery.addEventListener(function(mediaQuery){
+    setBackground(mediaQuery);
+});

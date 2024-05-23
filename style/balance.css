@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 2 ;
 }
 
-#date {
+.Date {
     text-align: right;
     padding-right: 10px;
 }
@@ -38,6 +38,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .Intro p {
     color: var(--Text);
+    padding: 10px;
+}
+
+.Intro h3 {
+    padding-left: 10px;
+}
+
+.FlexboxContainer {
+    padding-left: 10px;
 }
 
 /* Sidebar */

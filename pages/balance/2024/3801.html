@@ -8,140 +8,138 @@
     <link rel="stylesheet" href="/style/balance.css"/>
 </head>
 <body>
-    <main class="Grid">
-        <div class="Content">
-            <div id="Intro">
-                <header class="FlexboxContainer">
-                    <h1 class="FlexGrow4">Patch 3801</h1>
-                    <h4 class="FlexGrow1" id="date">Date:<i> March 15 2024</i></h4>
-                </header>
-                <p>This balance update comprises numerous minor adjustments to certain units, providing them with backup capabilities at a distance. Additionally, there are a few significant changes, such as the introduction of the new Teleport mechanic, alongside some slight nerfs.</p>
-                <h3> Balance Team</h3>
-                <hr>
-            </div>
+  <main class="Grid">
+    <div class="Content">
+      <div class="Intro" id="Intro">
+        <header class="FlexboxContainer">
+          <h1 class="FlexGrow4">Patch 3801</h1>
+          <h4 class="FlexGrow1 Date">Date:<i> March 15 2024</i></h4>
+        </header>
+        <p>This balance update comprises numerous minor adjustments to certain units, providing them with backup capabilities at a distance. Additionally, there are a few significant changes, such as the introduction of the new Teleport mechanic, alongside some slight nerfs.</p>
+        <h3> Balance Team</h3>
+        <hr>
+      </div>
 
-            <h2>Land</h2>
-            <div id="1">
-                <div id="t1scouts" class="Card">
-                    <h3>T1 Scouts</h3>
+      <h2>Land</h2> 
+        <div id="1">
+          <div id="t1scouts" class="Card">
+            <h3>T1 Scouts</h3>
+              <h4><img src="/assets/images/units/uef/land/T1Scout.png" alt="Snoop">Snoop</h4>
+                <ul>
+                  <li>BackUpDistance: <s>2</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                </ul>
 
-                    <h4><img src="/assets/images/units/uef/land/T1Scout.png" alt="Snoop">Snoop</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>2</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                    </ul>
+              <h4><img src="/assets/images/units/aeon/land/T1Scout.png" alt="Spirit">Spirit</h4>
+                <ul>
+                    <li>BackUpDistance: <s>2</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                    <li>MaxSpeedReverse: <s>3</s> <i class="fa-solid fa-arrow-right"></i> 4.6</li>
+                </ul>
 
-                    <h4><img src="/assets/images/units/aeon/land/T1Scout.png" alt="Spirit">Spirit</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>2</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>3</s> <i class="fa-solid fa-arrow-right"></i> 4.6</li>
-                    </ul>
+              <h4><img src="/assets/images/units/cybran/land/T1Scout.png" alt="Mole">Mole</h4>
+                <ul>
+                    <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                    <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 4.8</li>
+                </ul>
+          </div>
 
-                    <h4><img src="/assets/images/units/cybran/land/T1Scout.png" alt="Mole">Mole</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 4.8</li>
-                    </ul>
-                </div>
+          <div id="t1aa" class="Card">
+            <h3>T1 Anti-Air</h3>
 
-                <div id="t1aa" class="Card">
-                    <h3>T1 Anti-Air</h3>
+            <h4><img src="/assets/images/units/uef/land/T1MobileAA.png">Archer</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
 
-                    <h4><img src="/assets/images/units/uef/land/T1MobileAA.png">Archer</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
+            <h4><img src="/assets/images/units/cybran/land/T1MobileAA.png">Sky Slammer</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.9</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
 
-                    <h4><img src="/assets/images/units/cybran/land/T1MobileAA.png">Sky Slammer</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.9</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
+            <h4><img src="/assets/images/units/aeon/land/T1MobileAA.png">Thistle</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
 
-                    <h4><img src="/assets/images/units/aeon/land/T1MobileAA.png">Thistle</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
+            <h4><img src="/assets/images/units/sera/land/T1MobileAA.png">Ia-istle</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+              </ul>
+          </div>
 
-                    <h4><img src="/assets/images/units/sera/land/T1MobileAA.png">Ia-istle</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                    </ul>
+          <div id="t1tank" class="Card">
+            <h3>T1 Tank</h3>
 
-                </div>
+            <h4><img src="/assets/images/units/uef/land/T1Tank.png">Striker</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 3.4</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
 
-                <div id="t1tank" class="Card">
-                    <h3>T1 Tank</h3>
+            <h4><img src="/assets/images/units/aeon/land/T1Tank.png">Aurora</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+              </ul>
 
-                    <h4><img src="/assets/images/units/uef/land/T1Tank.png">Striker</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 3.4</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
+            <h4><img src="/assets/images/units/sera/land/T1Tank.png">Thaam</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 3.5</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
+          </div>
 
-                    <h4><img src="/assets/images/units/aeon/land/T1Tank.png">Aurora</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                    </ul>
+          <div id="t1arty" class="Card">
+            <h3>T1 Mobile Artilleries</h3>
 
-                    <h4><img src="/assets/images/units/sera/land/T1Tank.png">Thaam</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 3.5</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
-                </div>
+            <h4><img src="/assets/images/units/uef/land/T1MobileArty.png">Lobo</h4>
+              <ul>
+                  <li>BackUpDistance: <s>2</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+              </ul>
 
-                <div id="t1arty" class="Card">
-                    <h3>T1 Mobile Artilleries</h3>
+            <h4><img src="/assets/images/units/aeon/land/T1MobileArty.png">Fervor</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.7</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
 
-                    <h4><img src="/assets/images/units/uef/land/T1MobileArty.png">Lobo</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>2</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                    </ul>
+            <h4><img src="/assets/images/units/cybran/land/T1MobileArty.png">Medusa</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.9</li>
+                  <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+              </ul>
 
-                    <h4><img src="/assets/images/units/aeon/land/T1MobileArty.png">Fervor</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.7</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
+            <h4><img src="/assets/images/units/sera/land/T1MobileArty.png">Zthuee</h4>
+              <ul>
+                  <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
+                  <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.7</li>
+              </ul>
+          </div>
 
-                    <h4><img src="/assets/images/units/cybran/land/T1MobileArty.png">Medusa</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.9</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
+          <div id="t2shield" class="Card">
+          <h3>T2 Mobile Shield</h3>
 
-                    <h4><img src="/assets/images/units/sera/land/T1MobileArty.png">Zthuee</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 6</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 2.7</li>
-                    </ul>
-                </div>
+          <h4><img src="/assets/images/units/uef/land/T2MobileShield.png">Parashield</h4>
+            <ul>
+                <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 8</li>
+                <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 3.5</li>
+                <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+            </ul>
 
-                <div id="t2shield" class="Card">
-                    <h3>T2 Mobile Shield</h3>
+          <h4><img src="/assets/images/units/aeon/land/T2MobileShiled.png">Asylum</h4>
+            <ul>
+                <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 8</li>
+                <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 4</li>
+                <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
+            </ul>
 
-                    <h4><img src="/assets/images/units/uef/land/T2MobileShield.png">Parashield</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 8</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 3.5</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
-
-                    <h4><img src="/assets/images/units/aeon/land/T2MobileShiled.png">Asylum</h4>
-                    <ul>
-                        <li>BackUpDistance: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 8</li>
-                        <li>MaxSpeedReverse: <s>0</s> <i class="fa-solid fa-arrow-right"></i> 4</li>
-                        <li>RotateOnStop: <s>true</s> <i class="fa-solid fa-arrow-right"></i> false</li>
-                    </ul>
-
-                </div>
+          </div>
 
                 <div id="t2flack" class="Card">
                     <h3>T2 Mobile Flack</h3>
@@ -509,7 +507,7 @@
     </main>
 </body>
 <footer>
-    <div class="BackToTop"><button><a class="TopText" href="#top">Back to Top</a></button></div><br>
+    <div class="BackToTop"><a class="TopText" href="#top">Back to Top</a></div><br>
     <a href="/../index.html">Back to Patchnote List</a>
     <p>© 2015-2024 FAForever</p>
 </footer>
