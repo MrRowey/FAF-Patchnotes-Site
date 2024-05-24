@@ -15,6 +15,20 @@ h6 {
   font-weight: normal;
 }
 
+a {
+  color: var(--Link);
+  text-decoration: underline;
+}
+
+ul {
+  padding: 10px 25px 10px 25px;
+}
+
+li {
+  padding: 5px 0 5px 0;
+  list-style: none;
+}
+
 .Grid {
   padding: 10px; /* Space inside the grid container */
   display: grid; /* Enable grid layout */
@@ -83,11 +97,17 @@ h6 {
 }
 
 /* Title in Icon Sidebar */
-.IconSidebarTitle,
-.IconSidebarSubtitle {
+.IconSidebarTitle {
   grid-column: 1 / -1; /* Spanning full width */
   text-align: center; /* Centred text */
   margin: 0; /* Remove default margin */
+  padding: 10px 0 10px 0; /* Padding */
+}
+
+.IconSidebarSubtitle {
+  grid-column: 1 / -1;
+  text-align: left;
+  margin: 0;
 }
 
 /* Subgrid in Icon Sidebar */
@@ -137,7 +157,12 @@ h6 {
   border-radius: 50%;
 }
 
-a {
-  color: var(--Link);
-  text-decoration: underline;
+.Stat {
+  border-radius: 8px;
+  border: lightgray 1px solid;
+  padding: 3px 8px 3px 8px;
+}
+
+.SectionHeader {
+  padding: 10px 0 10px 0;
 }
