@@ -29,6 +29,14 @@ li {
   list-style: none;
 }
 
+header {
+  padding: 15px;
+}
+
+.patchDescription {
+  margin: 10px;
+}
+
 .Grid {
   padding: 10px; /* Space inside the grid container */
   display: grid; /* Enable grid layout */
