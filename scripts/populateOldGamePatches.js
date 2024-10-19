@@ -1,50 +1,77 @@
 async function populate() {
-  const requestURL = "../assets/data/oldgamepatches.json";
+  const requestURL = '../assets/data/oldgamepatches.json';
 
   try {
-    const response = await fetch(requestURL, { cache: "no-cache" });
+    // Fetching the patches data
+    const response = await fetch(requestURL, { cache: 'no-cache' });
 
     if (!response.ok) {
       throw new Error(`Network response was not ok: ${response.statusText}`);
     }
 
-    const patches = await response.json();
+    let patches;
 
-    if (!patches || !patches.game) {
-      throw new Error("Invalid data format: Missing game data");
+    try {
+      patches = await response.json(); // Safely parse JSON
+    } catch (jsonError) {
+      throw new Error('Failed to parse JSON data');
     }
 
-    renderPatchList(patches.game, ".gameList");
+    // Ensure game data exists
+    if (!patches || !Array.isArray(patches.game)) {
+      throw new Error('Invalid data format: Missing or malformed game data');
+    }
+
+    // Render the patches if available
+    renderPatchList(patches.game, '.gameList');
   } catch (error) {
-    console.error("There has been a problem with your fetch operation:", error);
+    console.error('There has been a problem with your fetch operation:', error);
+    renderError('.gameList', 'Failed to load game patches');
   }
 }
 
 function renderPatchList(patchList, containerSelector) {
   const container = document.querySelector(containerSelector);
+
   if (!container) {
-    console.error(`Container with selector ${containerSelector} not found`);
+    console.error(`Container with selector "${containerSelector}" not found.`);
     return;
   }
 
-  const list = document.createElement("ul");
+  const fragment = document.createDocumentFragment(); // Use fragment for better performance
 
-  patchList.forEach(({ patch, link, date }) => {
-    const listItem = document.createElement("li");
+  patchList.forEach(
+    ({ patch = 'Unknown Patch', link = '#', date = 'Unknown Date' }) => {
+      const listItem = document.createElement('li');
 
-    const linkElement = document.createElement("a");
-    linkElement.textContent = patch;
-    linkElement.href = link;
-    linkElement.target = "_blank";
+      const linkElement = document.createElement('a');
+      linkElement.textContent = patch;
+      linkElement.href = link;
+      linkElement.target = '_blank';
 
-    const dateElement = document.createElement("span");
-    dateElement.textContent = date;
+      const dateElement = document.createElement('span');
+      dateElement.textContent = date;
 
-    listItem.append(linkElement, dateElement);
-    list.appendChild(listItem);
-  });
+      listItem.append(linkElement, dateElement);
+      fragment.appendChild(listItem);
+    }
+  );
 
-  container.innerHTML = "";
-  container.appendChild(list);
+  container.innerHTML = ''; // Clear existing content
+  container.appendChild(fragment); // Append all items at once for better performance
 }
-document.addEventListener("DOMContentLoaded", populate);
+
+function renderError(containerSelector, message) {
+  const container = document.querySelector(containerSelector);
+
+  if (container) {
+    container.innerHTML = `<p class="error">${message}</p>`;
+  } else {
+    console.error(`Container with selector "${containerSelector}" not found.`);
+  }
+}
+
+// Load the patches on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', async () => {
+  await populate(); // Use async function for potential future enhancements
+});

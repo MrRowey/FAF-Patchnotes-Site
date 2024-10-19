@@ -16,20 +16,28 @@
   overflow: hidden;
   resize: horizontal;
   z-index: 1;
+  transition: width 0.3s ease; /* Smooth transition when resizing */
 }
 
 .ImageSlider > div:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   padding: 5px;
   background: linear-gradient(-45deg, white 50%, transparent 0);
   background-clip: content-box;
   cursor: ew-resize;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(
+    0 0 6px rgba(0, 0, 0, 0.4)
+  ); /* Softer shadow for better aesthetics */
+  transition: transform 0.2s ease; /* Smooth interaction when clicked */
+}
+
+.ImageSlider > div:hover:before {
+  transform: scale(1.1); /* Slightly enlarge the handle on hover */
 }
 
 .ImageSlider img {
@@ -38,8 +46,12 @@
   user-select: none;
   width: 100%;
   height: auto;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth fade effect when switching images */
+  loading: lazy; /* Lazy load for performance optimization */
 }
 
+/* Image Showcase Styles */
 .ImageShowcase {
   width: 100%;
   height: auto;
@@ -47,25 +59,35 @@
   border-radius: 15px;
 }
 
-/* Responsive design */
+/* Handle responsiveness for mobile devices */
 @media (max-width: 768px) {
   .ImageSlider > div {
-    width: 25px; /* Smaller handle for medium screens */
+    width: 25px; /* Smaller handle */
   }
 
   .ImageSlider > div:before {
-    width: 14px; /* Adjusted handle size */
-    height: 14px; /* Adjusted handle size */
+    width: 16px; /* Adjust handle size for medium screens */
+    height: 16px;
   }
 }
 
 @media (max-width: 420px) {
   .ImageSlider > div {
-    width: 20px; /* Smaller handle for small screens */
+    width: 20px; /* Even smaller handle for mobile */
   }
 
   .ImageSlider > div:before {
-    width: 12px; /* Adjusted handle size */
-    height: 12px; /* Adjusted handle size */
+    width: 12px; /* Adjust handle size for small screens */
+    height: 12px;
   }
+}
+
+/* ARIA and accessibility improvements */
+.ImageSlider[aria-valuenow] {
+  outline: none;
+}
+
+.ImageSlider[aria-valuenow]:focus-visible > div:before {
+  outline: 2px solid var(--ButtonFocusOutline, #000); /* Focus outline for keyboard users */
+  outline-offset: 2px;
 }

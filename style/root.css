@@ -2,19 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
-/* Declaring Default Color */
+/* Reset Box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Declaring Default Colors */
 :root {
-  /* Background Color */
+  /* Background Colors */
   --Background: #222831;
   --FooterBackground: #393e46;
   --IndexGridBackground: rgba(57, 62, 70, 0.85);
   --IconGridBackground: #393e46;
 
-  /* Text Color */
+  /* Text Colors */
   --Text: #eee;
   --Top: #000;
 
-  /* Card Color */
+  /* Card Colors */
   --Card: #393e46;
 
   /* Tags */
@@ -24,7 +31,7 @@
   --removed: rgba(190, 92, 0, 0.6);
   --added: rgba(31, 52, 172, 0.7);
 
-  /* Link Color */
+  /* Link Colors */
   --Link: #eee;
   --Link-Card: #000;
   --Link-Unvisited: #87cefa;
@@ -41,55 +48,49 @@
 }
 
 :root.light-mode {
-  /* Background Color */
-  --Background: #f2f2f2; /* Light gray for the background */
-  --FooterBackground: #e0e0e0; /* Slightly darker gray for the footer */
-  --IndexGridBackground: rgba(
-    240,
-    240,
-    240,
-    0.85
-  ); /* Light with slight transparency */
-  --IconGridBackground: #e0e0e0; /* Same as footer for consistency */
+  /* Background Colors */
+  --Background: #f2f2f2;
+  --FooterBackground: #e0e0e0;
+  --IndexGridBackground: rgba(240, 240, 240, 0.85);
+  --IconGridBackground: #e0e0e0;
 
-  /* Text Color */
-  --Text: #222831; /* Dark gray for the text, matching the original dark mode background */
-  --Top: #000; /* Kept black for high contrast */
+  /* Text Colors */
+  --Text: #222831;
+  --Top: #000;
 
-  /* Card Color */
-  --Card: #ffffff; /* White card for a clean, light look */
+  /* Card Colors */
+  --Card: #ffffff;
 
   /* Tags */
-  --buff: rgba(76, 142, 34, 0.8); /* Muted green, still vibrant but softer */
-  --nerf: rgba(150, 40, 40, 0.75); /* Less intense red for light backgrounds */
-  --stats: rgba(0, 0, 0, 0.4); /* Lighter black to match the new scheme */
-  --removed: rgba(185, 80, 20, 0.7); /* Softer orange-brown */
-  --added: rgba(50, 90, 200, 0.75); /* Brighter blue for readability */
+  --buff: rgba(76, 142, 34, 0.8);
+  --nerf: rgba(150, 40, 40, 0.75);
+  --stats: rgba(0, 0, 0, 0.4);
+  --removed: rgba(185, 80, 20, 0.7);
+  --added: rgba(50, 90, 200, 0.75);
 
-  /* Link Color */
-  --Link: #0056b3; /* Deep blue for links */
-  --Link-Card: #ffffff; /* White for link on card background */
-  --Link-Unvisited: #0047ab; /* Stronger blue for unvisited links */
-  --Link-Visited: #8b0000; /* Darker red for visited links */
-  --Link-Hover: #d4a020; /* Warm gold hover effect */
+  /* Link Colors */
+  --Link: #0056b3;
+  --Link-Card: #ffffff;
+  --Link-Unvisited: #0047ab;
+  --Link-Visited: #8b0000;
+  --Link-Hover: #d4a020;
 
   /* Other */
-  --Strike: #666; /* Medium gray for strikethroughs */
-  --Line: #bbb; /* Light gray for lines */
-  --LM-HR: #aaa; /* Slightly darker line for HRs */
-  --ButtonBackground: #4474c1; /* Kept the same button blue for consistency */
-  --ButtonText: #fff; /* White text for buttons */
-  --IconGlow: rgba(0, 0, 0, 0.2); /* Soft shadow for light mode */
+  --Strike: #666;
+  --Line: #bbb;
+  --LM-HR: #aaa;
+  --ButtonBackground: #4474c1;
+  --ButtonText: #fff;
+  --IconGlow: rgba(0, 0, 0, 0.2);
 }
 
 /* Base Elements */
 body {
   background: var(--Background);
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-family: 'Open Sans', 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--Text);
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -107,13 +108,13 @@ footer {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
 }
 h2 {
-  font-size: 25px;
+  font-size: 1.5625rem; /* 25px */
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
 }
 
 s {
@@ -127,13 +128,14 @@ img {
 }
 
 video {
-  width: 900px;
-  height: 100%;
+  width: 100%; /* Make it responsive */
+  max-width: 900px;
+  height: auto;
 }
 
 footer {
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   background: var(--FooterBackground);
   padding: 10px 0 5px;
 }
@@ -172,10 +174,10 @@ footer {
   display: flex;
 }
 
-.FlexGrow1 {
+.FlexGrow-1 {
   flex-grow: 1;
 }
 
-.FlexGrow4 {
+.FlexGrow-4 {
   flex-grow: 4;
 }
