@@ -1,6 +1,6 @@
 /* Importing Google Font and Font Awesome */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 /* Declaring Default Color */
 :root {
@@ -42,32 +42,44 @@
 
 :root.light-mode {
   /* Background Color */
-  --Background: #ffffff;
-  --FooterBackground: #f1f1f1;
-  --IndexGridBackground: rgba(245, 245, 245, 0.85);
-  --IconGridBackground: #e0e0e0;
+  --Background: #f2f2f2; /* Light gray for the background */
+  --FooterBackground: #e0e0e0; /* Slightly darker gray for the footer */
+  --IndexGridBackground: rgba(
+    240,
+    240,
+    240,
+    0.85
+  ); /* Light with slight transparency */
+  --IconGridBackground: #e0e0e0; /* Same as footer for consistency */
 
   /* Text Color */
-  --Text: #000;
-  --Top: #fff;
+  --Text: #222831; /* Dark gray for the text, matching the original dark mode background */
+  --Top: #000; /* Kept black for high contrast */
 
   /* Card Color */
-  --Card: #e0e0e0;
+  --Card: #ffffff; /* White card for a clean, light look */
+
+  /* Tags */
+  --buff: rgba(76, 142, 34, 0.8); /* Muted green, still vibrant but softer */
+  --nerf: rgba(150, 40, 40, 0.75); /* Less intense red for light backgrounds */
+  --stats: rgba(0, 0, 0, 0.4); /* Lighter black to match the new scheme */
+  --removed: rgba(185, 80, 20, 0.7); /* Softer orange-brown */
+  --added: rgba(50, 90, 200, 0.75); /* Brighter blue for readability */
 
   /* Link Color */
-  --Link: #000;
-  --Link-Card: #fff;
-  --Link-Unvisited: #1e90ff;
-  --Link-Visited: #8b0000;
-  --Link-Hover: #ffa500;
+  --Link: #0056b3; /* Deep blue for links */
+  --Link-Card: #ffffff; /* White for link on card background */
+  --Link-Unvisited: #0047ab; /* Stronger blue for unvisited links */
+  --Link-Visited: #8b0000; /* Darker red for visited links */
+  --Link-Hover: #d4a020; /* Warm gold hover effect */
 
   /* Other */
-  --Strike: #666;
-  --Line: #ccc;
-  --LM-HR: #aaa;
-  --ButtonBackground: #0000ff;
-  --ButtonText: #000;
-  --IconGlow: rgba(0, 0, 0, 0.7);
+  --Strike: #666; /* Medium gray for strikethroughs */
+  --Line: #bbb; /* Light gray for lines */
+  --LM-HR: #aaa; /* Slightly darker line for HRs */
+  --ButtonBackground: #4474c1; /* Kept the same button blue for consistency */
+  --ButtonText: #fff; /* White text for buttons */
+  --IconGlow: rgba(0, 0, 0, 0.2); /* Soft shadow for light mode */
 }
 
 /* Base Elements */
