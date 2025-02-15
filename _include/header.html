@@ -1,0 +1,32 @@
+<header class="wrapper">
+    <div class="site-header">
+        <a class="site-header-title" rel="author"  href="{{ '/' | relative_url}}">{{ site.title | | escape }}</a>
+
+        <div class="site-header-github">
+            <a
+            class="site-header-github-link"
+            href="https://github.com/MrRowey/FAF-Patchnotes-Site"
+            target="_blank"
+            title="View on GitHub">
+                <span class="icon-github"></span>
+            </a>
+
+            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+
+            <div class="site-header-github-meta">
+                <span class="site-header-github-meta-field">
+                    Last update at {{ site.time | date: date_format }}
+                </span>
+                {% if site.github.commit %}
+                <span class="site-header-github-meta-field">
+                    {{ site.github.commit }}
+                </span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+
+
+</header>
