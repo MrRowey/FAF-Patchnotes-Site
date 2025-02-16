@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>FAForever Patchnotes - Balance & Game Updates</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Browse and access the latest FAForever balance and game patch notes in an easy-to-read format.">
-    
-    <!-- META Tags For Discord and Social Sharing -->
-    <meta name="twitter:image:src" content="https://raw.githubusercontent.com/FAForever/patchnotes/master/images/thumbnail/thumbnail.png">
-    <meta name="twitter:site" content="@FAForever">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FAForever Patchnotes - Balance & Game Updates">
-    <meta name="twitter:description" content="Browse and access the latest FAForever balance and game patch notes in an easy-to-read format.">
-    
-    <meta property="og:image:url" content="https://raw.githubusercontent.com/FAForever/patchnotes/master/images/thumbnail/thumbnail.png">
-    <meta property="og:image:alt" content="FAForever Patchnote Site">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="600">
-    <meta property="og:site_name" content="FAForever">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="FAForever Patchnotes - Balance & Game Updates">
-    <meta property="og:url" content="https://faforever.com/patchnotes">
-    <meta property="og:description" content="Browse and access the latest FAForever balance and game patch notes in an easy-to-read format.">
+---
+layout: base
+title: FAForever Balance Patchnotes
+---
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
-
-    <!-- External Scripts -->
-    <script src="./scripts/backgroundRandom.js" defer></script>
-    <script src="./scripts/populatePatches.js" defer></script>
-  </head>
-  <body>
     <main class="GridContainer">
       <div class="Space"></div>
 
