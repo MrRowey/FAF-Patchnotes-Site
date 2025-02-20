@@ -1,41 +1,52 @@
 title: "FAForever Balance Patchnotes"
-description: "Latest balance updates for FAForever."
-author: "FAForever Team"
-lang: "en"
-baseurl: ""
 url: "https://faforever.github.io/FAFBalancePatchnotes"
+description: "Latest balance updates for FAForever."
 
-# Build Settings
+permalink: /:year/:month/:day/:title:output_ext
+
+baseurl: ""
+
+plugins_dir: _plugins
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-category-pages
   - jekyll-sitemap
+  - jekyll-category-pages
   - jekyll-transcode-image-filters
+  - jekyll-paginate
   - jekyll-seo-tag
 
-# markdown settings
 markdown: kramdown
 highlighter: rouge
 
-# navigation
-collections:
-  posts:
-    output: true
-    permalink: /patches/:year/:month/:title
+header_pages:
+  - about.md
 
-# Exclude from processing.
+date_format: "%d %B, %Y"
+
+repository: MrRowey/FAF-Patchnotes-Site
+
 exclude:
+  - .sass-cache/
+  - .idea/
+  - .vscode/
+  - .gitignore
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor
-  - .jekyll-cache
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 # Google Analytics
 # google_analytics: UA-XXXXXXXX-X
 
 social_links:
   twitter: "https://twitter.com/FAForever"
   github: "https://github.com/FAForever"
+
+category_layout: category_index.html
+category_path: category
