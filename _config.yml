@@ -4,7 +4,7 @@ description: "Latest balance updates for FAForever."
 
 permalink: /:year/:month/:day/:title:output_ext
 
-baseurl: ""
+baseurl: "FAF-Patchnotes-Site/"
 
 plugins_dir: _plugins
 plugins:
