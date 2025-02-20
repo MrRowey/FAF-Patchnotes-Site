@@ -2,9 +2,9 @@ title: "FAForever Balance Patchnotes"
 url: "https://faforever.github.io/FAFBalancePatchnotes"
 description: "Latest balance updates for FAForever."
 
-permalink: /:year/:month/:day/:title:output_ext
+permalink: FAF-Patchnotes-Site/:year/:month/:day/:title:output_ext
 
-baseurl: "FAF-Patchnotes-Site/"
+baseurl: ""
 
 plugins_dir: _plugins
 plugins:
