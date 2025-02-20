@@ -1,5 +1,7 @@
-title: FAForever Balance Patchnotes
-description: Patchnotes for FAForever Balance
+title: "FAForever Balance Patchnotes"
+description: "Latest balance updates for FAForever."
+author: "FAForever Team"
+lang: "en"
 baseurl: ""
 url: "https://faforever.github.io/FAFBalancePatchnotes"
 
@@ -12,6 +14,7 @@ plugins:
   - jekyll-category-pages
   - jekyll-sitemap
   - jekyll-transcode-image-filters
+  - jekyll-seo-tag
 
 # markdown settings
 markdown: kramdown
@@ -21,7 +24,7 @@ highlighter: rouge
 collections:
   posts:
     output: true
-    permalink: /patches/:title
+    permalink: /patches/:year/:month/:title
 
 # Exclude from processing.
 exclude:
@@ -29,10 +32,10 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - .jekyll-cache
 # Google Analytics
 # google_analytics: UA-XXXXXXXX-X
 
-# Social Media
-# social_links:
-#  twitter:
-#  github:
+social_links:
+  twitter: "https://twitter.com/FAForever"
+  github: "https://github.com/FAForever"
