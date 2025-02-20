@@ -1,0 +1,38 @@
+title: FAForever Balance Patchnotes
+description: Patchnotes for FAForever Balance
+baseurl: ""
+url: "https://faforever.github.io/FAFBalancePatchnotes"
+
+# Build Settings
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-category-pages
+  - jekyll-sitemap
+  - jekyll-transcode-image-filters
+
+# markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# navigation
+collections:
+  posts:
+    output: true
+    permalink: /patches/:title
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+# Google Analytics
+# google_analytics: UA-XXXXXXXX-X
+
+# Social Media
+# social_links:
+#  twitter:
+#  github:
