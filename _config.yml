@@ -13,9 +13,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-sitemap
   - jekyll-category-pages
-  - jekyll-transcode-image-filters
   - jekyll-paginate
-  - jekyll-seo-tag
 
 markdown: kramdown
 highlighter: rouge

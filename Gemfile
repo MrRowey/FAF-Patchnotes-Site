@@ -35,18 +35,6 @@ group :jekyll_plugins do
 
   gem 'jekyll-sitemap'
 
-  # Used to generate images of various sizes and formats to speed up page loading on mobile phones.
-  # - https://github.com/Garanas/jekyll-transcode-image-filters
-
-  gem 'jekyll-transcode-image-filters', git: "https://github.com/Garanas/jekyll-transcode-image-filters"
-
-end
-
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
 end
 
 # Performance-booster for watching directories on Windows
