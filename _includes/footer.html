@@ -19,29 +19,13 @@
 </style>
 
 <footer>
-    <div style="flex: 1; text-align: left;">
-        <p>Follow us:</p>
-        <a href="#" style="color: #bbb; margin: 0 5px;"><span class="material-icons">twitter</span></a>
-        <a href="#" style="color: #bbb; margin: 0 5px;"><span class="material-icons">facebook</span></a>
-        <a href="#" style="color: #bbb; margin: 0 5px;"><span class="material-icons">discord</span></a>
-    </div>
+
+    {% include components/social-links.html %}
     
     <div style="flex: 1; text-align: center;">
         <p>&copy; {{ "now" | date: "%Y" }} FAForever. All rights reserved.</p>
         <p>Licensed under <a href="#" style="color: #bbb;">FAF Licence</a></p>
     </div>
     
-    <div style="flex: 1; text-align: right;">
-        <label for="theme-toggle">Theme:</label>
-        <select id="theme-toggle" onchange="changeTheme(this.value)">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-        </select>
-    </div>
+    {% include components/theme-switch.html %}
 </footer>
-
-<script>
-    function changeTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-    }
-</script>

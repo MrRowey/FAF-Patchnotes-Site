@@ -1,30 +1,74 @@
-title: "FAForever Balance Patchnotes"
-url: "https://faforever.github.io/FAFBalancePatchnotes"
-description: "Latest balance updates for FAForever."
+# ==============================
+# ✅ Site Configuration
+# ==============================
+title: 'FAForever Balance Patch Notes'
+url: 'https://faforever.github.io/FAFBalancePatchnotes'
+description: 'Stay up-to-date with the latest FAForever balance updates, patches, and game improvements.'
 
-permalink: FAF-Patchnotes-Site/:year/:month/:day/:title:output_ext
+# 📌 SEO-Friendly Permalink Structure
+permalink: 'patchnotes/:year/:month/:day/:title/'
 
-baseurl: ""
+# Base URL (Leave empty unless hosted in a subdirectory)
+baseurl: ''
 
+# ==============================
+# 📌 Plugins & Extensions
+# ==============================
 plugins_dir: _plugins
 plugins:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-github-metadata
-  - jekyll-sitemap
-  - jekyll-category-pages
-  - jekyll-paginate
+  - jekyll-feed # Generates RSS feed
+  - jekyll-redirect-from # Enables URL redirections
+  - jekyll-github-metadata # Exposes repository metadata
+  - jekyll-sitemap # Generates sitemap for SEO
+  - jekyll-category-pages # Creates category pages
+  - jekyll-paginate # Enables pagination for posts
+  - jekyll-seo-tag # Adds SEO meta tags (NEW)
 
+# ==============================
+# 📌 Markdown & Syntax Highlighting
+# ==============================
 markdown: kramdown
 highlighter: rouge
 
+# ==============================
+# 📌 Navigation & Pages
+# ==============================
 header_pages:
   - about.md
 
-date_format: "%d %B, %Y"
+# ==============================
+# 📌 Formatting Options
+# ==============================
+date_format: '%d %B, %Y' # Example: "22 February, 2025"
 
+# ==============================
+# 📌 Repository Information (GitHub Integration)
+# ==============================
 repository: MrRowey/FAF-Patchnotes-Site
 
+# ==============================
+# 🚀 Pagination Settings
+# ==============================
+paginate: 10 # Number of posts per page
+paginate_path: '/page:num/'
+
+# ==============================
+# 🚀 SEO & Social Media Metadata
+# ==============================
+twitter:
+  username: 'FAForever'
+  card: 'summary_large_image'
+
+social:
+  name: 'FAForever'
+  links:
+    - 'https://twitter.com/FAForever'
+    - 'https://github.com/FAForever'
+
+# ==============================
+# 🚀 Excluded Files & Directories
+# (Prevents unnecessary processing)
+# ==============================
 exclude:
   - .sass-cache/
   - .idea/
@@ -39,12 +83,14 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-# Google Analytics
+
+# ==============================
+# 📌 Google Analytics (Uncomment & replace ID)
+# ==============================
 # google_analytics: UA-XXXXXXXX-X
 
-social_links:
-  twitter: "https://twitter.com/FAForever"
-  github: "https://github.com/FAForever"
-
+# ==============================
+# 📌 Category Settings
+# ==============================
 category_layout: category_index.html
 category_path: category
