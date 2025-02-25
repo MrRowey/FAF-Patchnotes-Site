@@ -11,7 +11,7 @@ jobs:
     defaults:
       run:
         working-directory: src
-    container: ghcr.io/mrrowey/faf-patchenotesjekyll-environment:latest
+    container: ghcr.io/mrrowey/patchnotes-site-jekyll-environment:latest
     steps:
       - name: Clone Repository
         uses: actions/checkout@v4
