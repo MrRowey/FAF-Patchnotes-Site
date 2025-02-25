@@ -1,47 +1,54 @@
 # **Experimental FAF Patch Notes**
 
-This project aims to **revive and modernize** the old patch notes site that many users loved by transitioning to a **Jekyll-based solution**. The goal is to **enhance usability**, provide a **clean and structured layout**, and **streamline the process** of creating, updating, and maintaining patch notes for balance updates.
+This project aims to **modernize and enhance** the patch notes experience by transitioning to a **Jekyll-based solution**. Our goal is to **improve usability**, create a **structured layout**, and **streamline the process** of maintaining patch notes for balance updates.
 
 ## **Key Objectives**
 
-✔ **User-Friendly Interface** – A refreshed and intuitive design for improved navigation.  
-✔ **Search & Filtering** – Quick and efficient ways to find specific patches.  
-✔ **Seamless Experience** – A consistent design across all pages.  
-✔ **Automation & Simplicity** – Easier patch note creation using Jekyll’s templating system.
+- **🚀 Modern & User-Friendly Design** – A refreshed interface for better navigation.
+- **🔍 Advanced Search & Filtering** – Quickly locate patch notes by keywords, tags, or version numbers.
+- **🎨 Consistent & Responsive Layout** – A uniform design across all pages, optimized for desktop and mobile.
+- **⚡ Automated & Simplified Updates** – Jekyll’s templating system makes patch note creation seamless.
 
 ---
 
 ## **Home Page Enhancements**
 
-The homepage will undergo a **full redesign**, introducing new features to make patch notes more accessible:
+The homepage will be **completely redesigned** to improve accessibility and usability:
 
-- **Unified Header & Footer** – A seamless, responsive layout across all pages.
-- **Patch Search Functionality** – Quickly locate patch notes by keywords, tags, or version numbers.
-- **Latest Patch Highlights** – Display the **three most recent patches** on the homepage for instant access.
-- **Clean & Readable Layout** – Optimized formatting for better readability on desktop and mobile.
+✅ **Latest Patch Highlights** – Showcasing the **three most recent patches** for quick access.  
+✅ **Search & Filtering** – Find patches efficiently using keywords, tags, or version numbers.  
+✅ **Unified Header & Footer** – A seamless, responsive design across all pages.  
+✅ **Readable, Clean Layout** – Improved formatting for better readability on all devices.
 
 ---
 
 ## **Patch Notes as Posts**
 
-Each patch notes page will be structured as an **individual post**, allowing for:
+Each patch note will be structured as an **individual post**, offering several key benefits:
 
-- **Improved Formatting** – Clear sections, bold headers, and markdown-friendly content.
-- **Metadata Integration** – Automatic inclusion of dates, version numbers, and tags for filtering.
-- **Category-Based Organization** – Easier navigation between different types of patches (e.g., Balance Updates, Bug Fixes, Feature Changes).
-- **Future-Proofing** – A scalable system that supports ongoing updates without breaking the structure.
-
----
-
-## **Future Enhancements**
-
-We plan to introduce additional features to further enhance the experience:
-
-- **Dark Mode Support** – A toggle for users who prefer a darker theme.
-- **RSS Feeds & Notifications** – Keep users informed when new patches are released.
-- **Interactive Changelog** – A visual comparison of changes between versions.
-- **User Feedback & Comments** – Allow users to discuss changes directly on patch notes.
+- 📌 **Enhanced Formatting** – Well-structured sections with bold headers and markdown support.
+- 🏷 **Metadata Integration** – Automated inclusion of version numbers, dates, and tags.
+- 📂 **Category-Based Organization** – Easy navigation between patch types (e.g., Balance, Bug Fixes, Features).
+- 🔄 **Future-Proofing** – A scalable system that supports ongoing updates without breaking structure.
 
 ---
 
-This project is an **ongoing effort**, and feedback from the community will be key to making it the best possible experience. Stay tuned for updates! 🚀
+## **Planned Future Enhancements**
+
+### **Short-Term Goals**
+
+🎨 **Dark Mode Support** – Toggle between light and dark themes.  
+🔔 **RSS Feeds & Notifications** – Keep users informed about new patches.
+
+### **Long-Term Features**
+
+📊 **Interactive Changelog** – Visual comparisons between patch versions.  
+💬 **User Feedback & Comments** – Engage the community directly on patch notes.
+
+---
+
+## **Your Feedback Matters!**
+
+This is an **ongoing project**, and we want **your input** to make it the best possible experience. Let us know what features you’d like to see!
+
+📢 **Join the discussion on our forums or Discord!**
