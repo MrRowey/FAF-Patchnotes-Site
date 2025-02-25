@@ -1,0 +1,28 @@
+{
+  "name": "faf-patchnote-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "workbox-wizard": "workbox wizard",
+    "workbox-generate": "workbox generateSW config/workbox-config.js",
+    "minify-html": "node scripts/minify-html.js",
+    "purge-css": "node scripts/purge-css.js",
+    "minify-css": "node scripts/minify-css.js",
+    "minify-js": "node scripts/minify-js.js",
+    "lighthouse": "lhci collect --config config/lighthouserc.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0",
+    "cssnano": "^7.0.6",
+    "glob": "^11.0.1",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "purgecss": "^7.0.2",
+    "uglify-js": "^3.19.3",
+    "workbox-cli": "^7.3.0"
+  }
+}

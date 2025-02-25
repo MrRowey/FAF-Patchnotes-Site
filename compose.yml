@@ -1,0 +1,19 @@
+services:
+  serve:
+    image: ghcr.io/mrrowey/patchnotes-jekyll-environment:latest
+    working_dir: /src
+    command: sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --watch --incremental --force_polling"
+    volumes:
+      - ./src:/src
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    expose:
+      - 4000
+      - 35729
+    environment:
+      - JEKYLL_ENV=development
+      - PAGES_REPO_NWO=MrRowey/FAF-Patchnotes-Site
+
+volumes:
+  src:
