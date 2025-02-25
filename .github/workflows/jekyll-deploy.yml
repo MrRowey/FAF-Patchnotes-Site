@@ -23,7 +23,7 @@ concurrency:
 jobs:
   build-and-minify:
     name: Build and minify the website
-    uses: ./.github/workflows/jekyll-minify.yaml
+    uses: ./.github/workflows/jekyll-minify.yml
 
   deploy:
     environment:
