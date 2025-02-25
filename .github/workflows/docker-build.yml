@@ -1,54 +1,70 @@
-name: Jekyll - Build
+# This is a custom imaage of the resposity to reduce the start up time for developers.
+# this is not jsut a tool chain but aslso all the packagaes and gesm that is needed to kept uptodate.
+
+# with this workflow we build the Jekyll website. We use a custom Docker image that contains
+# all the necessary tools and gems to build the website. This way we can speed up the build
+# process and make sure that the build environment is consistent across different machines.
+
+name: Docker - Build and publish
 
 on:
-  workflow_call:
   workflow_dispatch:
+  release:
+    types:
+      - published
+
+env:
+  IMAGE_NAME: "patchnotes-site-jekyll-environment"
 
 jobs:
-  build:
-    name: Build
+  build-and-publish:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: src
-    container: ghcr.io/mrrowey/patchnotes-jekyll-environment:latest
+    permissions:
+      contents: read
+      packages: write
+
     steps:
-      - name: Clone Repository
+      - name: Checkout the repository
         uses: actions/checkout@v4
-
-      # Restore and accumulate cache to speed up the build process
-
-      # To have responsive image we generate the various images sizes and formats while
-      # building the Jekyll website. These are stored in a folder (called cache). With this setup
-      # we try to restore the cache and save it in an accumulative manner. The accumulative manner
-      # is done via the 'restore-keys' value. It searches for the latest match if the actual
-      # key is not found.
-
-      # To prevent lingering images that are no longer used to exist in the cache we automatically
-      # add the year to the key. That way each year the cache is generated from scratch and
-      # populated with images that we use at that moment.
-
-      - name: Set image cache name with current year
-        run: echo "IMAGE_CACHE_NAME=cache-images-$(date +'%Y')" >> $GITHUB_ENV
-
-      - name: Restore cached images
-        id: cache-images-restore
-        uses: actions/cache@v4
         with:
-          path: src/cache
-          key: ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-${{ hashFiles('src/assets/images/**') }}
-          restore-keys: |
-            ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-
+          sparse-checkout: |
+            src/Gemfile
+            src/Gemfile.lock
+            Dockerfile
+            .dockerignore
+            compose.yml
+          sparse-checkout-cone-mode: false
+      - name: Log in to Github Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build
+        # Try to retrives the lastest relese tag. if fail the efualt to '0.0.0'
+      - name: Extract latest release tag
+        id: extract_latest_release_tag
+        run: |
+          LATEST_TAG=$(curl -s "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r .tag_name)
+
+          if [[ $LATEST_TAG == "null" || -z "$LATEST_TAG" ]]; then
+            LATEST_TAG="0.0.0"
+          else
+            LATEST_TAG="${LATEST_TAG#v}" # removed leading 'v' if exists
+          fi
+
+          echo "VERSION=$LATEST_TAG" >> $GITHUB_ENV
+
+      # Docker only accepets lowercase tags
+      - name: Normalize image tag
         env:
-          JEKYLL_ENV: production
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: echo "IMAGE_TAG=ghcr.io/${REPO_OWNER,,}/${{env.IMAGE_NAME}}" >> $GITHUB_ENV
 
-      # Post process the build
+      # Build the Docker image
+      - name: Build the Docker image
+        run: |
+          docker build -t ${{ env.IMAGE_TAG }}:latest .
+          docker tag ${{ env.IMAGE_TAG }}:latest ${{ env.IMAGE_TAG }}:${{ env.VERSION }}
 
-      - name: Upload artifact for CI
-        uses: actions/upload-artifact@v4
-        with:
-          name: "build"
-          path: "src/_site/"
+      # Push the Docker image to Github Container Registry
+      - name: Push the Docker image
+        run: |
+          docker push ${{ env.IMAGE_TAG }}:latest
+          docker push ${{ env.IMAGE_TAG }}:${{ env.VERSION }}
