@@ -5,7 +5,7 @@ description: "Stay up-to-date with the latest FAForever balance updates, patches
 permalink: "/:year/:month/:day/:title:output_ext"
 
 # Base URL (Leave empty unless hosted in a subdirectory)
-baseurl: ""
+baseurl: "FAF-Patchnotes-Site/"
 
 plugins_dir: _plugins
 plugins:
