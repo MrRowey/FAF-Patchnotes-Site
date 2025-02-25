@@ -1,0 +1,99 @@
+name: Build
+
+on:
+  # Enable this workflow to be used by other workflows
+  workflow_call:
+    inputs:
+      baseurl:
+        description: "The base URL to use"
+        type: string
+
+  # Enable this workflow to be triggered manually
+  workflow_dispatch:
+    inputs:
+      baseurl:
+        description: "The base URL to use"
+        type: string
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: src
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          cache-version: 0
+          working-directory: "${{ github.workspace }}/src"
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # We restore images to speed up the build process
+
+      - name: Restore cached images
+        id: cache-images-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: src/cache
+          key: cache-images-${{ hashFiles('src/assets/images/**') }}
+
+      - name: Build with Jekyll
+        if: ${{ inputs.baseurl != '' }}
+        run: bundle exec jekyll build --baseurl ${{ inputs.baseurl }}
+        env:
+          JEKYLL_ENV: production
+
+      - name: Build with Jekyll
+        if: ${{ inputs.baseurl == '' }}
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      # We store the images to speed up the build process
+
+      - name: Save images to cache
+        if: steps.cache-images-restore.outputs.cache-hit != 'true'
+        id: cache-images-save
+        uses: actions/cache/save@v4
+        with:
+          path: src/cache
+          key: ${{ steps.cache-images-restore.outputs.cache-primary-key }}
+
+      # Post process the build
+
+      - name: Post process the build
+        run: |
+          npm install --clean
+
+          # Minify assets to reduce bundle size
+          npm run purge-css
+          npm run minify-css
+          npm run minify-js
+          npm run minify-html
+
+          # Turn the website into a PWA
+          npm run workbox-generate
+
+      # Upload artifacts for inspection
+
+      - name: Upload artifact for GitHub pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: "github-pages"
+          path: "src/_site/"
+
+      - name: Upload artifact for CI
+        uses: actions/upload-artifact@v4
+        with:
+          name: "build"
+          path: "src/_site/"
