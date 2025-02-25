@@ -1,39 +1,54 @@
-*** This Site has now be Deprecated ***
+# **Experimental FAF Patch Notes**
 
+This project aims to **modernize and enhance** the patch notes experience by transitioning to a **Jekyll-based solution**. Our goal is to **improve usability**, create a **structured layout**, and **streamline the process** of maintaining patch notes for balance updates.
 
-# FAF Patchnotes
+## **Key Objectives**
 
-This Simple website contains All Current and Previous Patchnotes for Game and Balance
-
-
-# Patchnotes Faforever
-
-This repository contains the source code and documentation for the Patchnotes Faforever website. Patchnotes Faforever is a platform that provides comprehensive patch notes for the popular real-time strategy game, Forged Alliance Forever.
-
-## About
-
-Patchnotes Faforever is dedicated to providing players of Forged Alliance Forever with detailed and up-to-date information about game patches, changes, and updates. It aims to be a centralized resource for players to stay informed about the latest developments in the game.
-
-## Features
-
-- Access to patch notes for all major updates of Forged Alliance Forever.
-- Detailed information about changes to units and gameplay mechanics.
-- User-friendly interface for seamless navigation and browsing of patch notes.
-
-## Usage
-
-To access Patchnotes Faforever, simply visit [https://patchnotes.faforever.com/](https://patchnotes.faforever.com/) in your web browser. From there, you can browse through the available patch notes, search for specific changes, and stay informed about the latest updates to the game.
-
-## Contributing
-
-Contributions to Patchnotes Faforever are welcome! If you'd like to contribute to the development of the website or suggest improvements, please feel free to submit a pull request or open an issue on this GitHub repository.
-
-The source code for Patchnotes Faforever is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-Patchnotes Faforever is made possible thanks to the hard work and dedication of its contributors. Special thanks to the Forged Alliance Forever community for their support and feedback.
+- **🚀 Modern & User-Friendly Design** – A refreshed interface for better navigation.
+- **🔍 Advanced Search & Filtering** – Quickly locate patch notes by keywords, tags, or version numbers.
+- **🎨 Consistent & Responsive Layout** – A uniform design across all pages, optimized for desktop and mobile.
+- **⚡ Automated & Simplified Updates** – Jekyll’s templating system makes patch note creation seamless.
 
 ---
 
-[Visit Patchnotes Faforever](https://patchnotes.faforever.com/)
+## **Home Page Enhancements**
+
+The homepage will be **completely redesigned** to improve accessibility and usability:
+
+✅ **Latest Patch Highlights** – Showcasing the **three most recent patches** for quick access.  
+✅ **Search & Filtering** – Find patches efficiently using keywords, tags, or version numbers.  
+✅ **Unified Header & Footer** – A seamless, responsive design across all pages.  
+✅ **Readable, Clean Layout** – Improved formatting for better readability on all devices.
+
+---
+
+## **Patch Notes as Posts**
+
+Each patch note will be structured as an **individual post**, offering several key benefits:
+
+- 📌 **Enhanced Formatting** – Well-structured sections with bold headers and markdown support.
+- 🏷 **Metadata Integration** – Automated inclusion of version numbers, dates, and tags.
+- 📂 **Category-Based Organization** – Easy navigation between patch types (e.g., Balance, Bug Fixes, Features).
+- 🔄 **Future-Proofing** – A scalable system that supports ongoing updates without breaking structure.
+
+---
+
+## **Planned Future Enhancements**
+
+### **Short-Term Goals**
+
+🎨 **Dark Mode Support** – Toggle between light and dark themes.  
+🔔 **RSS Feeds & Notifications** – Keep users informed about new patches.
+
+### **Long-Term Features**
+
+📊 **Interactive Changelog** – Visual comparisons between patch versions.  
+💬 **User Feedback & Comments** – Engage the community directly on patch notes.
+
+---
+
+## **Your Feedback Matters!**
+
+This is an **ongoing project**, and we want **your input** to make it the best possible experience. Let us know what features you’d like to see!
+
+📢 **Join the discussion on our forums or Discord!**

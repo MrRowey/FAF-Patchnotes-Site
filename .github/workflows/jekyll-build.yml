@@ -1,0 +1,54 @@
+name: Jekyll - Build
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: src
+    container: ghcr.io/mrrowey/faf-patchenotes-site-jekyll-environment:latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+
+      # Restore and accumulate cache to speed up the build process
+
+      # To have responsive image we generate the various images sizes and formats while
+      # building the Jekyll website. These are stored in a folder (called cache). With this setup
+      # we try to restore the cache and save it in an accumulative manner. The accumulative manner
+      # is done via the 'restore-keys' value. It searches for the latest match if the actual
+      # key is not found.
+
+      # To prevent lingering images that are no longer used to exist in the cache we automatically
+      # add the year to the key. That way each year the cache is generated from scratch and
+      # populated with images that we use at that moment.
+
+      - name: Set image cache name with current year
+        run: echo "IMAGE_CACHE_NAME=cache-images-$(date +'%Y')" >> $GITHUB_ENV
+
+      - name: Restore cached images
+        id: cache-images-restore
+        uses: actions/cache@v4
+        with:
+          path: src/cache
+          key: ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-${{ hashFiles('src/assets/images/**') }}
+          restore-keys: |
+            ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      # Post process the build
+
+      - name: Upload artifact for CI
+        uses: actions/upload-artifact@v4
+        with:
+          name: "build"
+          path: "src/_site/"

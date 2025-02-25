@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-21T12:20:37+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAForever Balance Patchnotes</title><subtitle>Latest balance updates for FAForever.</subtitle><entry><title type="html">FAF Patch 3810</title><link href="http://localhost:4000/FAF-Patchnotes-Site/2024/07/07/3810.html" rel="alternate" type="text/html" title="FAF Patch 3810" /><published>2024-07-07T12:00:00+01:00</published><updated>2024-07-07T12:00:00+01:00</updated><id>http://localhost:4000/FAF-Patchnotes-Site/2024/07/07/3810</id><content type="html" xml:base="http://localhost:4000/FAF-Patchnotes-Site/2024/07/07/3810.html"><![CDATA[<h1 id="faf-patch-3810">FAF Patch 3810</h1>
+
+<p>*Published on <strong>July 7th, 2024*</strong></p>
+
+<p>This balance update comprises numerous minor adjustments to certain units, providing them with backup capabilities at a distance. Additionally, there are a few significant changes, such as the introduction of the new <strong>Teleport mechanic</strong>, alongside some slight nerfs.</p>
+
+<h3 id="-the-balance-team">– The Balance Team</h3>
+
+<hr />
+
+<h2 id="land-units">Land Units</h2>
+
+<h3 id="t1-scout---selen"><strong>T1 Scout - Selen</strong></h3>
+
+<p><img src="/assets/images/units/sera/land/T1Scout.png" alt="Selen" /></p>
+
+<ul>
+  <li>Cloak Vision Multiplier: <del>0.6</del> → <strong>0.8</strong></li>
+  <li>Cloak Radar Multiplier: <del>0.6</del> → <strong>0.8</strong></li>
+  <li>Cloak Wait Time: <del>3s</del> → <strong>1.5s</strong></li>
+</ul>
+
+<h3 id="t1-anti-air---thistle"><strong>T1 Anti-Air - Thistle</strong></h3>
+
+<p><img src="/assets/images/units/aeon/land/T1MobileAA.png" alt="Thistle" /></p>
+
+<ul>
+  <li>Health: <del>250</del> → <strong>265</strong></li>
+</ul>
+
+<h3 id="t2-range-bot---mongoose--hoplite"><strong>T2 Range Bot - Mongoose &amp; Hoplite</strong></h3>
+
+<p><img src="/assets/images/units/uef/land/T2RangeBot.png" alt="Mongoose" /><br />
+<strong>Mongoose:</strong> Now fires from transports.</p>
+
+<ul>
+  <li>Shoot From Transport: <del>False</del> → <strong>True</strong></li>
+</ul>
+
+<p><img src="/assets/images/units/cybran/land/T2RangeBot.png" alt="Hoplite" /><br />
+<strong>Hoplite:</strong> Increased <strong>muzzle velocity</strong> for better usability.</p>
+
+<ul>
+  <li>Muzzle Velocity: <del>20</del> → <strong>25</strong></li>
+</ul>
+
+<h3 id="t2-bot---ilshavoh"><strong>T2 Bot - Ilshavoh</strong></h3>
+
+<p><img src="/assets/images/units/sera/land/T2Tank.png" alt="Ilshavoh" /></p>
+
+<ul>
+  <li>Max Turn Rate: <del>75</del> → <strong>90</strong></li>
+  <li>Turn On Spot Rate: <del>45</del> → <strong>90</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="air-units">Air Units</h2>
+
+<h3 id="tech-2-gunship---vulthoo"><strong>Tech 2 Gunship - Vulthoo</strong></h3>
+
+<p><img src="/assets/images/units/sera/air/T2Gunship.png" alt="Vulthoo" /></p>
+
+<ul>
+  <li>Damage: <del>19.2</del> → <strong>20</strong></li>
+  <li>Max Radius: <del>22</del> → <strong>24</strong></li>
+</ul>
+
+<h3 id="tech-3-gunship---wailer"><strong>Tech 3 Gunship - Wailer</strong></h3>
+
+<p><img src="/assets/images/units/cybran/air/T3Gunship.png" alt="Wailer" /></p>
+
+<ul>
+  <li>Muzzle Velocity: <del>13</del> → <strong>22</strong></li>
+  <li>Projectile Lifetime: <del>2s</del> → <strong>2.4s</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="naval-units">Naval Units</h2>
+
+<h3 id="tech-2-destroyers"><strong>Tech 2 Destroyers</strong></h3>
+
+<h4 id="salem"><strong>Salem</strong></h4>
+
+<p><img src="/assets/images/units/cybran/naval/T2Destoryer.png" alt="Salem" /></p>
+
+<ul>
+  <li>Backup Distance: <del>5</del> → <strong>10</strong></li>
+</ul>
+
+<h4 id="uashavoh"><strong>Uashavoh</strong></h4>
+
+<p><img src="/assets/images/units/sera/naval/T2Destroyer.png" alt="Uashavoh" /></p>
+
+<ul>
+  <li>Anti-Torpedo Rate of Fire: <del>0.26</del> → <strong>0.3</strong></li>
+</ul>
+
+<h3 id="t3-sub-hunter-seraphim"><strong>T3 Sub Hunter (Seraphim)</strong></h3>
+
+<p><img src="/assets/images/units/sera/naval/T3SubHunter.png" alt="Sub Hunter" /></p>
+
+<ul>
+  <li><strong>Main Weapon</strong>
+    <ul>
+      <li>Damage(DPS): <del>290 (363)</del> → <strong>380 (338)</strong></li>
+      <li>Rate of Fire: <del>0.25</del> → <strong>0.22</strong></li>
+      <li>Salvo Size: <del>5</del> → <strong>4</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="structures">Structures</h2>
+
+<h3 id="tech-2--3-radars"><strong>Tech 2 &amp; 3 Radars</strong></h3>
+
+<ul>
+  <li><strong>T1 Radar Build Rate:</strong> <del>14.08</del> → <strong>13</strong></li>
+  <li><strong>T2 Radar Build Rate:</strong> <del>21.46</del> → <strong>20</strong></li>
+  <li><strong>T2 Radar Build Time:</strong> <del>845</del> → <strong>780</strong></li>
+  <li><strong>T3 Radar Build Time:</strong> <del>2575</del> → <strong>2400</strong></li>
+</ul>
+
+<h3 id="tml-tactical-missile-launcher-changes"><strong>TML (Tactical Missile Launcher) Changes</strong></h3>
+
+<ul>
+  <li>Health: <del>1500</del> → <strong>900</strong></li>
+  <li>Death Damage: <del>0</del> → <strong>750</strong></li>
+  <li>Death AoE: <del>0</del> → <strong>2</strong></li>
+</ul>
+
+<h3 id="experimental-artillery---salvation"><strong>Experimental Artillery - Salvation</strong></h3>
+
+<p><img src="/assets/images/units/aeon/structure/T4RapidArty.png" alt="Salvation" /></p>
+
+<ul>
+  <li>Adjacency Bonus: <del>42%</del> → <strong>20%</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="acu-changes">ACU Changes</h2>
+
+<h3 id="uef-bubble-shield"><strong>UEF Bubble Shield</strong></h3>
+
+<p><img src="/assets/images/Enhancements/uef/bubbleshield.png" alt="UEF Bubble Shield" /></p>
+
+<ul>
+  <li><strong>Energy Cost:</strong> <del>70,000</del> → <strong>45,000</strong></li>
+  <li><strong>Mass Cost:</strong> <del>2,000</del> → <strong>1,400</strong></li>
+  <li><strong>Shield Health:</strong> <del>7,000</del> → <strong>5,000</strong></li>
+  <li><strong>Recharge Time:</strong> <del>60s</del> → <strong>45s</strong></li>
+  <li><strong>Regen Rate:</strong> <del>67</del> → <strong>60</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="summary">Summary</h2>
+
+<p>Patch <strong>3810</strong> focuses on:<br />
+✅ <strong>Improving unit balance</strong><br />
+✅ <strong>Buffing underused units</strong><br />
+✅ <strong>Introducing the new teleport mechanic</strong><br />
+✅ <strong>Adjusting shields and ACU explosion mechanics</strong></p>
+
+<p>🔗 <a href="../index.html">Back to Patchnote List</a></p>
+
+<p>© 2015-2024 FAForever</p>]]></content><author><name></name></author><category term="patch" /><category term="balance" /><category term="FAF" /><category term="balance" /><category term="patch3810" /><summary type="html"><![CDATA[FAF Patch 3810]]></summary></entry></feed>

@@ -1,0 +1,16 @@
+<div style="flex: 1; text-align: right;">
+    <label for="theme-toggle">Theme:</label>
+    <select id="theme-toggle" onchange="changeTheme(this.value)">
+        <option value="uef">🌐 UEF</option>
+        <option value="aeon">✨ Aeon</option>
+        <option value="seraphim">☄ Seraphim</option>
+        <option value="cybran">⚛ Cybran</option>
+        <option value="civilian">🏢 Civilian</option>
+    </select>
+</div>
+
+<script>
+    function changeTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+    }
+</script>

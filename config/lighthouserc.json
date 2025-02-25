@@ -1,0 +1,12 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./src/_site"
+    },
+    "assert": {},
+    "upload": {
+      "target": "filesystem",
+      "outputDir": ".lighthouseci"
+    }
+  }
+}
