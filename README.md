@@ -1,4 +1,4 @@
-# **Experimental FAF Patch Notes**
+# **Experimental FAF Patch Notes !**
 
 This project aims to **modernize and enhance** the patch notes experience by transitioning to a **Jekyll-based solution**. Our goal is to **improve usability**, create a **structured layout**, and **streamline the process** of maintaining patch notes for balance updates.
 
