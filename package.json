@@ -2,7 +2,6 @@
   "name": "faf-patchnote-site",
   "version": "1.0.0",
   "private": true,
-  "type" : "module",
   "scripts": {
     "workbox-wizard": "workbox wizard",
     "workbox-generate": "workbox generateSW config/workbox-config.js",

@@ -1,9 +1,9 @@
-import { readFileSync, writeFileSync } from "fs";
-import { resolve } from "path";
-import { glob } from "glob";
-import { minify } from "html-minifier-terser";
+const { readFileSync, writeFileSync } = require("fs");
+const { resolve } = require("path");
+const glob = require("glob");
+const { minify } = require("html-minifier-terser");
 
-(async () => {
+(async function () {
   const configuration = {
     caseSensitive: false,
     collapseBooleanAttributes: true,
@@ -35,23 +35,28 @@ import { minify } from "html-minifier-terser";
   try {
     // Find all matching files
     const pattern = "src/_site/**/*.html";
-    const files = await glob(pattern);
-
-    for (const file of files) {
-      const inputPath = resolve(file);
-      const outputPath = inputPath.replace(/\.html$/, ".html");
-
-      try {
-        const htmlContent = readFileSync(inputPath, "utf8");
-        const minified = await minify(htmlContent, configuration);
-
-        // Overwrite source file
-        writeFileSync(outputPath, minified, "utf8");
-        console.log(`Minified ${file} -> ${outputPath}`);
-      } catch (err) {
-        console.error(`Error processing ${file}:`, err);
+    glob(pattern, async (err, files) => {
+      if (err) {
+        console.error("Error finding files:", err);
+        return;
       }
-    }
+
+      for (const file of files) {
+        const inputPath = resolve(file);
+        const outputPath = inputPath.replace(/\.html$/, ".html");
+
+        try {
+          const htmlContent = readFileSync(inputPath, "utf8");
+          const minified = await minify(htmlContent, configuration);
+
+          // Overwrite source file
+          writeFileSync(outputPath, minified, "utf8");
+          console.log(`Minified ${file} -> ${outputPath}`);
+        } catch (err) {
+          console.error(`Error processing ${file}:`, err);
+        }
+      }
+    });
   } catch (err) {
     console.error("Error finding files:", err);
   }

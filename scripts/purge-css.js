@@ -1,7 +1,7 @@
-import { PurgeCSS } from "purgecss";
-import { writeFileSync } from "fs";
+const PurgeCSS = require("purgecss").PurgeCSS;
+const { writeFileSync } = require("fs");
 
-(async () => {
+(async function () {
   try {
     const purgeCSSResults = await new PurgeCSS().purge({
       content: ["src/_site/**/*.html"],
