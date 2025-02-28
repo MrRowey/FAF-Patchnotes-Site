@@ -41,7 +41,9 @@ jobs:
             ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: | 
+          bundle install
+          bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
