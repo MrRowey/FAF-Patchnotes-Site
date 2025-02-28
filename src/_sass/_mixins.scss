@@ -1,1 +1,23 @@
+// Define defaults for each variable.
 
+
+
+// use media queries like this::after
+// @include media-query($breakpoint) {
+//     // styles
+// }
+//
+// Notice the following mixin uses max-width, in a deprecated, desktop-first
+// approach, whereas media queries used elsewhere now use min-width.
+//
+
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin relative-font-size($ratio) {
+    font-size: #{$ratio}rem;
+}
