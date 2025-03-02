@@ -1,72 +1,74 @@
+/* Button Styles */
 button {
-  border-radius: 5px;
-  padding: 12px 16px;
-  background: var(--ButtonBackground);
-  color: var(--ButtonText);
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  text-align: center;
-  min-width: 100px; /* Ensures a minimum button width */
+  padding: 0.75rem 1rem;
+  min-width: 100px;
   min-height: 40px;
-  white-space: nowrap; /* Prevents text wrapping */
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--ButtonText);
+  background-color: var(--ButtonBackground);
+  border: none;
+  border-radius: 0.3125rem; /* 5px */
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    filter 0.2s ease;
+  white-space: nowrap;
+  text-align: center;
 }
 
-button a {
-  color: inherit;
-  text-decoration: none;
-}
-
+/* Hover and Active States */
 button:hover {
-  filter: brightness(0.9); /* Darkens the background without needing darken() */
+  filter: brightness(0.9);
 }
 
 button:active {
   filter: brightness(0.8);
-  transform: scale(0.98); /* Subtle press effect */
+  transform: scale(0.98);
 }
 
-/* Focus styles for accessibility */
+/* Focus Styles for Accessibility */
 button:focus {
-  outline: 3px solid var(--ButtonFocusOutline, #0056b3); /* More visible focus color */
+  outline: 3px solid var(--ButtonFocusOutline, #0056b3);
   outline-offset: 3px;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Add inner glow for better focus effect */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
-/* Disabled state */
+/* Disabled State */
 button:disabled {
-  background: var(--ButtonDisabledBackground, #ccc); /* Light gray background */
-  color: var(--ButtonDisabledText, #777); /* Muted text color */
+  background-color: var(--ButtonDisabledBackground, #ccc);
+  color: var(--ButtonDisabledText, #777);
   cursor: not-allowed;
-  filter: none;
+  opacity: 0.7;
 }
 
-/* Small and large button classes for flexibility */
+/* Button Size Variants */
 button.small {
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
 }
 
 button.large {
-  font-size: 18px;
-  padding: 16px 24px;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
   button {
-    font-size: 14px;
-    padding: 10px 14px;
+    font-size: 0.9rem;
+    padding: 0.625rem 0.875rem;
   }
 }
 
 @media (max-width: 420px) {
   button {
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
   }
 }
