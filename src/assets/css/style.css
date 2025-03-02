@@ -102,8 +102,9 @@
 /* Global Styles */
 html {
   min-height: 100%;
-  background: var(--Background) no-repeat center center fixed;
+  background-color: var(--Background) no-repeat center center fixed;
   background-size: cover;
+  background-image: var(--RandomBackgroundImage);
 }
 
 body {
