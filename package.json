@@ -2,24 +2,37 @@
   "name": "faf-patchnote-site",
   "version": "1.0.0",
   "private": true,
+  "description": "Patch notes site for FAF (Forged Alliance Forever) game updates.",
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrRowey/FAF-Patchnotes-Site.git"
+  },
   "scripts": {
-    "workbox-wizard": "workbox wizard",
-    "workbox-generate": "workbox generateSW config/workbox-config.js",
+    "start": "bundle exec jekyll serve --host 0.0.0.0 --livereload --incremental --force_polling",
+    "build": "npm run minify-html && npm run purge-css && npm run minify-css && npm run minify-js && npm run workbox-generate",
+    "workbox-wizard": "npx workbox wizard",
+    "workbox-generate": "npx workbox generateSW config/workbox-config.js",
     "minify-html": "node scripts/minify-html.js",
     "purge-css": "node scripts/purge-css.js",
     "minify-css": "node scripts/minify-css.js",
     "minify-js": "node scripts/minify-js.js",
-    "lighthouse": "lhci collect --config config/lighthouserc.json"
+    "lighthouse": "lhci collect --config config/lighthouserc.json",
+    "lint": "eslint . --ext .js",
+    "test": "npm run lint && npm run build"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "devDependencies": {
     "@lhci/cli": "^0.14.0",
     "cssnano": "^7.0.6",
+    "eslint": "^8.50.0",
     "glob": "^11.0.1",
     "html-minifier-terser": "^7.2.0",
-    "postcss": "^8.5.1",
+    "postcss": "^8.4.26",
     "postcss-cli": "^11.0.0",
     "purgecss": "^7.0.2",
     "uglify-js": "^3.19.3",
