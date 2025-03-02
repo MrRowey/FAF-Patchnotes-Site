@@ -1,43 +1,32 @@
-# Use the official Ruby slim image and specify a version
-FROM ruby:3.2.2-slim
-
-# Set environment variables
-ENV BUNDLE_HOME=/usr/local/bundle \
-    BUNDLE_APP_CONFIG=/usr/local/bundle \
-    BUNDLE_DISABLE_PLATFORM_WARNINGS=1 \
-    BUNDLE_BIN=/usr/local/bundle/bin \
-    GEM_HOME=/usr/local/bundle \
-    GEM_BIN=/usr/local/bundle/bin \
-    PATH=$BUNDLE_BIN:$GEM_BIN:$PATH
-
-# Install build dependencies and clean up in a single step
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-      build-essential \
-      zlib1g-dev \
-      git \
-      imagemagick && \
-    gem install bundler -v 2.6.7 && \
-    # Clean up APT when done
-    apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false && \
-    rm -rf /var/lib/apt/lists/*
-
-# Set the working directory
-WORKDIR /src
+# Use the Debian-based Ruby slim image
+FROM ruby:3.4.2-slim
 
 # Copy the Gemfile and Gemfile.lock into the image
-COPY src/Gemfile* ./
+WORKDIR /src
+COPY src/Gemfile /src/Gemfile
+COPY src/Gemfile.lock /src/Gemfile.lock
 
-# Install gems for the project
-RUN bundle config set deployment 'true' && \
-    bundle config set without 'development test' && \
-    bundle install --jobs 4 --retry 3
+# Set environment variables
+ENV BUNDLE_HOME=/usr/local/bundle
+ENV BUNDLE_APP_CONFIG=/usr/local/bundle
+ENV BUNDLE_DISABLE_PLATFORM_WARNINGS=true
+ENV BUNDLE_BIN=/usr/local/bundle/bin
+ENV GEM_HOME=/usr/gem
+ENV GEM_BIN=/usr/gem/bin
 
-# Copy the rest of the application code
-COPY src/ ./
-
-# Expose default Jekyll port
-EXPOSE 4000
-
-# Default command to run when starting the container
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--incremental", "--force_polling"]
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+  build-essential \
+  zlib1g-dev \
+  git \
+  imagemagick && \
+  # Install dependencies for Jekyll
+  gem install bundler -v 2.6.2 && \
+  gem install jekyll && \
+  # Install gems for the project
+  bundle install --no-cache && \
+  # Clean up the image to reduce its size
+  gem clean && \
+  apt-get remove -y build-essential && \
+  apt-get autoremove -y && \
+  rm -rf /var/lib/apt/lists/* /usr/local/bundle/cache /usr/gem/cache
