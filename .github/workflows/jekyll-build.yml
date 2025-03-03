@@ -1,56 +1,45 @@
 name: Jekyll - Build
 
 on:
-  workflow_call:
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
-    name: Build
+    name: Build Jekyll Site
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: src
     container: ghcr.io/mrrowey/patchnotes-site-jekyll-environment:latest
     steps:
-      - name: Clone Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Restore and accumulate cache to speed up the build process
-
-      # To have responsive image we generate the various images sizes and formats while
-      # building the Jekyll website. These are stored in a folder (called cache). With this setup
-      # we try to restore the cache and save it in an accumulative manner. The accumulative manner
-      # is done via the 'restore-keys' value. It searches for the latest match if the actual
-      # key is not found.
-
-      # To prevent lingering images that are no longer used to exist in the cache we automatically
-      # add the year to the key. That way each year the cache is generated from scratch and
-      # populated with images that we use at that moment.
-
-      - name: Set image cache name with current year
+      # Set up caching for responsive images
+      - name: Set Image Cache Name with Current Year
+        id: cache-setup
         run: echo "IMAGE_CACHE_NAME=cache-images-$(date +'%Y')" >> $GITHUB_ENV
 
-      - name: Restore cached images
-        id: cache-images-restore
+      - name: Restore Cached Images
+        id: cache-images
         uses: actions/cache@v4
         with:
-          path: src/cache
-          key: ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-${{ hashFiles('src/assets/images/**') }}
+          path: cache
+          key: ${{ env.IMAGE_CACHE_NAME }}-${{ runner.os }}-${{ hashFiles('assets/images/**') }}
           restore-keys: |
-            ${{ env.IMAGE_CACHE_NAME }}-${{runner.os}}-
+            ${{ env.IMAGE_CACHE_NAME }}-${{ runner.os }}-
 
       - name: Build with Jekyll
-        run: | 
-          bundle install
-          bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+        run: |
+          bundle install
+          bundle exec jekyll build
 
-      # Post process the build
-
-      - name: Upload artifact for CI
+      # Upload the build artifact for continuous integration
+      - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "build"
-          path: "src/_site/"
+          name: build
+          path: _site/
