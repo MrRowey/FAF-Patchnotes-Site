@@ -37,9 +37,13 @@ jobs:
           bundle install
           bundle exec jekyll build
 
+      # List _site directory contents
+      - name: List _site Directory
+        run: ls -la _site
+
       # Upload the build artifact for continuous integration
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: _site/
+          path: src/_site/
