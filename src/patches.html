@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: FAForever Balance Patchnotes
 subtitle: This is a test to see if the fucking thing works
 ---
@@ -7,10 +7,6 @@ subtitle: This is a test to see if the fucking thing works
 <section class="index-Container">
   <h1>{{ page.title }}</h1>
   <p>{{ page.subtitle }}</p>
-
-  <section class="search-Container">
-    <input type="text" id="search" placeholder="Search for patchnotes">
-  </section>
 
   <section class="patchnotes-Container">
     {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
@@ -26,10 +22,9 @@ subtitle: This is a test to see if the fucking thing works
         {% endfor %}
       </ul>
     {% endfor %}
-    
-    <p><a href="{{ 'patches.html' | relative_url }}">See all patches</a></p>
   </section>
 </section>
+
 
 
 <!--
