@@ -12,7 +12,7 @@ jobs:
   minify:
     name: Minify
     needs: [build]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     defaults:
       run:
         working-directory: src
@@ -38,16 +38,13 @@ jobs:
       - name: Post process the build
         run: |
           npm install --clean
-
           # Minify assets to reduce bundle size
           npm run purge-css
           npm run minify-css
           npm run minify-js
           npm run minify-html
-
           # Turn the website into a PWA
           npm run workbox-generate
-
       # Upload artifacts for inspection
 
       - name: Upload artifact for GitHub pages
